@@ -8,15 +8,20 @@
  */
 
 /* Variables - 8-point spacing system */
-$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+$font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 $font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', menlo, monospace;
 
+/* Ultra-Clean Light Theme - Business Grade */
 $color-bg: #FFFFFF;
-$color-text: #111111;
-$color-text-secondary: #525F78;
-$color-accent: #0A66FF;
-$color-border: #E5E5E5;
-$color-gray: #8E8E93;
+$color-bg-subtle: #F8F9FC;
+$color-text: #1A1A1A;
+$color-text-secondary: #5C6B7F;
+$color-accent: #1A73E8;
+$color-border: #E8EAF6;
+$color-gray: #757575;
+$color-success: #2E7D32;
+$color-warning: #F9A825;
+$color-info: #0288D1;
 
 $spacing-unit: 8px;
 $spacing-xs: $spacing-unit;
@@ -906,82 +911,102 @@ a:hover {
 /* Enhanced Experience Section */
 .experience-list {
   list-style: none;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .experience-item {
-  position: relative;
-  padding-left: $spacing-xxl;
-  margin-bottom: $spacing-xxl;
+  margin-bottom: $spacing-xl;
+  padding: $spacing-lg;
+  background: $color-bg;
+  border: 1px solid $color-border;
+  border-radius: $radius;
+  transition: all 0.2s ease;
 }
 
-.experience-item::before {
-  content: '';
-  position: absolute;
-  left: $spacing-sm;
-  top: 0.4rem;
-  width: 0.5rem;
-  height: 0.5rem;
-  background: $color-accent;
-  border-radius: 50%;
+.experience-item:hover {
+  border-color: $color-accent;
+  box-shadow: 0 4px 12px rgba(10, 102, 255, 0.05);
 }
 
-.experience-item::after {
-  content: '';
-  position: absolute;
-  left: $spacing-sm;
-  top: 1rem;
-  bottom: -$spacing-md;
-  width: 1px;
-  background: $color-border;
-}
-
-.experience-item:last-child::after {
-  display: none;
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: $spacing-sm;
 }
 
 .experience-date {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: $color-gray;
   font-weight: 600;
-  margin-bottom: $spacing-xs;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .experience-role {
   font-size: 1.375rem;
   font-weight: 700;
   color: $color-text;
-  margin-bottom: $spacing-xs;
+}
+
+.experience-company {
+  margin-bottom: $spacing-md;
 }
 
 .company-badge {
   display: inline-block;
-  background: #F5F5F5;
+  background: $color-bg-subtle;
   color: $color-text-secondary;
   padding: $spacing-xs $spacing-sm;
   border-radius: 4px;
   font-size: 0.875rem;
-  margin-left: $spacing-sm;
+}
+
+.experience-metrics {
+  display: flex;
+  gap: $spacing-lg;
+  margin-bottom: $spacing-sm;
+  flex-wrap: wrap;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+}
+
+.metric-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $color-accent;
+  line-height: 1;
+}
+
+.metric-label {
+  font-size: 0.75rem;
+  color: $color-gray;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.experience-tech {
+  font-size: 0.875rem;
+  color: $color-text-secondary;
+  font-family: $font-mono;
+  background: $color-bg-subtle;
+  padding: $spacing-xs $spacing-sm;
+  border-radius: 4px;
+  display: inline-block;
 }
 
 .theme-dark .company-badge {
-  background: #1A1A1A;
+  background: #333333;
 }
 
-.experience-description {
-  margin-bottom: 0;
-}
-
-.achievement-list {
-  margin-top: $spacing-sm;
-  padding-left: $spacing-lg;
-  color: $color-text-secondary;
-}
-
-.achievement-list li {
-  margin-bottom: $spacing-xs;
-  line-height: 1.5;
+.theme-dark .experience-tech {
+  background: #222222;
 }
 
 .experience-view-all {
@@ -1030,27 +1055,86 @@ a:hover {
 }
 
 .skill-tag {
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   padding: $spacing-xs $spacing-sm;
-  background: #F5F5F5;
+  background: #F0F4FF;
   border: 1px solid $color-border;
-  border-radius: 4px;
+  border-radius: 6px;
   color: $color-text-secondary;
   transition: all 0.2s ease;
   display: inline-flex;
   align-items: center;
   gap: $spacing-xs;
+  font-weight: 500;
 }
 
 .skill-tag:hover {
-  transform: translateY(-2px);
-  background: $color-accent;
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, $color-accent 0%, #64B5F6 100%);
   color: #FFFFFF;
   border-color: $color-accent;
+  box-shadow: 0 4px 12px rgba(10, 102, 255, 0.3);
 }
 
 .skill-icon {
   font-size: 1rem;
+}
+
+/* Enhanced Skills Section */
+.skill-category {
+  background: $color-bg;
+  border: 1px solid #E0E7FF;
+  border-radius: 10px;
+  padding: $spacing-lg;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-category::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(10, 102, 255, 0.03) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-4px);
+  border-color: $color-accent;
+  box-shadow: 0 12px 30px rgba(10, 102, 255, 0.08);
+}
+
+.skill-category:hover::before {
+  opacity: 1;
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  margin-bottom: $spacing-md;
+  padding-bottom: $spacing-md;
+  border-bottom: 2px solid #E0E7FF;
+}
+
+.skill-category-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: $color-text;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.skill-icon {
+  width: 20px;
+  height: 20px;
+  color: $color-accent;
+  flex-shrink: 0;
 }
 
 .skills-view-all {
@@ -1178,6 +1262,50 @@ a:hover {
 }
 
 .icon.github-icon {
+  width: 20px;
+  height: 20px;
+  color: #1A1A1A;
+}
+
+.icon.linkedin-icon {
+  width: 20px;
+  height: 20px;
+  color: #0A66C2;
+}
+
+.icon.discord-icon {
+  width: 20px;
+  height: 20px;
+  color: #5865F2;
+}
+
+.icon.mail-icon {
+  width: 20px;
+  height: 20px;
+  color: #EA4335;
+}
+
+/* Navigation Social Icons */
+.nav-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-text;
+  padding: $spacing-xs $spacing-xs;
+  border-radius: $radius;
+  transition: all 0.2s ease;
+}
+
+.nav-social-icon:hover {
+  color: $color-accent;
+  background: #F5F5F5;
+}
+
+.theme-dark .nav-social-icon:hover {
+  background: #1A1A1A;
+}
+
+.nav-social-icon svg {
   width: 20px;
   height: 20px;
 }
@@ -1394,6 +1522,17 @@ a:hover {
   text-transform: uppercase;
 }
 
+.confidential-card {
+  opacity: 0.8;
+  border-color: #333333;
+}
+
+.confidential-card:hover {
+  border-color: #333333;
+  opacity: 1;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
 .theme-dark .badge-confidential {
   background: #555555;
 }
@@ -1405,6 +1544,10 @@ a:hover {
 
 .theme-dark .project-card-3:hover {
   border-color: $color-accent;
+}
+
+.theme-dark .confidential-card {
+  border-color: #444444;
 }
 
 .theme-dark .project-tech-3 {
@@ -1678,4 +1821,413 @@ a:hover {
 
 .theme-dark .impact-progress {
   background: #333333;
+}
+
+/* Enhanced Hero Section - GPU/Kubernetes Focus */
+.hero-subtitle-highlight {
+  color: $color-accent;
+  font-weight: 700;
+}
+
+.hero-tech-stack {
+  display: flex;
+  gap: $spacing-sm;
+  margin-bottom: $spacing-xl;
+  flex-wrap: wrap;
+}
+
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-xs $spacing-md;
+  background: #F5F5F5;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: $color-text-secondary;
+  transition: all 0.2s ease;
+  border: 1px solid #E5E5E5;
+}
+
+.tech-badge:hover {
+  transform: translateY(-2px);
+  border-color: $color-accent;
+  box-shadow: 0 4px 12px rgba(10, 102, 255, 0.2);
+}
+
+.tech-badge.vllm { background: linear-gradient(135deg, #0052CC 0%, #0044CC 100%); color: #FFFFFF; border: none; }
+.tech-badge.k8s { background: linear-gradient(135deg, #326CE5 0%, #285ACB 100%); color: #FFFFFF; border: none; }
+.tech-badge.pytorch { background: linear-gradient(135deg, #EE4C2C 0%, #D63A1C 100%); color: #FFFFFF; border: none; }
+.tech-badge.python { background: linear-gradient(135deg, #3776AB 0%, #2C5C8D 100%); color: #FFFFFF; border: none; }
+.tech-badge.fastapi { background: linear-gradient(135deg, #009688 0%, #00796B 100%); color: #FFFFFF; border: none; }
+
+.hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: $spacing-lg;
+  margin-bottom: $spacing-xl;
+}
+
+.metric-item {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+}
+
+.metric-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $color-accent;
+  line-height: 1;
+}
+
+.metric-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: $color-gray;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Dark Mode Tech Badges */
+.theme-dark .tech-badge {
+  background: #333333;
+  border-color: #444444;
+  color: #A0A0A0;
+}
+
+.theme-dark .tech-badge.vllm, .theme-dark .tech-badge.k8s,
+.theme-dark .tech-badge.pytorch, .theme-dark .tech-badge.python,
+.theme-dark .tech-badge.fastapi {
+  opacity: 0.9;
+}
+
+.theme-dark .metric-number {
+  color: $color-accent;
+}
+
+/* World-Class Experience Section */
+.experience-section {
+  padding: $spacing-xxxl 0;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: $spacing-lg;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-card {
+  background: #FFFFFF;
+  border: 1px solid #E8EAF6;
+  border-radius: 12px;
+  padding: $spacing-xl;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(10, 102, 255, 0.02) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  border-color: $color-accent;
+  box-shadow: 0 20px 40px rgba(10, 102, 255, 0.12);
+}
+
+.experience-card:hover::before {
+  opacity: 1;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: $spacing-md;
+  padding-bottom: $spacing-md;
+  border-bottom: 2px solid #F0F4FF;
+}
+
+.company-header {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+}
+
+.experience-role {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $color-text;
+  margin: 0;
+}
+
+.company-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: $color-accent;
+  letter-spacing: 0.02em;
+}
+
+.experience-date {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: $color-gray;
+  background: #F0F4FF;
+  padding: $spacing-xs $spacing-sm;
+  border-radius: 20px;
+  align-self: flex-start;
+}
+
+.experience-details {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: $spacing-sm;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  padding: $spacing-sm;
+  background: #F8F9FC;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.achievement-item:hover {
+  background: $color-bg-subtle;
+  transform: translateX(4px);
+}
+
+.achievement-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.achievement-text {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: $color-text;
+  line-height: 1.4;
+}
+
+.experience-desc {
+  font-size: 0.9375rem;
+  color: $color-text-secondary;
+  line-height: 1.7;
+  margin: 0;
+  padding: $spacing-sm 0;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-xs;
+}
+
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-xs $spacing-sm;
+  background: #F5F5F5;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: $color-text-secondary;
+  font-family: $font-mono;
+  transition: all 0.2s ease;
+}
+
+.tech-badge:hover {
+  background: $color-accent;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.experience-view-all {
+  margin-top: $spacing-xxl;
+  text-align: center;
+}
+
+/* Dark Mode Experience */
+.theme-dark .experience-card {
+  background: #1A1A1A;
+  border-color: #333333;
+}
+
+.theme-dark .experience-header {
+  border-bottom-color: #333333;
+}
+
+.theme-dark .achievement-item {
+  background: #2A2A2A;
+}
+
+.theme-dark .achievement-icon {
+  color: #E5E5E5;
+}
+
+.theme-dark .achievement-text {
+  color: #A0A0A0;
+}
+
+.theme-dark .experience-desc {
+  color: #A0A0A0;
+}
+
+.theme-dark .tech-badge {
+  background: #333333;
+  color: #A0A0A0;
+}
+
+.theme-dark .tech-badge:hover {
+  background: $color-accent;
+  color: #FFFFFF;
+}
+
+.theme-dark .experience-date {
+  background: #333333;
+  color: #A0A0A0;
+}
+
+/* Clean Experience Section - Simple One-on-One Style */
+.experience-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  margin-bottom: $spacing-xl;
+  padding-bottom: $spacing-lg;
+  border-bottom: 1px solid $color-border;
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: $spacing-sm;
+}
+
+.experience-role {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $color-text;
+  margin: 0;
+}
+
+.experience-date {
+  font-size: 0.875rem;
+  color: $color-gray;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.experience-company {
+  font-size: 1rem;
+  font-weight: 600;
+  color: $color-accent;
+  margin-bottom: $spacing-sm;
+}
+
+.experience-achievements {
+  margin-bottom: $spacing-md;
+}
+
+.experience-achievements p {
+  font-size: 0.9375rem;
+  color: $color-text-secondary;
+  margin-bottom: $spacing-xs;
+  line-height: 1.5;
+}
+
+.achievement-icon {
+  margin-right: $spacing-xs;
+}
+
+.experience-desc {
+  font-size: 0.9375rem;
+  color: $color-text-secondary;
+  line-height: 1.6;
+  margin-bottom: $spacing-sm;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-xs;
+}
+
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-xs $spacing-sm;
+  background: #F5F5F5;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: $color-text-secondary;
+  font-family: $font-mono;
+  transition: all 0.2s ease;
+}
+
+.tech-badge:hover {
+  background: $color-accent;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.experience-view-all {
+  margin-top: $spacing-xl;
+  text-align: center;
+}
+
+/* Dark Mode Clean Experience */
+.theme-dark .experience-item {
+  border-bottom-color: #333333;
+}
+
+.theme-dark .experience-achievements p,
+.theme-dark .experience-desc {
+  color: #A0A0A0;
+}
+
+.theme-dark .tech-badge {
+  background: #333333;
+  color: #A0A0A0;
+}
+
+.theme-dark .tech-badge:hover {
+  background: $color-accent;
+  color: #FFFFFF;
+}
+
+.theme-dark .experience-company {
+  color: #42A5F5;
 }

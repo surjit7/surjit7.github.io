@@ -18,20 +18,20 @@
       </p>
       <div class="hero-stats">
         <div class="stat-item">
-          <span class="stat-number">5+</span>
-          <span class="stat-label">Years</span>
+          <span class="stat-number" data-target="4">0+</span>
+          <span class="stat-label">Years Experience</span>
         </div>
         <div class="stat-item">
-          <span class="stat-number">27%</span>
+          <span class="stat-number" data-target="27">0%</span>
           <span class="stat-label">Cost Savings</span>
         </div>
         <div class="stat-item">
-          <span class="stat-number">30%</span>
+          <span class="stat-number" data-target="30">0%</span>
           <span class="stat-label">Latency Reduction</span>
         </div>
         <div class="stat-item">
-          <span class="stat-number">5</span>
-          <span class="stat-label">Systems Modernized</span>
+          <span class="stat-number" data-target="71">0</span>
+          <span class="stat-label">Model Accuracy</span>
         </div>
       </div>
       <div class="hero-actions">
@@ -53,5 +53,30 @@
     if (typeof createHeroParticles === 'function') {
       createHeroParticles();
     }
+    // Animate counters on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          document.querySelectorAll('.stat-number').forEach(el => {
+            const target = parseInt(el.getAttribute('data-target'));
+            const duration = 2000;
+            const steps = 60;
+            const increment = target / steps;
+            let current = 0;
+            const timer = setInterval(() => {
+              current += increment;
+              if (current >= target) {
+                el.textContent = target + (el.textContent.includes('%') ? '%' : '+');
+                clearInterval(timer);
+              } else {
+                el.textContent = Math.floor(current) + (el.textContent.includes('%') ? '%' : '+');
+              }
+            }, duration / steps);
+          });
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.1 });
+    observer.observe(document.querySelector('.hero-stats'));
   });
 </script>

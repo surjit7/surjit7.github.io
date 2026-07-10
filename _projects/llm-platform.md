@@ -1,9 +1,10 @@
 ---
-title: "LLM Platform"
+title: "Agentic Route Planner"
 date: 2024-03-10
-excerpt: "Self‑hosted inference platform using vLLM, Kubernetes, and GPU acceleration."
-tags: [vLLM, Kubernetes, GPUs, OpenAI‑compatible]
-github_url: "https://github.com/surjit7/llm-platform"
+excerpt: "Agentic LLM platform for intelligent route optimization with multi-modal transportation planning."
+tags: [vLLM, PyTorch, Kubernetes, NVIDIA TAO, Docker, NGINX]
 ---
 
-A high‑performance LLM serving stack that scales horizontally on Kubernetes clusters, exposing OpenAI‑compatible REST endpoints for easy integration.
+Agentic LLM platform enabling intelligent route optimization with multi-modal transportation planning. Built on vLLM for fast inference, PyTorch for model training, and Kubernetes for scalable deployment. Includes NVIDIA TAO for model optimization and Docker/NGINX for production serving.
+
+All rights reserved to BJS AllmyIT.

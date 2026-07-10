@@ -13,12 +13,8 @@
 <lastmod>2024-03-10T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>http://0.0.0.0:4000/projects/ssso/</loc>
-<lastmod>2024-04-01T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>http://0.0.0.0:4000/projects/django-auth-platform/</loc>
-<lastmod>2024-04-20T00:00:00+00:00</lastmod>
+<loc>http://0.0.0.0:4000/projects/amt-scaler/</loc>
+<lastmod>2024-03-15T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>http://0.0.0.0:4000/projects/ai-chat-platform/</loc>
@@ -31,10 +27,6 @@
 <url>
 <loc>http://0.0.0.0:4000/projects/ml-workflow-platform/</loc>
 <lastmod>2024-07-01T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>http://0.0.0.0:4000/projects/llm-sandbox/</loc>
-<lastmod>2024-08-15T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>http://0.0.0.0:4000/projects/legacy-modernization/</loc>
