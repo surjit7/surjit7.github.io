@@ -1,0 +1,26 @@
+title: "Surjit Singh Portfolio"
+description: "Personal portfolio of a senior software engineer specializing in AI infrastructure, authentication platforms, and distributed systems."
+url: "https://surjit7.github.io"
+baseurl: ""
+author:
+  name: "Surjit Singh"
+  email: "surjit@example.com"
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: /:categories/:year/:month/:day/:title/
+exclude:
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - README.md

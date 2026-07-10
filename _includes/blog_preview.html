@@ -1,0 +1,14 @@
+<section id="blog" class="section blog-section">
+  <div class="container">
+    <h2>Latest Posts</h2>
+    <div class="post-grid">
+      {% for post in site.posts limit:3 %}
+      <article class="post-card">
+        <h3 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p class="post-meta">{{ post.date | date: "%b %d, %Y" }} • {{ post.reading_time }} min read</p>
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

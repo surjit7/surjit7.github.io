@@ -1,0 +1,13 @@
+---
+layout: default
+title: Home
+---
+
+{% include hero.html %}
+{% include about.html %}
+{% include skills.html %}
+{% include experience.html %}
+{% include projects.html %}
+{% include blog_preview.html %}
+{% include github_section.html %}
+{% include contact.html %}
