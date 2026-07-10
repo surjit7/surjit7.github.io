@@ -1,13 +1,12 @@
 ---
 layout: default
-title: Home
+title: Surjit Singh
 ---
 
 {% include hero.html %}
-{% include about.html %}
-{% include skills.html %}
-{% include experience.html %}
+{% include impact.html %}
 {% include projects.html %}
+{% include experience.html %}
+{% include skills.html %}
 {% include blog_preview.html %}
-{% include github_section.html %}
 {% include contact.html %}

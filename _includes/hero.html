@@ -1,14 +1,57 @@
-<section id="hero" class="section hero-section">
+<section id="hero" class="hero">
+  <div class="hero-bg">
+    <div class="hero-bg-gradient"></div>
+    <div class="hero-particles" id="heroParticles"></div>
+  </div>
   <div class="container">
-    <h1 class="hero-title">Surjit Singh</h1>
-    <h2 class="hero-subtitle">AI Engineer • Backend Engineer • Infrastructure Engineer</h2>
-    <p class="hero-description">
-      Building scalable AI systems, authentication platforms, and cloud‑native backend infrastructure.
-    </p>
-    <div class="hero-buttons">
-      <a href="#projects" class="btn primary">View Projects</a>
-      <a href="https://github.com/surjit7" class="btn secondary" target="_blank" rel="noopener">GitHub</a>
-      <a href="/resume.pdf" class="btn secondary" download>Resume</a>
+    <div class="hero-content">
+      <div class="hero-header">
+        <div class="hero-greeting">Hello, I'm</div>
+        <h1 class="hero-title">Surjit<span class="hero-cursor">_</span></h1>
+      </div>
+      <div class="hero-subtitle-container">
+        <h2 class="hero-subtitle" id="typewriter"></h2>
+      </div>
+      <p class="hero-description">
+        AI/ML & Python Engineer with <span class="highlight-text">4+ years</span> of experience building scalable LLM platforms and distributed ML systems.
+        Proven ability to modernize legacy architectures, integrate AI into production, and drive significant <span class="highlight-text">27% cloud cost reduction</span> and <span class="highlight-text">30% API latency reduction</span>.
+      </p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">5+</span>
+          <span class="stat-label">Years</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">27%</span>
+          <span class="stat-label">Cost Savings</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">30%</span>
+          <span class="stat-label">Latency Reduction</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">5</span>
+          <span class="stat-label">Systems Modernized</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="{{ '/projects/' | relative_url }}" class="btn btn-primary">View Projects</a>
+        <a href="https://github.com/surjit7" class="btn btn-secondary github-btn" target="_blank" rel="noopener">
+          <svg class="icon github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="{{ '/resume/' | relative_url }}" class="btn btn-secondary">Resume</a>
+        <a href="{{ '/contact/' | relative_url }}" class="btn btn-tertiary">Let's Connect</a>
+      </div>
     </div>
   </div>
 </section>
+<script src="{{ '/assets/js/typewriter.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/hero-particles.js' | relative_url }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (typeof createHeroParticles === 'function') {
+      createHeroParticles();
+    }
+  });
+</script>

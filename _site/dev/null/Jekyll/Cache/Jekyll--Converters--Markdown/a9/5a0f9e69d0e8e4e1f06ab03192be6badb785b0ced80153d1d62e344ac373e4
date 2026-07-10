@@ -1,0 +1,41 @@
+I"]<section id="experience" class="section experience-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-subtitle">My professional journey and key contributions</p>
+    </div>
+    <ul class="experience-list">
+      <li class="experience-item">
+        <span class="experience-date">2022 – Present</span>
+        <h3 class="experience-role">Senior Software Engineer <span class="company-badge">ExampleCorp</span></h3>
+        <p class="experience-description">
+          <span class="highlight-text">Key Achievements:</span>
+          <ul class="achievement-list">
+            <li>Designed and built AI-powered authentication platforms serving 10k+ monthly users</li>
+            <li>Led Kubernetes-based infrastructure projects reducing deployment time by 60%</li>
+            <li>Implemented scalable backend architectures using Django, FastAPI, and Flask</li>
+            <li>Deployed GPU-based AI inference workloads using vLLM and Ollama</li>
+            <li>Mentored 3 junior engineers and established engineering best practices</li>
+          </ul>
+        </p>
+      </li>
+      <li class="experience-item">
+        <span class="experience-date">2020 – 2022</span>
+        <h3 class="experience-role">Backend Engineer <span class="company-badge">TechStart</span></h3>
+        <p class="experience-description">
+          <span class="highlight-text">Key Achievements:</span>
+          <ul class="achievement-list">
+            <li>Developed microservices in Django and FastAPI processing 1M+ monthly requests</li>
+            <li>Integrated OAuth2 flows for secure authentication improving security posture</li>
+            <li>Optimized PostgreSQL and Redis performance reducing latency by 40%</li>
+            <li>Built REST APIs and GraphQL endpoints for internal and external consumption</li>
+          </ul>
+        </p>
+      </li>
+    </ul>
+    <div class="experience-view-all" style="text-align: center; margin-top: $spacing-xxl;">
+      <a href="/resume/" class="btn btn-secondary">View Full Resume</a>
+    </div>
+  </div>
+</section>
+:ET

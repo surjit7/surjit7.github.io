@@ -1,0 +1,157 @@
+I"()<section id="projects" class="section projects-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">Showcasing my best work in AI infrastructure, authentication, and cloud-native systems</p>
+    </div>
+    <div class="project-grid">
+      
+      <article class="project-card">
+        <div class="project-card-header">
+          <div class="project-card-badge">
+            
+            <span class="badge badge-auth">Authentication</span>
+            
+          </div>
+          <h3 class="project-card-title">Enterprise Identity Platform</h3>
+        </div>
+        <p class="project-card-excerpt">Production‑ready OAuth2 &amp; OpenID Connect multi‑tenant authentication platform built with Django.</p>
+        <div class="project-tech-stack">
+          
+          <span class="project-tech" title="Python"></span>
+          
+          <span class="project-tech" title="Django"></span>
+          
+          <span class="project-tech" title="OAuth2"></span>
+          
+          <span class="project-tech" title="OIDC"></span>
+          
+          <span class="project-tech" title="PostgreSQL"></span>
+          
+          <span class="project-tech" title="Redis"></span>
+          
+        </div>
+        <div class="project-stats">
+          <span class="stat-item">
+            <svg class="icon star-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+            <span class="stat-value">⭐ 1.2k</span>
+          </span>
+          <span class="stat-item">
+            <svg class="icon fork-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14.5 6c-4.42 0-8 3.58-8 8 0 2.98 1.69 5.55 4.16 6.82.35.18.46-.42.46-.88 0-.44-.02-1.8-.03-3.47-1.69.37-2.04-.81-2.04-.81-.28-.72-.68-1.06-.68-1.06-.56-.38.04-.38.04-.38.62.04.95.64.95.64.55.94 1.44.67 1.79.51.05-.4.22-.67.39-.82-1.77-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.14.46.54.38C17.81 17.55 19.5 14.98 19.5 12c0-4.42-3.58-8-8-8z" /></svg>
+            <span class="stat-value">Forks</span>
+          </span>
+        </div>
+        <div class="project-links">
+          
+          <a href="https://github.com/surjit7/enterprise-identity-platform" target="_blank" rel="noopener" class="project-link-btn">
+            <svg class="icon github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
+            GitHub
+          </a>
+          
+          
+          <a href="https://surjit7.github.io/enterprise-identity-platform/docs" target="_blank" rel="noopener" class="project-link-btn">
+            <svg class="icon docs-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-9V3.5L18.5 9H13z" /></svg>
+            Docs
+          </a>
+          
+        </div>
+      </article>
+      
+      <article class="project-card">
+        <div class="project-card-header">
+          <div class="project-card-badge">
+            
+            <span class="badge badge-ai">AI &amp; Infrastructure</span>
+            
+          </div>
+          <h3 class="project-card-title">LLM Platform</h3>
+        </div>
+        <p class="project-card-excerpt">Self‑hosted inference platform using vLLM, Kubernetes, and GPU acceleration.</p>
+        <div class="project-tech-stack">
+          
+          <span class="project-tech" title="vLLM"></span>
+          
+          <span class="project-tech" title="Kubernetes"></span>
+          
+          <span class="project-tech" title="GPUs"></span>
+          
+          <span class="project-tech" title="OpenAI‑compatible"></span>
+          
+        </div>
+        <div class="project-stats">
+          <span class="stat-item">
+            <svg class="icon star-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+            <span class="stat-value">⭐ 1.2k</span>
+          </span>
+          <span class="stat-item">
+            <svg class="icon fork-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14.5 6c-4.42 0-8 3.58-8 8 0 2.98 1.69 5.55 4.16 6.82.35.18.46-.42.46-.88 0-.44-.02-1.8-.03-3.47-1.69.37-2.04-.81-2.04-.81-.28-.72-.68-1.06-.68-1.06-.56-.38.04-.38.04-.38.62.04.95.64.95.64.55.94 1.44.67 1.79.51.05-.4.22-.67.39-.82-1.77-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.14.46.54.38C17.81 17.55 19.5 14.98 19.5 12c0-4.42-3.58-8-8-8z" /></svg>
+            <span class="stat-value">Forks</span>
+          </span>
+        </div>
+        <div class="project-links">
+          
+          <a href="https://github.com/surjit7/llm-platform" target="_blank" rel="noopener" class="project-link-btn">
+            <svg class="icon github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
+            GitHub
+          </a>
+          
+          
+        </div>
+      </article>
+      
+      <article class="project-card">
+        <div class="project-card-header">
+          <div class="project-card-badge">
+            
+            <span class="badge badge-auth">Authentication</span>
+            
+          </div>
+          <h3 class="project-card-title">SSSO</h3>
+        </div>
+        <p class="project-card-excerpt">Secure Single Sign‑On (SSSO) platform built with Ruby on Rails and OAuth2.</p>
+        <div class="project-tech-stack">
+          
+          <span class="project-tech" title="Ruby"></span>
+          
+          <span class="project-tech" title="Rails"></span>
+          
+          <span class="project-tech" title="OAuth2"></span>
+          
+          <span class="project-tech" title="PostgreSQL"></span>
+          
+          <span class="project-tech" title="Redis"></span>
+          
+        </div>
+        <div class="project-stats">
+          <span class="stat-item">
+            <svg class="icon star-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+            <span class="stat-value">⭐ 1.2k</span>
+          </span>
+          <span class="stat-item">
+            <svg class="icon fork-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14.5 6c-4.42 0-8 3.58-8 8 0 2.98 1.69 5.55 4.16 6.82.35.18.46-.42.46-.88 0-.44-.02-1.8-.03-3.47-1.69.37-2.04-.81-2.04-.81-.28-.72-.68-1.06-.68-1.06-.56-.38.04-.38.04-.38.62.04.95.64.95.64.55.94 1.44.67 1.79.51.05-.4.22-.67.39-.82-1.77-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.14.46.54.38C17.81 17.55 19.5 14.98 19.5 12c0-4.42-3.58-8-8-8z" /></svg>
+            <span class="stat-value">Forks</span>
+          </span>
+        </div>
+        <div class="project-links">
+          
+          <a href="https://github.com/surjit7/ssso" target="_blank" rel="noopener" class="project-link-btn">
+            <svg class="icon github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
+            GitHub
+          </a>
+          
+          
+          <a href="https://surjit7.github.io/ssso/docs" target="_blank" rel="noopener" class="project-link-btn">
+            <svg class="icon docs-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-9V3.5L18.5 9H13z" /></svg>
+            Docs
+          </a>
+          
+        </div>
+      </article>
+      
+    </div>
+    <div class="projects-view-all" style="text-align: center; margin-top: $spacing-xxl;">
+      <a href="/projects/" class="btn btn-secondary">View All Projects</a>
+    </div>
+  </div>
+</section>
+:ET

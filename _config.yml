@@ -1,10 +1,11 @@
-title: "Surjit Singh Portfolio"
-description: "Personal portfolio of a senior software engineer specializing in AI infrastructure, authentication platforms, and distributed systems."
+title: "Surjit Singh | Software Engineer"
+description: "Personal portfolio of a senior software engineer showcasing AI infrastructure, authentication platforms, and distributed systems."
 url: "https://surjit7.github.io"
 baseurl: ""
 author:
   name: "Surjit Singh"
-  email: "surjit@example.com"
+  email: "surjit@protonmail.com"
+  github: "https://github.com/surjit7"
 theme: minima
 plugins:
   - jekyll-feed
@@ -24,3 +25,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - .jekyll-cache
+# Use Jekyll's built-in cache control via environment variable
