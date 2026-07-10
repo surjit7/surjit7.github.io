@@ -2214,4 +2214,154 @@ a:hover {
   color: #42A5F5;
 }
 
+/* Impact Dashboard - World Class Impact Section */
+.impact-section {
+  padding: 128px 0;
+  background: #FFFFFF;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.impact-card {
+  background: #FFFFFF;
+  border: 1px solid #E8EAF6;
+  border-radius: 6px;
+  padding: 48px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.impact-card:hover {
+  transform: translateY(-8px);
+  border-color: #1A73E8;
+  box-shadow: 0 20px 40px rgba(10, 102, 255, 0.1);
+}
+
+.impact-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.impact-badge {
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 20px;
+  letter-spacing: 0.05em;
+}
+
+.cost-card .impact-badge {
+  background: #E0F7FA;
+  color: #006064;
+}
+
+.latency-card .impact-badge {
+  background: #FFF3E0;
+  color: #E65100;
+}
+
+.f1-card .impact-badge {
+  background: #E8F5E9;
+  color: #2E7D32;
+}
+
+.inference-card .impact-badge {
+  background: #F3E5F5;
+  color: #7B1FA2;
+}
+
+.modernize-card .impact-badge {
+  background: #FFF9C4;
+  color: #F9A825;
+}
+
+.experience-card .impact-badge {
+  background: #E3F2FD;
+  color: #1565C0;
+}
+
+.cost-icon, .latency-icon, .accuracy-icon, .speed-icon, .systems-icon, .experience-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.impact-value {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, #1A1A1A 0%, rgba(10, 102, 255, 0.8) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.impact-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1A1A1A;
+  margin-bottom: 16px;
+}
+
+.impact-progress {
+  height: 6px;
+  background: #F5F5F5;
+  border-radius: 3px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  background: linear-gradient(90deg, #1A73E8 0%, #64B5F6 100%);
+}
+
+.impact-detail {
+  font-size: 0.875rem;
+  color: #5C6B7F;
+  line-height: 1.5;
+}
+
+/* Dark Mode Impact Dashboard */
+.theme-dark .impact-card {
+  background: #1A1A1A;
+  border-color: #333333;
+}
+
+.theme-dark .impact-badge {
+  opacity: 0.8;
+}
+
+.theme-dark .progress-bar {
+  background: linear-gradient(90deg, #1A73E8 0%, #42A5F5 100%);
+}
+
+.theme-dark .impact-value {
+  background: linear-gradient(135deg, #FFFFFF 0%, #1A73E8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.theme-dark .impact-detail {
+  color: #A0A0A0;
+}
+
+.theme-dark .impact-progress {
+  background: #333333;
+}
+
 /*# sourceMappingURL=main.css.map */
