@@ -2543,6 +2543,222 @@ a:hover {
     font-size: 1rem;
   }
 }
+/* ==================== =================== ==================== ===================
+   PLAIN DOCUMENT-STYLE RESUME CSS - Simple, No Boxes, Clean Look
+   ==================== =================== ==================== =================== */
+.resume-content {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.resume-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.resume-contact {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.resume-contact span {
+  margin: 0 10px;
+}
+
+.resume-section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111;
+  margin: 30px 0 15px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #333;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.resume-job {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.resume-job:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.resume-job h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+  color: #111;
+}
+
+.resume-job div {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.resume-job ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.resume-job li {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.resume-job p {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.resume-project {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.resume-project:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.resume-project h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: #111;
+}
+
+.resume-project p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.resume-project p a {
+  color: #1A73E8;
+  text-decoration: none;
+}
+
+.resume-project p a:hover {
+  text-decoration: underline;
+}
+
+.resume-project ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.resume-project li {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.resume-skills {
+  margin-bottom: 25px;
+}
+
+.resume-skills h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 20px 0 8px 0;
+  color: #111;
+}
+
+.resume-skills p {
+  font-size: 0.95rem;
+  color: #444;
+  margin: 0;
+}
+
+.resume-education {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.resume-education:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.resume-education h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+  color: #111;
+}
+
+.resume-education p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+.resume-achievement {
+  margin-bottom: 25px;
+}
+
+.resume-achievement h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+  color: #111;
+}
+
+.resume-achievement p {
+  font-size: 0.95rem;
+  color: #444;
+  margin: 5px 0;
+}
+
+.resume-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 2px solid #333;
+}
+
+.resume-footer p {
+  margin-top: 15px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .resume-header {
+    padding-bottom: 15px;
+  }
+  .resume-name {
+    font-size: 2rem;
+  }
+  .resume-contact span {
+    display: block;
+    margin: 5px 0;
+  }
+}
 /* Enhanced Hero Section - GPU/Kubernetes Focus */
 .hero-subtitle-highlight {
   color: #1A73E8;
