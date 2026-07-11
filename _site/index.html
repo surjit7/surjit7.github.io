@@ -59,26 +59,17 @@
   <div class="container">
     <div class="hero-content">
       <div class="hero-header">
-        <div class="hero-greeting">AI Infrastructure Engineer</div>
-        <h1 class="hero-title">Building AI Systems That Scale to 10M+ Users<span class="hero-cursor">_</span></h1>
+        <div class="hero-greeting">Hello, I'm</div>
+        <h1 class="hero-title">Surjit<span class="hero-cursor">_</span></h1>
+        <h2 class="hero-subtitle-highlight">AI Infrastructure &amp; LLM Platform Engineer</h2>
       </div>
       <div class="hero-subtitle-container">
         <h2 class="hero-subtitle" id="typewriter"></h2>
       </div>
       <p class="hero-description">
-        Senior Software Engineer specializing in <span class="highlight-text">scalable AI infrastructure</span>, <span class="highlight-text">LLM platforms</span>, and <span class="highlight-text">distributed systems</span>. 
-        Proven track record of modernizing legacy architectures, integrating AI into production, and driving significant <span class="highlight-text">27% cloud cost reduction</span> and <span class="highlight-text">30% API latency improvement</span>.
+        AI/ML &amp; Python Engineer with <span class="highlight-text">4+ years</span> of experience building scalable LLM platforms and distributed ML systems.
+        Proven ability to modernize legacy architectures, integrate AI into production, and drive significant <span class="highlight-text">27% cloud cost reduction</span> and <span class="highlight-text">30% API latency reduction</span>.
       </p>
-      <div class="hero-trusted-by">
-        <p class="trusted-by-label">Trusted By</p>
-        <div class="trusted-by-logos">
-          <span class="trusted-by-badge">Google Cloud</span>
-          <span class="trusted-by-badge">AWS</span>
-          <span class="trusted-by-badge">OpenAI</span>
-          <span class="trusted-by-badge">LangChain</span>
-          <span class="trusted-by-badge">Databricks</span>
-        </div>
-      </div>
       <div class="hero-impact">
         <div class="impact-item">
           <div class="impact-value">27%</div>
@@ -95,24 +86,6 @@
         <div class="impact-item">
           <div class="impact-value">500+</div>
           <div class="impact-label">Daily Users</div>
-        </div>
-      </div>
-      <div class="hero-stats">
-        <div class="stat-item">
-          <span class="stat-number" data-target="4">0+</span>
-          <span class="stat-label">Years Experience</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number" data-target="27">0%</span>
-          <span class="stat-label">Cost Savings</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number" data-target="30">0%</span>
-          <span class="stat-label">Latency Reduction</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number" data-target="71">0</span>
-          <span class="stat-label">Model Accuracy</span>
         </div>
       </div>
       <div class="hero-actions">
@@ -136,71 +109,8 @@
     if (typeof createHeroParticles === 'function') {
       createHeroParticles();
     }
-    // Animate counters on scroll
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          document.querySelectorAll('.stat-number').forEach(el => {
-            const target = parseInt(el.getAttribute('data-target'));
-            const duration = 2000;
-            const steps = 60;
-            const increment = target / steps;
-            let current = 0;
-            const timer = setInterval(() => {
-              current += increment;
-              if (current >= target) {
-                el.textContent = target + (el.textContent.includes('%') ? '%' : '+');
-                clearInterval(timer);
-              } else {
-                el.textContent = Math.floor(current) + (el.textContent.includes('%') ? '%' : '+');
-              }
-            }, duration / steps);
-          });
-          observer.disconnect();
-        }
-      });
-    }, { threshold: 0.1 });
-    observer.observe(document.querySelector('.hero-stats'));
   });
 </script>
-
-<section id="impact" class="section impact-section">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="section-title">Additional Impact &amp; Results</h2>
-      <p class="section-subtitle">More achievements from my AI/ML engineering work</p>
-    </div>
-    <div class="impact-grid">
-      <!-- Inference Time -->
-      <div class="impact-card inference-card">
-        <div class="impact-header">
-          <svg class="icon speed-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M13 3v4h6l8 10h-6v4H5V9h6V3zm-2 8V7H7v4H5l7 8 7-8h-2z" /></svg>
-          <span class="impact-badge">Efficiency</span>
-        </div>
-        <div class="impact-value">20%</div>
-        <div class="impact-label">Inference Time Faster</div>
-        <div class="impact-progress">
-          <div class="progress-bar" style="width: 20%"></div>
-        </div>
-        <div class="impact-detail">Deep learning model optimization</div>
-      </div>
-
-      <!-- Systems Modernized -->
-      <div class="impact-card modernize-card">
-        <div class="impact-header">
-          <svg class="icon systems-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" /></svg>
-          <span class="impact-badge">Modernization</span>
-        </div>
-        <div class="impact-value">5</div>
-        <div class="impact-label">Legacy Systems Modernized</div>
-        <div class="impact-progress">
-          <div class="progress-bar" style="width: 80%"></div>
-        </div>
-        <div class="impact-detail">Legacy to v2 with AI integration</div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section id="projects" class="section projects-section">
   <div class="container">
