@@ -190,6 +190,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
 .hero-bg {
@@ -223,6 +224,7 @@ a:hover {
 .hero-content {
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 
 .hero-header {
@@ -328,6 +330,7 @@ a:hover {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .btn-tertiary {
@@ -358,6 +361,7 @@ a:hover {
   gap: 64px;
   margin-bottom: 64px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .impact-item {
