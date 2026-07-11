@@ -125,98 +125,33 @@
 
       <div class="resume-project">
         <h3>Enterprise Identity Platform</h3>
-        <p>Built a comprehensive identity management system with SSO and RBAC capabilities for enterprise customers.</p>
-        <p><strong>Tech Stack:</strong> Python, FastAPI, OAuth 2.0, PostgreSQL, Redis</p>
+        <p>Production-ready OAuth2 &amp; OpenID Connect multi-tenant authentication platform built with Django.</p>
+        <p><strong>Tech Stack:</strong> Python, Django, OAuth2, OIDC, PostgreSQL, Redis</p>
         <ul>
           <li>Implemented SSO with multiple identity providers</li>
           <li>Built fine-grained RBAC system with 100+ permission types</li>
           <li>Achieved 99.99% uptime with distributed architecture</li>
         </ul>
-        <p><a href="https://github.com/surjit7" target="_blank" rel="noopener">GitHub</a></p>
+        <p><a href="https://github.com/surjit7/SSO-Django" target="_blank" rel="noopener">GitHub</a></p>
       </div>
 
       <div class="resume-project">
-        <h3>LLM Platform</h3>
-        <p>Self-hosted LLM inference platform with GPU orchestration and workflow automation.</p>
-        <p><strong>Tech Stack:</strong> vLLM, Ollama, PyTorch, Kubernetes, Ray</p>
-        <ul>
-          <li>Deployed 10+ LLM models on shared GPU infrastructure</li>
-          <li>Achieved 30% faster inference with vLLM optimization</li>
-          <li>Built automated model deployment pipelines</li>
-        </ul>
-        <p><a href="https://github.com/surjit7" target="_blank">GitHub</a></p>
+        <h3>Enterprise AI Chat Platform</h3>
+        <p>Enterprise-grade AI chat platform for customer support and internal knowledge base.</p>
+        <p><strong>Tech Stack:</strong> Python, LLM, RAG, OpenAI</p>
       </div>
 
       <div class="resume-project">
-        <h3>LLM Platform (Alternative)</h3>
-        <p>Alternative LLM implementation with different stack configuration.</p>
-        <p><strong>Tech Stack:</strong> FastAPI, PyTorch, Transformers, Chroma, Redis</p>
-        <ul>
-          <li>Built document retrieval system with RAG architecture</li>
-          <li>Implemented semantic search with Chroma vector database</li>
-          <li>Achieved 71% accuracy on model benchmarks</li>
-        </ul>
-        <p><a href="https://github.com/surjit7" target="_blank">GitHub</a></p>
+        <h3>AMT Scaler</h3>
+        <p>Pre-configured Kubernetes VM with Azure VMSS for elastic, production-ready deployment with minimal infrastructure cost.</p>
+        <p><strong>Tech Stack:</strong> Kubernetes, Azure, VMSS, AMT</p>
+        <p><a href="https://marketplace.microsoft.com/en-us/product/bjsallmyitlimited1759407982389.amt-scaler?tab=overview" target="_blank" rel="noopener">Microsoft Marketplace</a></p>
       </div>
 
       <div class="resume-project">
-        <h3>ML Workflow Platform</h3>
-        <p>End-to-end ML pipeline with training, evaluation, and deployment capabilities.</p>
-        <p><strong>Tech Stack:</strong> Ray, PyTorch, MLflow, Kubernetes</p>
-        <ul>
-          <li>Built automated training pipeline with 10x speedup</li>
-          <li>Implemented experiment tracking with MLflow</li>
-          <li>Deployed models with Kubernetes and autoscaling</li>
-        </ul>
-        <p><a href="https://github.com/surjit7" target="_blank">GitHub</a></p>
-      </div>
-
-      <div class="resume-project">
-        <h3>Legacy Modernization</h3>
-        <p>Modernized legacy enterprise applications with new microservices architecture.</p>
-        <p><strong>Tech Stack:</strong> Python, FastAPI, Django, PostgreSQL, Docker</p>
-        <ul>
-          <li>Migrated 5 legacy systems to modern stack</li>
-          <li>Reduced infrastructure costs by 27%</li>
-          <li>Improved system performance by 30%</li>
-        </ul>
-        <p><a href="https://github.com/surjit7" target="_blank">GitHub</a></p>
-      </div>
-
-      <div class="resume-project">
-        <h3>AI Chat Platform</h3>
-        <p>Conversational AI platform with RAG and multi-turn conversation support.</p>
-        <p><strong>Tech Stack:</strong> FastAPI, PyTorch, Chroma, Redis, LangChain</p>
-        <ul>
-          <li>Built conversational interface with 500+ daily active users</li>
-          <li>Implemented RAG for context-aware responses</li>
-          <li>Achieved 91% F1 score on intent classification</li>
-        </ul>
-        <p><a href="https://github.com/surjit7" target="_blank">GitHub</a></p>
-      </div>
-
-      <div class="resume-project">
-        <h3>AML Scaler</h3>
-        <p>Automated ML model scaling solution for dynamic workloads.</p>
-        <p><strong>Tech Stack:</strong> Python, Kubernetes, Prometheus, Grafana</p>
-        <ul>
-          <li>Built auto-scaling for GPU workloads based on demand</li>
-          <li>Integrated with Kubernetes HPA for seamless scaling</li>
-          <li>Reduced GPU costs by 27% through efficient scaling</li>
-        </ul>
-        <p><a href="https://github.com/surjit7" target="_blank">GitHub</a></p>
-      </div>
-
-      <div class="resume-project">
-        <h3>Notifications Service</h3>
-        <p>Scalable notification system supporting multiple channels.</p>
-        <p><strong>Tech Stack:</strong> Python, Kafka, Redis, Celery, FastAPI</p>
-        <ul>
-          <li>Built async notification pipeline with Kafka</li>
-          <li>Achieved 99.9% delivery rate with retry logic</li>
-          <li>Supported 10k+ notifications per minute</li>
-        </ul>
-        <p><a href="https://github.com/surjit7" target="_blank">GitHub</a></p>
+        <h3>Agentic Route Planner</h3>
+        <p>Agentic LLM platform for intelligent route optimization with multi-modal transportation planning.</p>
+        <p><strong>Tech Stack:</strong> vLLM, PyTorch, Kubernetes, NVIDIA TAO</p>
       </div>
 
       <h2>Skills</h2>
@@ -288,6 +223,26 @@
     </div>
   </div>
 </section>
+
+<script>
+  // Email copy functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const emailLink = document.querySelector('a[href^="mailto:"]');
+    if (emailLink) {
+      emailLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        const email = 'singhsurjit7@outlook.com';
+        navigator.clipboard.writeText(email).then(function() {
+          alert('Email copied to clipboard: ' + email);
+          window.location.href = 'mailto:' + email;
+        }).catch(function() {
+          window.location.href = 'mailto:' + email;
+        });
+      });
+    }
+  });
+</script>
+
 
   </main>
   <footer class="site-footer">

@@ -2627,7 +2627,54 @@ a:hover {
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+
+.resume-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  color: #666;
+  text-decoration: none;
+  padding: 8px 16px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  border: 1px solid #e9ecef;
+}
+
+.resume-contact-item:hover {
+  background: #e3f2fd;
+  border-color: #90caf9;
+  color: #1a73e8;
+}
+
+.resume-contact-item svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.resume-contact-item .contact-text {
+  display: none;
+}
+
+.resume-contact-item svg {
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .resume-contact {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+  }
+  
+  .resume-contact-item {
+    min-width: 48px;
+  }
 }
 
 .resume-contact-item {
@@ -2660,17 +2707,6 @@ a:hover {
   display: none;
 }
 
-.resume-contact-item svg {
-  display: inline-block;
-}
-
-.resume-contact-item .contact-text {
-  display: none;
-}
-
-.resume-contact span {
-  margin: 0 10px;
-}
 
 .resume-section-title {
   font-size: 1.5rem;
