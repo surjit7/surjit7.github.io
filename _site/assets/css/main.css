@@ -190,7 +190,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
 }
 
 .hero-bg {
@@ -224,7 +223,7 @@ a:hover {
 .hero-content {
   position: relative;
   z-index: 1;
-  text-align: center;
+  text-align: left;
 }
 
 .hero-header {
