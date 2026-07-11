@@ -182,10 +182,14 @@ a:hover {
 /* Hero Section */
 .hero {
   position: relative;
-  padding: 128px 0 96px;
+  padding: 128px 0;
   max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-bg {
@@ -812,6 +816,10 @@ a:hover {
     flex-direction: column;
     gap: 32px;
     align-items: center;
+  }
+  .hero {
+    padding: 64px 0;
+    min-height: auto;
   }
 }
 @media (max-width: 480px) {
