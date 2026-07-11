@@ -2623,9 +2623,59 @@ a:hover {
 }
 
 .resume-contact {
-  margin-top: 15px;
-  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.resume-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
   color: #666;
+  text-decoration: none;
+  padding: 8px 16px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  border: 1px solid #e9ecef;
+}
+
+.resume-contact-item:hover {
+  background: #e3f2fd;
+  border-color: #90caf9;
+  color: #1a73e8;
+}
+
+.resume-contact-item svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.contact-text {
+  display: none;
+}
+
+.resume-contact-item svg {
+  display: inline-block;
+}
+
+@media (min-width: 769px) {
+  .contact-text {
+    display: inline;
+  }
+  
+  .resume-contact-item .contact-text {
+    margin-left: 4px;
+  }
+  
+  .resume-contact-item svg {
+    display: none;
+  }
 }
 
 .resume-contact span {
