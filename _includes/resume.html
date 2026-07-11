@@ -1,84 +1,128 @@
-  <section id="resume" class="section resume-section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Resume</h2>
-        <p class="section-subtitle">AI Infrastructure & LLM Platform Engineer</p>
-      </div>
+<section id="resume" class="section resume-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Resume</h2>
+      <p class="section-subtitle">AI Infrastructure & LLM Platform Engineer</p>
+    </div>
 
     <!-- Profile Section -->
-    <div class="resume-card" data-animate>
+    <div class="resume-document">
       <div class="resume-header">
-        <h3 class="resume-card-title">Professional Summary</h3>
-        <p class="resume-card-subtitle">AI/ML & Python Engineer with 4+ years of experience</p>
+        <h1 class="resume-name">Surjit Singh</h1>
+        <div class="resume-contact">
+          <span class="resume-contact-item">singhsurjit7@outlook.com</span>
+          <span class="resume-contact-item">linkedin.com/in/surjit7</span>
+          <span class="resume-contact-item">github.com/surjit7</span>
+        </div>
       </div>
-      <p class="resume-description">
-        AI/ML & Python Engineer with 4+ years of experience building scalable LLM platforms and distributed ML systems. Proven ability to modernize legacy architectures, integrate AI into production, and drive significant <span class="highlight-text">27% cloud cost reduction</span> and <span class="highlight-text">30% API latency reduction</span>. Expertise in GPU infrastructure, Kubernetes orchestration, and end-to-end ML/LLM pipeline development.
-      </p>
-      <div class="resume-contact">
-        <a href="mailto:singhsurjit7@outlook.com" class="resume-contact-item">
-          <svg class="icon mail-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-          singhsurjit7@outlook.com
-        </a>
-        <a href="https://linkedin.com/in/surjit7" target="_blank" rel="noopener" class="resume-contact-item">
-          <svg class="icon linkedin-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-          linkedin.com/in/surjit7
-        </a>
-        <a href="https://github.com/surjit7" target="_blank" rel="noopener" class="resume-contact-item">
-          <svg class="icon github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          github.com/surjit7
-        </a>
+
+      <div class="resume-summary">
+        <h3 class="resume-section-title">Summary</h3>
+        <p>
+          AI/ML & Python Engineer with 4+ years of experience building scalable LLM platforms and distributed ML systems. Proven ability to modernize legacy architectures, integrate AI into production, and drive significant 27% cloud cost reduction and 30% API latency reduction. Expertise in GPU infrastructure, Kubernetes orchestration, and end-to-end ML/LLM pipeline development.
+        </p>
       </div>
     </div>
 
     <!-- Experience Section -->
-    <div class="resume-section-content" data-animate>
-      <div class="section-header">
-        <h2 class="section-title">Experience</h2>
-      </div>
+    <div class="resume-document">
+      <h3 class="resume-section-title">Experience</h3>
 
-      {% for job in site.data.resume.experience %}
-      <div class="resume-timeline-item" data-animate>
-        <div class="resume-timeline-marker"></div>
-        <div class="resume-timeline-content">
-          <div class="resume-job-header">
-            <h3 class="resume-job-title">{{ job.role }}</h3>
-            <span class="resume-job-date">{{ job.duration }}</span>
-          </div>
-          <p class="resume-job-company">{{ job.company }}</p>
-          <p class="resume-job-location">{{ job.location }}</p>
+      <div class="resume-job">
+        <div class="resume-job-header">
+          <h4 class="resume-job-title">AI/ML & Python Engineer</h4>
+          <span class="resume-job-date">2023 – Present</span>
+        </div>
+        <div class="resume-job-location">BJS Home Delivery</div>
+        <div class="resume-job-location">Remote</div>
 
-          <ul class="resume-achievements">
-            {% for achievement in job.achievements %}
-            <li>{{ achievement }}</li>
-            {% endfor %}
-          </ul>
+        <ul class="resume-job-achievements">
+          <li>Built self-hosted LLM platform (vLLM, Ollama, PyTorch, Chroma) with SSO & RBAC</li>
+          <li>Deployed GPU workloads on Kubernetes enabling scalable ML & LLM inference</li>
+          <li>Automated distributed training & deployment using Ray</li>
+          <li>Integrated AI workflows into legacy & new applications</li>
+          <li>27% Cloud Cost Savings through optimization</li>
+          <li>30% API Latency Reduction</li>
+          <li>5 Legacy Systems Modernized</li>
+        </ul>
 
-          <div class="resume-tech-stack">
-            {% for tech in job.techStack %}
-            <span class="tech-badge">{{ tech }}</span>
-            {% endfor %}
-          </div>
+        <div class="resume-tech-stack">
+          <span class="tech-badge">vLLM</span>
+          <span class="tech-badge">Ollama</span>
+          <span class="tech-badge">PyTorch</span>
+          <span class="tech-badge">Kubernetes</span>
+          <span class="tech-badge">Azure Pipelines</span>
+          <span class="tech-badge">Ray</span>
+          <span class="tech-badge">Chroma</span>
+          <span class="tech-badge">SSO</span>
+          <span class="tech-badge">RBAC</span>
         </div>
       </div>
-      {% endfor %}
+
+      <div class="resume-job">
+        <div class="resume-job-header">
+          <h4 class="resume-job-title">Software Engineer (Python)</h4>
+          <span class="resume-job-date">2021 – 2022</span>
+        </div>
+        <div class="resume-job-location">Connoisseur Infotech</div>
+        <div class="resume-job-location">Remote</div>
+
+        <ul class="resume-job-achievements">
+          <li>Developed and optimized deep learning NLP models (BERT/Huggingface)</li>
+          <li>Improved BERT F1 score from 71 to 91 through model optimization</li>
+          <li>Reduced inference time by 20% through quantization and batch processing</li>
+          <li>Built Python REST APIs using Flask and FastAPI</li>
+          <li>Prepared and processed multilingual datasets</li>
+        </ul>
+
+        <div class="resume-tech-stack">
+          <span class="tech-badge">BERT</span>
+          <span class="tech-badge">Huggingface</span>
+          <span class="tech-badge">Flask</span>
+          <span class="tech-badge">FastAPI</span>
+          <span class="tech-badge">NLP</span>
+          <span class="tech-badge">PyTorch</span>
+          <span class="tech-badge">Scikit-learn</span>
+        </div>
+      </div>
+
+      <div class="resume-job">
+        <div class="resume-job-header">
+          <h4 class="resume-job-title">Python Developer</h4>
+          <span class="resume-job-date">2021</span>
+        </div>
+        <div class="resume-job-location">Extech Digital</div>
+        <div class="resume-job-location">India</div>
+
+        <ul class="resume-job-achievements">
+          <li>Developed Python-based backend solutions using Flask</li>
+          <li>Contributed to front-end integration and API development</li>
+          <li>Built RESTful APIs for client applications</li>
+        </ul>
+
+        <div class="resume-tech-stack">
+          <span class="tech-badge">Flask</span>
+          <span class="tech-badge">REST APIs</span>
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">JavaScript</span>
+          <span class="tech-badge">HTML/CSS</span>
+        </div>
+      </div>
     </div>
 
     <!-- Projects Section -->
-    <div class="resume-section-content" data-animate>
-      <div class="section-header">
-        <h2 class="section-title">Projects</h2>
-      </div>
+    <div class="resume-document">
+      <h3 class="resume-section-title">Projects</h3>
 
       {% for project in site.data.resume.projects %}
-      <div class="resume-card" data-animate>
-        <div class="resume-card-header">
-          <h3 class="resume-project-title">{{ project.title }}</h3>
-          <a href="{{ project.github }}" target="_blank" rel="noopener" class="resume-card-link">
-            <svg class="icon github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+      <div class="resume-project">
+        <div class="resume-project-header">
+          <h4 class="resume-project-title">{{ project.title }}</h4>
+          <a href="{{ project.github }}" target="_blank" rel="noopener" class="resume-project-link">
             GitHub
           </a>
         </div>
-        <p class="resume-description">{{ project.description }}</p>
+        <p>{{ project.description }}</p>
 
         <div class="resume-tech-stack">
           {% for tech in project.techStack %}
@@ -86,79 +130,60 @@
           {% endfor %}
         </div>
 
-        <div class="resume-card-achievements">
+        <ul class="resume-job-achievements">
           {% for achievement in project.achievements %}
-          <div class="resume-card-achievement">
-            <svg class="icon star-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <span>{{ achievement }}</span>
-          </div>
+          <li>{{ achievement }}</li>
           {% endfor %}
-        </div>
+        </ul>
       </div>
       {% endfor %}
     </div>
 
     <!-- Skills Section -->
-    <div class="resume-section-content" data-animate>
-      <div class="section-header">
-        <h2 class="section-title">Skills</h2>
-      </div>
+    <div class="resume-document">
+      <h3 class="resume-section-title">Skills</h3>
 
-      {% for skill_group in site.data.resume.skills %}
-      <div class="resume-card" data-animate>
-        <h3 class="resume-card-title">{{ skill_group.title }}</h3>
-        <div class="resume-tech-stack">
-          {% for tag in skill_group.tags %}
-          <span class="tech-badge">{{ tag }}</span>
-          {% endfor %}
+      <div class="resume-skills-grid">
+        {% for skill_group in site.data.resume.skills %}
+        <div class="resume-skill-category">
+          <h4 class="resume-skill-category-title">{{ skill_group.title }}</h4>
+          <div class="resume-tech-stack">
+            {% for tag in skill_group.tags %}
+            <span class="tech-badge">{{ tag }}</span>
+            {% endfor %}
+          </div>
         </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
 
     <!-- Education Section -->
-    <div class="resume-section-content" data-animate>
-      <div class="section-header">
-        <h2 class="section-title">Education</h2>
-      </div>
+    <div class="resume-document">
+      <h3 class="resume-section-title">Education</h3>
 
       {% for edu in site.data.resume.education %}
-      <div class="resume-card" data-animate>
-        <div class="resume-card-header">
-          <h3 class="resume-card-title">{{ edu.degree }}</h3>
-        </div>
-        <p class="resume-job-company">{{ edu.university }}</p>
-        <p class="resume-job-location">{{ edu.location }}</p>
-        <p class="resume-job-date">{{ edu.duration }}</p>
+      <div class="resume-education">
+        <h4 class="resume-education-title">{{ edu.degree }}</h4>
+        <div class="resume-job-location">{{ edu.university }}</div>
+        <div class="resume-job-location">{{ edu.location }}</div>
+        <span class="resume-job-date">{{ edu.duration }}</span>
       </div>
       {% endfor %}
     </div>
 
     <!-- Achievements Section -->
-    <div class="resume-section-content" data-animate>
-      <div class="section-header">
-        <h2 class="section-title">Key Achievements</h2>
-      </div>
+    <div class="resume-document">
+      <h3 class="resume-section-title">Key Achievements</h3>
 
-      {% for achievement in site.data.resume.achievements %}
-      <div class="resume-card" data-animate>
-        <h3 class="resume-achievement-title">{{ achievement.title }}</h3>
-        <p class="resume-achievement-category">{{ achievement.category }}</p>
-        <p class="resume-description">{{ achievement.description }}</p>
+      <div class="resume-achievements-grid">
+        {% for achievement in site.data.resume.achievements %}
+        <div class="resume-achievement-item">
+          <h4 class="resume-achievement-title">{{ achievement.title }}</h4>
+          <span class="resume-achievement-category">{{ achievement.category }}</span>
+          <p>{{ achievement.description }}</p>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
-    </div>
-
-    <!-- PDF Download Section -->
-    <div class="resume-download" data-animate>
-      <h2 class="section-title">Download Full Resume</h2>
-      <p class="section-subtitle">Get a printable PDF version of this resume</p>
-      <a href="/resume.pdf" class="btn btn-primary" download>
-        Download PDF Resume
-      </a>
-      <p class="resume-footer-note">Last Updated: July 2026</p>
     </div>
   </div>
 </section>
-
-<script src="{{ '/assets/js/resume-animations.js' | relative_url }}"></script>

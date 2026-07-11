@@ -2292,44 +2292,308 @@ a:hover {
   transform: translateX(0);
 }
 
+/* ============== ========================= ================================
+   RESUME DOCUMENT STYLE - Clean PDF-like Format
+   ============== ========================= ================================ */
+
+.resume-section {
+  padding: $spacing-xxxl 0;
+  background: $color-bg;
+}
+
+.resume-document {
+  background: #FFFFFF;
+  border: 1px solid $color-border;
+  border-radius: 0;
+  padding: $spacing-xl $spacing-lg;
+  margin-bottom: $spacing-xl;
+  box-shadow: none;
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: $spacing-xl;
+  padding-bottom: $spacing-lg;
+  border-bottom: 2px solid $color-border;
+}
+
+.resume-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $color-text;
+  margin: 0 0 $spacing-sm 0;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.resume-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $spacing-lg;
+}
+
+.resume-contact-item {
+  font-size: 0.9375rem;
+  color: $color-text-secondary;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.resume-contact-item:hover {
+  color: $color-accent;
+}
+
+.resume-section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $color-text;
+  margin-bottom: $spacing-md;
+  padding-bottom: $spacing-sm;
+  border-bottom: 1px solid $color-border;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.resume-summary {
+  font-size: 0.9375rem;
+  color: $color-text-secondary;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.resume-job {
+  margin-bottom: $spacing-lg;
+  padding-bottom: $spacing-lg;
+  border-bottom: 1px solid $color-border;
+}
+
+.resume-job:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.resume-job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: $spacing-xs;
+}
+
+.resume-job-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: $color-text;
+  margin: 0;
+}
+
+.resume-job-date {
+  font-size: 0.875rem;
+  color: $color-gray;
+  font-weight: 500;
+}
+
+.resume-job-location {
+  font-size: 0.875rem;
+  color: $color-text-secondary;
+  margin-bottom: $spacing-xs;
+}
+
+.resume-job-achievements {
+  list-style: disc;
+  margin: $spacing-sm 0;
+  padding-left: $spacing-xl;
+}
+
+.resume-job-achievements li {
+  font-size: 0.875rem;
+  color: $color-text-secondary;
+  line-height: 1.6;
+  margin-bottom: $spacing-xs;
+}
+
+.resume-project {
+  margin-bottom: $spacing-lg;
+  padding-bottom: $spacing-lg;
+  border-bottom: 1px solid $color-border;
+}
+
+.resume-project:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.resume-project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: $spacing-sm;
+}
+
+.resume-project-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: $color-text;
+  margin: 0;
+}
+
+.resume-project-link {
+  font-size: 0.875rem;
+  color: $color-accent;
+  text-decoration: none;
+  padding: $spacing-xs $spacing-sm;
+  background: #F5F5F5;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.resume-project-link:hover {
+  background: $color-accent;
+  color: #FFFFFF;
+}
+
+.resume-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-xs;
+  margin-top: $spacing-md;
+}
+
+.resume-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: $spacing-md;
+}
+
+.resume-skill-category {
+  margin-bottom: $spacing-md;
+}
+
+.resume-skill-category-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: $color-text;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: $spacing-xs;
+}
+
+.resume-education {
+  margin-bottom: $spacing-lg;
+  padding-bottom: $spacing-lg;
+  border-bottom: 1px solid $color-border;
+}
+
+.resume-education:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.resume-education-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: $color-text;
+  margin: 0 0 $spacing-xs 0;
+}
+
+.resume-achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: $spacing-md;
+}
+
+.resume-achievement-item {
+  background: #F8F9FC;
+  padding: $spacing-md;
+  border-radius: 6px;
+  border: 1px solid $color-border;
+}
+
+.resume-achievement-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: $color-text;
+  margin: 0 0 $spacing-xs 0;
+}
+
+.resume-achievement-category {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: $color-accent;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: $spacing-xs;
+}
+
+/* Resume Animations */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-animate].visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Responsive Resume */
 @media (max-width: 768px) {
   .resume-section {
     padding: $spacing-xl 0;
   }
 
-  .resume-card {
-    padding: $spacing-md;
+  .resume-name {
+    font-size: 2rem;
+  }
+
+  .resume-contact {
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-sm;
   }
 
   .resume-job-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: $spacing-xs;
   }
 
-  .resume-tech-stack {
+  .resume-project-header {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .resume-contact {
-    flex-direction: column;
-    align-items: flex-start;
+  .resume-project-link {
+    margin-top: $spacing-xs;
+  }
+
+  .resume-skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-achievements-grid {
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 480px) {
-  .resume-project-title {
-    font-size: 1.25rem;
+  .resume-section-title {
+    font-size: 1.125rem;
   }
 
   .resume-job-title {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
-  .resume-contact-item {
-    font-size: 0.875rem;
+  .resume-project-title {
+    font-size: 1rem;
+  }
+
+  .resume-education-title {
+    font-size: 1rem;
   }
 }
 
