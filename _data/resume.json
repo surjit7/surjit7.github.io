@@ -161,11 +161,11 @@
   "skills": {
     "programmingLanguages": {
       "title": "Programming Languages",
-      "tags": ["Python", "JavaScript", "SQL", "Bash", "TypeScript"]
+      "tags": ["Python", "JavaScript", "SQL", "TypeScript"]
     },
     "backend": {
       "title": "Backend & APIs",
-      "tags": ["FastAPI", "Flask", "Django", "REST APIs", "GraphQL", "OAuth 2.0", "gRPC"]
+      "tags": ["FastAPI", "Flask", "Django", "REST APIs", "OAuth 2.0"]
     },
     "aiMl": {
       "title": "AI & Machine Learning",
@@ -173,7 +173,7 @@
     },
     "cloud": {
       "title": "Cloud & DevOps",
-      "tags": ["Azure", "AWS", "Kubernetes", "Docker", "CI/CD", "ArgoCD", "Terraform", "Linux", "Shell"]
+      "tags": ["Azure", "AWS", "Kubernetes", "Docker", "CI/CD", "ArgoCD", "Linux", "Shell"]
     },
     "databases": {
       "title": "Databases",
