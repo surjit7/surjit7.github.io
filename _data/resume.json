@@ -196,14 +196,14 @@
       "description": "Improved API response times through caching, query optimization, and code refactoring"
     },
     {
-      "title": "71% Model Accuracy",
+      "title": "91% Model Accuracy",
       "category": "AI/ML",
       "description": "Achieved state-of-the-art model performance through fine-tuning and data optimization"
     },
     {
-      "title": "500+ Daily Users",
+      "title": "1000+ Daily Users",
       "category": "Scale",
-      "description": "Built systems serving 500+ active daily users with 99.9% uptime"
+      "description": "Built systems serving 1000+ active daily users with 99.9% uptime"
     }
   ]
 }
