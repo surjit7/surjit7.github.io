@@ -2664,18 +2664,8 @@ a:hover {
   display: inline-block;
 }
 
-@media (min-width: 769px) {
-  .contact-text {
-    display: inline;
-  }
-  
-  .resume-contact-item .contact-text {
-    margin-left: 4px;
-  }
-  
-  .resume-contact-item svg {
-    display: none;
-  }
+.resume-contact-item .contact-text {
+  display: none;
 }
 
 .resume-contact span {
