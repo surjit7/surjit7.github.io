@@ -145,10 +145,17 @@
   ],
   "education": [
     {
-      "degree": "Bachelor of Technology in Computer Science",
-      "university": "Guru Gobind Singh Indraprastha University",
-      "duration": "2017 – 2021",
-      "location": "New Delhi, India"
+      "degree": "Master of Computer Science",
+      "university": "Chandigarh University",
+      "specialization": "Machine Learning",
+      "duration": "2019 - 2021",
+      "location": "Chandigarh, India"
+    },
+    {
+      "degree": "Bachelor of Computer Science",
+      "university": "Chandigarh Group of Colleges",
+      "duration": "2016 - 2019",
+      "location": "Chandigarh, India"
     }
   ],
   "skills": {
