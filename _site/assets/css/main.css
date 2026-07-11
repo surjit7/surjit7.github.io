@@ -130,12 +130,34 @@ a:hover {
 .site-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 16px 0;
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
+  gap: 32px;
+}
+
+.nav-logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #1A1A1A;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 6px;
+  transition: color 0.2s ease;
+}
+
+.nav-logo:hover {
+  color: #1A73E8;
+}
+
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-list {
@@ -157,6 +179,36 @@ a:hover {
 .nav-list a:hover {
   color: #1A73E8;
   background-color: #F5F5F5;
+}
+
+/* Social Icons */
+.nav-socials {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1A1A1A;
+  padding: 8px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.nav-social-icon:hover {
+  color: #1A73E8;
+  background: #F5F5F5;
+}
+
+.theme-dark .nav-social-icon:hover {
+  background: #1A1A1A;
+}
+
+.nav-social-icon svg {
+  width: 20px;
+  height: 20px;
 }
 
 /* Sections */
@@ -1867,6 +1919,68 @@ a:hover {
   background: #333333;
 }
 
+/* =========================================
+   MOBILE NAVIGATION - Centered logo, nav-right, socials below
+   ========================================= */
+/* Mobile navigation (max-width: 768px) */
+@media (max-width: 768px) {
+  .site-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .nav-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  .nav-list a {
+    font-size: 0.75rem;
+    padding: 8px 16px;
+  }
+  .nav-socials {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .nav-social-icon {
+    padding: 8px;
+    font-size: 0.75rem;
+  }
+}
+/* Small mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .site-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .nav-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-list {
+    width: 100%;
+    justify-content: center;
+  }
+  .nav-list a {
+    font-size: 0.75rem;
+    padding: 8px 16px;
+  }
+  .nav-socials {
+    width: 100%;
+    justify-content: center;
+  }
+  .nav-social-icon {
+    padding: 8px;
+  }
+}
 /* ============================
    RESUME SECTION STYLES
    Premium FAANG-level Design
@@ -2602,22 +2716,70 @@ a:hover {
 }
 
 .resume-contact-item .contact-text {
-  display: none;
+  /* Visually hidden but accessible to screen readers */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .resume-contact-item svg {
   display: inline-block;
 }
 
+/* Mobile horizontal scrolling for contact icons */
 @media (max-width: 768px) {
+  .resume-contact-item .contact-text {
+    /* On mobile, show text labels when user hovers/taps */
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    clip: unset;
+    white-space: normal;
+    border: 0;
+    font-size: 0.75rem;
+    color: #757575;
+  }
   .resume-contact {
+    flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
+    overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 10px;
+    padding: 10px 0;
+    gap: 12px;
+    /* Hide scrollbar for cleaner look */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+  .resume-contact::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
   }
   .resume-contact-item {
+    flex-shrink: 0;
     min-width: 48px;
+    padding: 8px 12px;
+    gap: 6px;
+  }
+  .resume-contact-item svg {
+    width: 20px;
+    height: 20px;
+  }
+  .resume-subtitle {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #5C6B7F;
+    margin-top: 8px;
+    margin-bottom: 32px;
+    text-align: center;
   }
 }
 .resume-contact-item {

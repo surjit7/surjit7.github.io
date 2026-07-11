@@ -1,0 +1,259 @@
+I"�4<section id="resume" class="section resume-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Resume</h2>
+    </div>
+
+     <div class="resume-content">
+       <div class="resume-header">
+         <h1 class="resume-name">Surjit Singh</h1>
+         <h2 class="resume-subtitle">AI/ML &amp; Python Engineer</h2>
+        <div class="resume-contact" role="navigation" aria-label="Contact information">
+          <a href="mailto:singhsurjit7@outlook.com" class="resume-contact-item" title="Email: singhsurjit7@outlook.com" aria-label="Email">
+            <svg class="icon mail-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" /></svg>
+            <span class="contact-text">Email</span>
+          </a>
+          <a href="https://linkedin.com/in/surjit7" target="_blank" rel="noopener" class="resume-contact-item" title="LinkedIn Profile" aria-label="LinkedIn">
+            <svg class="icon linkedin-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
+            <span class="contact-text">LinkedIn</span>
+          </a>
+          <a href="https://github.com/surjit7" target="_blank" rel="noopener" class="resume-contact-item" title="GitHub Profile" aria-label="GitHub">
+            <svg class="icon github-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
+            <span class="contact-text">GitHub</span>
+          </a>
+        </div>
+       </div>
+
+      <h2>Professional Summary</h2>
+      <p>
+        AI/ML &amp; Python Engineer with 4+ years of experience building scalable LLM platforms and distributed ML systems. Proven ability to modernize legacy architectures, integrate AI into production, and drive significant 27% cloud cost reduction and 30% API latency reduction. Expertise in GPU infrastructure, Kubernetes orchestration, and end-to-end ML/LLM pipeline development.
+      </p>
+
+      <h2>Experience</h2>
+
+      <div class="resume-job">
+        <h3>AI/ML &amp; Python Engineer</h3>
+        <div>BJS Home Delivery &bull; 2023 – Present &bull; Remote</div>
+        <ul>
+          <li>Built self-hosted LLM platform (vLLM, Ollama, PyTorch, Chroma) with SSO &amp; RBAC</li>
+          <li>Deployed GPU workloads on Kubernetes enabling scalable ML &amp; LLM inference</li>
+          <li>Automated distributed training &amp; deployment using Ray</li>
+          <li>Integrated AI workflows into legacy &amp; new applications</li>
+          <li>27% Cloud Cost Savings through optimization</li>
+          <li>30% API Latency Reduction</li>
+          <li>5 Legacy Systems Modernized</li>
+        </ul>
+        <p><strong>Tech Stack:</strong> vLLM, Ollama, PyTorch, Kubernetes, Azure Pipelines, Ray, Chroma, SSO, RBAC</p>
+      </div>
+
+      <div class="resume-job">
+        <h3>Software Engineer (Python)</h3>
+        <div>Connoisseur Infotech &bull; 2021 – 2022 &bull; Remote</div>
+        <ul>
+          <li>Developed and optimized deep learning NLP models (BERT/Huggingface)</li>
+          <li>Improved BERT F1 score from 71 to 91 through model optimization</li>
+          <li>Reduced inference time by 20% through quantization and batch processing</li>
+          <li>Built Python REST APIs using Flask and FastAPI</li>
+          <li>Prepared and processed multilingual datasets</li>
+        </ul>
+        <p><strong>Tech Stack:</strong> BERT, Huggingface, Flask, FastAPI, NLP, PyTorch, Scikit-learn</p>
+      </div>
+
+      <div class="resume-job">
+        <h3>Python Developer</h3>
+        <div>Extech Digital &bull; 2021 &bull; India</div>
+        <ul>
+          <li>Developed Python-based backend solutions using Flask</li>
+          <li>Contributed to front-end integration and API development</li>
+          <li>Built RESTful APIs for client applications</li>
+        </ul>
+        <p><strong>Tech Stack:</strong> Flask, REST APIs, Python, JavaScript, HTML/CSS</p>
+      </div>
+
+      <h2>Projects</h2>
+
+      <div class="resume-project">
+        <h3>Enterprise AI Chat Platform</h3>
+        <p>ChatGPT-like conversational AI with enterprise-grade role-based permissions, multi-tenant architecture, and seamless enterprise integration.</p>
+        <p><strong>Tech Stack:</strong> OpenAI API, Python, FastAPI, PostgreSQL, Redis, RBAC</p>
+        <ul>
+          <li>ChatGPT-like conversational AI interface</li>
+          <li>Fine-grained Role-Based Access Control (RBAC)</li>
+          <li>Secure multi-tenant architecture</li>
+          <li>Seamless integration with existing enterprise systems</li>
+        </ul>
+      </div>
+
+      <div class="resume-project">
+        <h3>Kubernetes Hosting Platform</h3>
+        <p>Production-ready Kubernetes hosting platform with all essential cloud-native tools pre-configured on a single VM for instant application hosting.</p>
+        <p><strong>Tech Stack:</strong> Kubernetes, Azure, DevOps, Containers, NGINX, Vault, Argo CD</p>
+        <ul>
+          <li>Pre-configured Kubernetes on a single VM</li>
+          <li>NGINX Ingress Controller for traffic management</li>
+          <li>HashiCorp Vault for secret management</li>
+          <li>Argo CD for GitOps-style deployments</li>
+          <li>Redis, Kafka, MongoDB, PostgreSQL, Chroma DB for data workloads</li>
+          <li>Ready for development, edge, and production workloads</li>
+        </ul>
+        <p><a href="https://marketplace.microsoft.com/en-us/product/bjsallmyitlimited1759407982389.bjs-ml?tab=overview" target="_blank" rel="noopener">Microsoft Marketplace</a></p>
+      </div>
+
+      <div class="resume-project">
+        <h3>Agentic Route Planner</h3>
+        <p>Agentic LLM platform for intelligent route optimization with multi-modal transportation planning and real-time dynamic adjustments.</p>
+        <p><strong>Tech Stack:</strong> vLLM, PyTorch, Kubernetes, NVIDIA TAO, LLM, Agentic AI</p>
+        <ul>
+          <li>Intelligent route optimization with AI-driven planning</li>
+          <li>Multi-modal transportation planning (road, rail, air, sea)</li>
+          <li>Real-time route adaptation based on traffic and constraints</li>
+          <li>Scalable inference powered by vLLM</li>
+          <li>NVIDIA TAO for model optimization</li>
+        </ul>
+      </div>
+
+      <div class="resume-project">
+        <h3>Enterprise Identity Platform</h3>
+        <p>Production-ready OAuth2 &amp; OpenID Connect multi-tenant authentication platform built with Django for enterprise-scale identity management.</p>
+        <p><strong>Tech Stack:</strong> Python, Django, OAuth2, OIDC, PostgreSQL, Redis, Azure AD</p>
+        <ul>
+          <li>Full compliance with OAuth2 &amp; OpenID Connect standards</li>
+          <li>Multi-tenant architecture with secure isolation</li>
+          <li>JWT authentication for secure token-based auth</li>
+          <li>Role-Based Access Control (RBAC) with fine-grained permissions</li>
+          <li>Seamless integration with Microsoft Entra ID</li>
+        </ul>
+        <p><a href="https://github.com/surjit7/enterprise-identity-platform" target="_blank" rel="noopener">GitHub</a></p>
+      </div>
+
+      <div class="resume-project">
+        <h3>AMT Scaler</h3>
+        <p>Pre-configured Kubernetes VM with Azure VMSS for elastic, production-ready deployment with minimal infrastructure cost and seamless scaling.</p>
+        <p><strong>Tech Stack:</strong> Kubernetes, Azure, VMSS, Keda, Argo CD, Velero</p>
+        <ul>
+          <li>Multi-node Kubernetes cluster powered by Azure VMSS</li>
+          <li>Elastic scaling of worker nodes with Keda</li>
+          <li>Seamless integration with Argo CD and HashiCorp Vault</li>
+          <li>Supports Kafka, Redis, and MongoDB for scalable workloads</li>
+          <li>Calico CNI for secure, scalable networking</li>
+        </ul>
+        <p><a href="https://marketplace.microsoft.com/en-us/product/bjsallmyitlimited1759407982389.amt-scaler?tab=overview" target="_blank" rel="noopener">Microsoft Marketplace</a></p>
+      </div>
+
+      <div class="resume-project">
+        <h3>Real-time Notifications Service</h3>
+        <p>High-performance notification system with push notifications, in-app alerts, and email integrations for enterprise-grade communication.</p>
+        <p><strong>Tech Stack:</strong> Python, FastAPI, WebSockets, Redis, PostgreSQL, Kafka</p>
+        <ul>
+          <li>Real-time push notifications for instant message delivery</li>
+          <li>Embedded in-app alert system within applications</li>
+          <li>Automated email notifications with customizable templates</li>
+          <li>High throughput design for large-scale notification delivery</li>
+          <li>Guaranteed message delivery with retry mechanisms and failover</li>
+        </ul>
+        <p><em>Built for Company - All Rights to BJS</em></p>
+      </div>
+
+      <div class="resume-project">
+        <h3>Internal ML Platform</h3>
+        <p>JupyterLab-based machine learning platform for model development, training, and experimentation with full experiment tracking.</p>
+        <p><strong>Tech Stack:</strong> Python, PyTorch, JupyterLab, Kubernetes, MLflow, Docker</p>
+        <ul>
+          <li>Interactive JupyterLab development environment for Python-based ML work</li>
+          <li>Full support for PyTorch and other ML frameworks</li>
+          <li>MLflow integration for logging experiments and models</li>
+          <li>Scalable model serving on Kubernetes</li>
+          <li>Containerized environment for reproducibility</li>
+        </ul>
+      </div>
+
+      <h2>Skills</h2>
+
+      <div class="resume-skills">
+        <h3>Programming Languages</h3>
+        <p>Python, JavaScript, SQL, TypeScript</p>
+      </div>
+
+      <div class="resume-skills">
+        <h3>Backend &amp; APIs</h3>
+        <p>FastAPI, Flask, Django, REST APIs, OAuth 2.0</p>
+      </div>
+
+      <div class="resume-skills">
+        <h3>Cloud &amp; DevOps</h3>
+        <p>Azure, AWS, Kubernetes, Docker, CI/CD, ArgoCD, Linux, Shell</p>
+      </div>
+
+      <div class="resume-skills">
+        <h3>Databases</h3>
+        <p>PostgreSQL, MySQL, Redis, Kafka, MongoDB, Elasticsearch, SQL</p>
+      </div>
+
+       <div class="resume-skills">
+         <h3>Infrastructure &amp; Tools</h3>
+         <p>Git, Bitbucket, Jira, Confluence, Agile, Microservices, System Design</p>
+       </div>
+
+       <h2>Education</h2>
+
+      <div class="resume-education">
+        <h3>Master of Computer Science</h3>
+        <p>Chandigarh University &bull; 2019 - 2021 &bull; Chandigarh, India</p>
+        <p><em>Specialization: Machine Learning</em></p>
+      </div>
+
+      <div class="resume-education">
+        <h3>Bachelor of Computer Science</h3>
+        <p>Chandigarh Group of Colleges &bull; 2016 - 2019 &bull; Chandigarh, India</p>
+      </div>
+
+      <h2>Key Achievements</h2>
+
+      <div class="resume-achievement">
+        <h3>27% Cloud Cost Savings</h3>
+        <p>Optimized cloud infrastructure through rightsizing, reserved instances, and efficient resource utilization</p>
+      </div>
+
+      <div class="resume-achievement">
+        <h3>30% API Latency Reduction</h3>
+        <p>Improved API response times through caching, query optimization, and code refactoring</p>
+      </div>
+
+      <div class="resume-achievement">
+        <h3>91% Model Accuracy</h3>
+        <p>Achieved state-of-the-art model performance through fine-tuning and data optimization</p>
+      </div>
+
+      <div class="resume-achievement">
+        <h3>1000+ Daily Users</h3>
+        <p>Built systems serving 1000+ active daily users with 99.9% uptime</p>
+      </div>
+    </div>
+
+    <div class="resume-footer">
+      <a href="/resume.pdf" class="btn btn-primary" download="">Resume</a>
+      <p>Last Updated: July 2026</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Email copy functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const emailLink = document.querySelector('a[href^="mailto:"]');
+    if (emailLink) {
+      emailLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        const email = 'singhsurjit7@outlook.com';
+        navigator.clipboard.writeText(email).then(function() {
+          alert('Email copied to clipboard: ' + email);
+          window.location.href = 'mailto:' + email;
+        }).catch(function() {
+          window.location.href = 'mailto:' + email;
+        });
+      });
+    }
+  });
+</script>
+
+:ET

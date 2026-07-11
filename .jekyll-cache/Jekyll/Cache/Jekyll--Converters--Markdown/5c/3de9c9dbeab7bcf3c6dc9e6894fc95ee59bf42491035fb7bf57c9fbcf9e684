@@ -1,0 +1,176 @@
+I"6,<section id="projects" class="section projects-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">Building scalable AI infrastructure, enterprise platforms, and modern systems</p>
+    </div>
+
+    <div class="projects-grid-3">
+      <!-- 1. Enterprise AI Chat Platform -->
+      <article class="project-card-3">
+        <div class="project-badge-3">
+          <span class="badge badge-backend">Built for Company</span>
+          <span class="badge badge-confidential">All Rights to BJS</span>
+        </div>
+        <h3 class="project-title-3">Enterprise AI Chat Platform</h3>
+        <p class="project-desc-3">ChatGPT-like conversational AI with enterprise-grade role-based permissions, multi-tenant architecture, and seamless enterprise integration.</p>
+        <div class="project-tech-stack-3">
+          <span class="project-tech-3" title="OpenAI API">OpenAI API</span>
+          <span class="project-tech-3" title="Python">Python</span>
+          <span class="project-tech-3" title="FastAPI">FastAPI</span>
+          <span class="project-tech-3" title="PostgreSQL">PostgreSQL</span>
+          <span class="project-tech-3" title="Redis">Redis</span>
+          <span class="project-tech-3" title="RBAC">RBAC</span>
+        </div>
+        <div class="project-links-3">
+          <span class="project-link-3">Built for Company</span>
+        </div>
+      </article>
+
+      <!-- 2. AMT Concrete -->
+      <article class="project-card-3">
+        <div class="project-badge-3">
+          <span class="badge badge-backend">Featured</span>
+          <span class="badge badge-backend">Built for Company</span>
+          <span class="badge badge-confidential">All Rights to BJS</span>
+        </div>
+        <h3 class="project-title-3">AMT Concrete</h3>
+        <p class="project-desc-3">Production-ready Kubernetes hosting platform with all essential cloud-native tools pre-configured on a single VM for instant application hosting.</p>
+        <div class="project-tech-stack-3">
+          <span class="project-tech-3" title="Kubernetes">Kubernetes</span>
+          <span class="project-tech-3" title="Azure">Azure</span>
+          <span class="project-tech-3" title="DevOps">DevOps</span>
+          <span class="project-tech-3" title="Containers">Containers</span>
+          <span class="project-tech-3" title="NGINX">NGINX</span>
+          <span class="project-tech-3" title="Vault">Vault</span>
+          <span class="project-tech-3" title="Argo CD">Argo CD</span>
+        </div>
+        <div class="project-links-3">
+          <a href="https://marketplace.microsoft.com/en-us/product/bjsallmyitlimited1759407982389.bjs-ml?tab=overview" target="_blank" rel="noopener" class="project-link-3">
+            <svg class="icon docs-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-9V3.5L18.5 9H13z" /></svg>
+            Microsoft Marketplace
+          </a>
+        </div>
+      </article>
+
+      <!-- 3. Agentic Route Planner -->
+      <article class="project-card-3">
+        <div class="project-badge-3">
+          <span class="badge badge-backend">Featured</span>
+          <span class="badge badge-backend">Built for Company</span>
+        </div>
+        <h3 class="project-title-3">Agentic Route Planner</h3>
+        <p class="project-desc-3">Agentic LLM platform for intelligent route optimization with multi-modal transportation planning and real-time dynamic adjustments.</p>
+        <div class="project-tech-stack-3">
+          <span class="project-tech-3" title="vLLM">vLLM</span>
+          <span class="project-tech-3" title="PyTorch">PyTorch</span>
+          <span class="project-tech-3" title="Kubernetes">Kubernetes</span>
+          <span class="project-tech-3" title="NVIDIA TAO">NVIDIA TAO</span>
+          <span class="project-tech-3" title="LLM">LLM</span>
+          <span class="project-tech-3" title="Agentic AI">Agentic AI</span>
+        </div>
+        <div class="project-links-3">
+          <span class="project-link-3">Built for Company</span>
+        </div>
+      </article>
+
+      <!-- 4. Enterprise Identity Platform -->
+      <article class="project-card-3">
+        <div class="project-badge-3">
+          <span class="badge badge-backend">Open Source</span>
+        </div>
+        <h3 class="project-title-3">Enterprise Identity Platform</h3>
+        <p class="project-desc-3">Production-ready OAuth2 &amp; OpenID Connect multi-tenant authentication platform built with Django for enterprise-scale identity management.</p>
+        <div class="project-tech-stack-3">
+          <span class="project-tech-3" title="Python">Python</span>
+          <span class="project-tech-3" title="Django">Django</span>
+          <span class="project-tech-3" title="OAuth2">OAuth2</span>
+          <span class="project-tech-3" title="OIDC">OIDC</span>
+          <span class="project-tech-3" title="PostgreSQL">PostgreSQL</span>
+          <span class="project-tech-3" title="Redis">Redis</span>
+          <span class="project-tech-3" title="Azure AD">Azure AD</span>
+        </div>
+        <div class="project-links-3">
+          <a href="https://github.com/surjit7/enterprise-identity-platform" target="_blank" rel="noopener" class="project-link-3">
+            <svg class="icon github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
+            GitHub
+          </a>
+          <a href="https://surjit7.github.io/enterprise-identity-platform/docs" target="_blank" rel="noopener" class="project-link-3">
+            <svg class="icon docs-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-9V3.5L18.5 9H13z" /></svg>
+            Documentation
+          </a>
+        </div>
+      </article>
+
+      <!-- 5. AMT Scaler -->
+      <article class="project-card-3">
+        <div class="project-badge-3">
+          <span class="badge badge-backend">Featured</span>
+          <span class="badge badge-backend">Built for Company</span>
+          <span class="badge badge-confidential">All Rights to BJS</span>
+        </div>
+        <h3 class="project-title-3">AMT Scaler</h3>
+        <p class="project-desc-3">Pre-configured Kubernetes VM with Azure VMSS for elastic, production-ready deployment with minimal infrastructure cost and seamless scaling.</p>
+        <div class="project-tech-stack-3">
+          <span class="project-tech-3" title="Kubernetes">Kubernetes</span>
+          <span class="project-tech-3" title="Azure">Azure</span>
+          <span class="project-tech-3" title="VMSS">VMSS</span>
+          <span class="project-tech-3" title="Keda">Keda</span>
+          <span class="project-tech-3" title="Argo CD">Argo CD</span>
+          <span class="project-tech-3" title="Velero">Velero</span>
+        </div>
+        <div class="project-links-3">
+          <a href="https://marketplace.microsoft.com/en-us/product/bjsallmyitlimited1759407982389.amt-scaler?tab=overview" target="_blank" rel="noopener" class="project-link-3">
+            <svg class="icon docs-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-9V3.5L18.5 9H13z" /></svg>
+            Microsoft Marketplace
+          </a>
+        </div>
+      </article>
+
+      <!-- 6. Real-time Notifications Service -->
+      <article class="project-card-3">
+        <div class="project-badge-3">
+          <span class="badge badge-backend">Featured</span>
+          <span class="badge badge-backend">Open Source</span>
+        </div>
+        <h3 class="project-title-3">Real-time Notifications Service</h3>
+        <p class="project-desc-3">High-performance notification system with push notifications, in-app alerts, and email integrations for enterprise-grade communication.</p>
+        <div class="project-tech-stack-3">
+          <span class="project-tech-3" title="Python">Python</span>
+          <span class="project-tech-3" title="FastAPI">FastAPI</span>
+          <span class="project-tech-3" title="WebSockets">WebSockets</span>
+          <span class="project-tech-3" title="Redis">Redis</span>
+          <span class="project-tech-3" title="PostgreSQL">PostgreSQL</span>
+          <span class="project-tech-3" title="Kafka">Kafka</span>
+        </div>
+        <div class="project-links-3">
+          <a href="https://github.com/surjit7/notifications-service" target="_blank" rel="noopener" class="project-link-3">
+            <svg class="icon github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
+            GitHub
+          </a>
+        </div>
+      </article>
+
+      <!-- 7. Internal ML Platform -->
+      <article class="project-card-3">
+        <div class="project-badge-3">
+          <span class="badge badge-backend">Built for Company</span>
+        </div>
+        <h3 class="project-title-3">Internal ML Platform</h3>
+        <p class="project-desc-3">JupyterLab-based machine learning platform for model development, training, and experimentation with full experiment tracking.</p>
+        <div class="project-tech-stack-3">
+          <span class="project-tech-3" title="Python">Python</span>
+          <span class="project-tech-3" title="PyTorch">PyTorch</span>
+          <span class="project-tech-3" title="JupyterLab">JupyterLab</span>
+          <span class="project-tech-3" title="Kubernetes">Kubernetes</span>
+          <span class="project-tech-3" title="MLflow">MLflow</span>
+          <span class="project-tech-3" title="Docker">Docker</span>
+        </div>
+        <div class="project-links-3">
+          <span class="project-link-3">Built for Company</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+:ET
