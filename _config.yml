@@ -26,4 +26,6 @@ exclude:
   - Gemfile.lock
   - README.md
   - .jekyll-cache
-# Use Jekyll's built-in cache control via environment variable
+# Disable Jekyll cache to avoid permission issues
+# Jekyll's built-in cache control via environment variable
+JEKYLL_ENV: production

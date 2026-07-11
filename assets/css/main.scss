@@ -359,6 +359,68 @@ a:hover {
   height: 18px;
 }
 
+/* Trusted By Section */
+.hero-trusted-by {
+  margin: $spacing-xl 0 $spacing-lg;
+  text-align: center;
+}
+
+.trusted-by-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: $color-gray;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: $spacing-sm;
+}
+
+.trusted-by-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: $spacing-md;
+}
+
+.trusted-by-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-xs $spacing-sm;
+  background: $color-bg-subtle;
+  color: $color-text-secondary;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 4px;
+  border: 1px solid $color-border;
+}
+
+/* Hero Impact Metrics */
+.hero-impact {
+  display: flex;
+  gap: $spacing-xl;
+  margin-bottom: $spacing-xl;
+  flex-wrap: wrap;
+}
+
+.impact-item {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+}
+
+.impact-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: $color-accent;
+  line-height: 1;
+}
+
+.impact-label {
+  font-size: 0.875rem;
+  color: $color-gray;
+  font-weight: 500;
+}
+
 /* Interactive Elements */
 .project-card {
   transition: all 0.3s ease;
@@ -592,18 +654,49 @@ a:hover {
 /* Contact Section */
 .contact-section {
   text-align: center;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
+.open-to-work-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-xs;
+  padding: $spacing-xs $spacing-md;
+  background: #E8F5E9;
+  border-radius: 20px;
+  margin-bottom: $spacing-lg;
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  background: $color-success;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.badge-text {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: $color-success;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 .contact-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: $spacing-md;
 }
 
 .contact-description {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: $color-text-secondary;
   margin-bottom: $spacing-xl;
 }
@@ -763,6 +856,22 @@ a:hover {
   .site-nav {
     flex-direction: column;
     gap: $spacing-sm;
+  }
+
+  .hero-trusted-by {
+    margin-bottom: $spacing-lg;
+  }
+
+  .trusted-by-logos {
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-sm;
+  }
+
+  .hero-impact {
+    flex-direction: column;
+    gap: $spacing-md;
+    align-items: center;
   }
 }
 
