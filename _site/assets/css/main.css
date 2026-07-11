@@ -510,71 +510,290 @@ a:hover {
   font-size: 0.875rem;
 }
 
-/* Experience Section */
-.experience-list {
-  list-style: none;
-  max-width: 700px;
+/* Experience Section - Clean FAANG Resume Style */
+.experience-resume {
+  max-width: 850px;
   margin: 0 auto;
 }
 
-.experience-item {
-  position: relative;
-  padding-left: 64px;
-  margin-bottom: 96px;
+.experience-entry {
+  margin-bottom: 64px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #E0E0E0;
 }
 
-.experience-item::before {
-  content: "";
-  position: absolute;
-  left: 16px;
-  top: 0.4rem;
-  width: 0.375rem;
-  height: 0.375rem;
-  background: #1A73E8;
-  border-radius: 50%;
+.experience-entry:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
-.experience-item::after {
-  content: "";
-  position: absolute;
-  left: 16px;
-  top: 1rem;
-  bottom: -32px;
-  width: 1px;
-  background: #E8EAF6;
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 16px;
 }
 
-.experience-item:last-child::after {
-  display: none;
+.experience-title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.experience-title h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1A1A1A;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.company-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1A73E8;
 }
 
 .experience-date {
   font-size: 0.875rem;
-  color: #757575;
   font-weight: 500;
-  margin-bottom: 8px;
+  color: #757575;
+  background: #F5F5F5;
+  padding: 8px 16px;
+  border-radius: 4px;
 }
 
-.experience-role {
-  font-size: 1.25rem;
-  font-weight: 600;
+.experience-achievements {
+  margin-bottom: 16px;
+}
+
+.experience-achievements p {
+  font-size: 0.9375rem;
   color: #1A1A1A;
   margin-bottom: 8px;
+  line-height: 1.5;
+  padding-left: 16px;
 }
 
-.experience-company {
-  font-size: 1rem;
-  color: #5C6B7F;
-  margin-bottom: 16px;
+.experience-achievements p strong {
+  color: #1A73E8;
+}
+
+.bullet {
+  color: #1A73E8;
+  font-weight: 700;
+  margin-right: 8px;
 }
 
 .experience-description {
   font-size: 0.9375rem;
   color: #5C6B7F;
-  line-height: 1.6;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  padding: 32px;
+  background: #F9F9F9;
+  border-left: 3px solid #1A73E8;
+  border-radius: 4px;
 }
 
-/* Skills Section */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.tech-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  background: #F0F4FF;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #5C6B7F;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", menlo, monospace;
+  border: 1px solid #E0E7FF;
+}
+
+.tech-tag:hover {
+  background: #1A73E8;
+  color: #FFFFFF;
+  border-color: #1A73E8;
+}
+
+.experience-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 16px;
+}
+
+.highlight-card {
+  background: #FFF8E6;
+  border-left: 3px solid #FDB931;
+  padding: 16px 32px;
+  border-radius: 0 6px 6px 0;
+  transition: all 0.2s ease;
+}
+
+.highlight-card:hover {
+  background: #FFF3E0;
+  border-left-color: #1A73E8;
+}
+
+.highlight-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.highlight-desc {
+  font-size: 0.75rem;
+  color: #5C6B7F;
+  line-height: 1.5;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+  position: absolute;
+  left: -64px;
+  top: 48px;
+  bottom: 48px;
+  width: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.progress-bar {
+  position: relative;
+  width: 100%;
+  background: #E8EAF6;
+  border-radius: 2px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.progress-fill {
+  background: linear-gradient(to bottom, #1A73E8 0%, rgb(18.8928571429, 92, 188.1071428571) 100%);
+  width: 100%;
+  border-radius: 2px;
+  transition: height 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.progress-bar:hover {
+  background: #D1DAF0;
+}
+
+/* Dark Mode Progress Bar */
+.theme-dark .progress-bar {
+  background: #333333;
+}
+
+.theme-dark .progress-fill {
+  background: linear-gradient(to bottom, #1A73E8 0%, #42A5F5 100%);
+}
+
+/* Dark Mode Experience */
+.theme-dark .experience-entry {
+  border-bottom-color: #333333;
+}
+
+.theme-dark .experience-date {
+  background: #333333;
+  color: #A0A0A0;
+}
+
+.theme-dark .experience-achievements p {
+  color: #E5E5E5;
+}
+
+.theme-dark .experience-description {
+  background: #2A2A2A;
+  color: #A0A0A0;
+  border-left-color: #1A73E8;
+}
+
+.theme-dark .tech-tag {
+  background: #333333;
+  color: #A0A0A0;
+  border-color: #444444;
+}
+
+.theme-dark .tech-tag:hover {
+  background: #1A73E8;
+  color: #FFFFFF;
+}
+
+.theme-dark .highlight-card {
+  background: #2A2A2A;
+  border-left-color: #FDB931;
+}
+
+.theme-dark .highlight-card:hover {
+  background: #333333;
+  border-left-color: #1A73E8;
+}
+
+/* Experience View All */
+.experience-view-all {
+  margin-top: 64px;
+  text-align: center;
+}
+
+/* Dark Mode Experience */
+.theme-dark .experience-entry {
+  border-bottom-color: #333333;
+}
+
+.theme-dark .experience-date {
+  background: #333333;
+  color: #A0A0A0;
+}
+
+.theme-dark .experience-achievements p {
+  color: #E5E5E5;
+}
+
+.theme-dark .experience-description {
+  background: #2A2A2A;
+  color: #A0A0A0;
+  border-left-color: #1A73E8;
+}
+
+.theme-dark .tech-tag {
+  background: #333333;
+  color: #A0A0A0;
+  border-color: #444444;
+}
+
+.theme-dark .tech-tag:hover {
+  background: #1A73E8;
+  color: #FFFFFF;
+}
+
+/* Responsive Experience */
+@media (max-width: 768px) {
+  .experience-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .experience-achievements p {
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 480px) {
+  .experience-description {
+    font-size: 0.875rem;
+  }
+  .tech-tags {
+    justify-content: flex-start;
+  }
+}
 .skills-section {
   background: #F9F9F9;
 }
@@ -1590,6 +1809,8 @@ a:hover {
 .project-links-3 {
   display: flex;
   gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .project-link-3 {
@@ -1603,11 +1824,21 @@ a:hover {
   background: #F5F5F5;
   border-radius: 4px;
   transition: all 0.2s ease;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .project-link-3:hover {
   background: #1A73E8;
   color: #FFFFFF;
+}
+
+.project-link-3:hover .github-icon {
+  fill: #FFFFFF;
+}
+
+.project-link-3:hover .docs-icon {
+  fill: #FFFFFF;
 }
 
 .badge-confidential {
@@ -1919,6 +2150,432 @@ a:hover {
   background: #333333;
 }
 
+.experience-section {
+  background: #FFFFFF;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-card {
+  background: #FFFFFF;
+  border: 1px solid #E8EAF6;
+  border-radius: 16px;
+  padding: 96px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(10, 102, 255, 0.02) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  border-color: #1A73E8;
+  box-shadow: 0 20px 40px rgba(10, 102, 255, 0.12);
+}
+
+.experience-card:hover::before {
+  opacity: 1;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 2px solid #F0F4FF;
+}
+
+.company-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.experience-role {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1A1A1A;
+  margin: 0;
+}
+
+.experience-company {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1A73E8;
+  letter-spacing: 0.02em;
+}
+
+.experience-date {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #757575;
+  background: #F0F4FF;
+  padding: 8px 16px;
+  border-radius: 20px;
+  align-self: flex-start;
+}
+
+.experience-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 48px;
+  padding: 32px;
+  background: #F8F9FC;
+  border-radius: 6px;
+}
+
+.metric-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1A73E8;
+  line-height: 1;
+}
+
+.metric-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #757575;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.experience-details {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: #F8F9FC;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.achievement-item:hover {
+  background: #F0F4FF;
+  transform: translateX(4px);
+}
+
+.achievement-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.achievement-text {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #1A1A1A;
+  line-height: 1.4;
+}
+
+.experience-desc {
+  font-size: 0.9375rem;
+  color: #5C6B7F;
+  line-height: 1.7;
+  margin: 0;
+  padding: 16px 0;
+  border-left: 3px solid #1A73E8;
+  padding-left: 16px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid #E0E7FF;
+}
+
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  background: #F5F5F5;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #5C6B7F;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", menlo, monospace;
+  transition: all 0.2s ease;
+}
+
+.tech-badge:hover {
+  background: #1A73E8;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+/* Tech Badge Colors */
+.tech-badge.vllm {
+  background: linear-gradient(135deg, #0052CC 0%, #0044CC 100%);
+  color: #FFFFFF;
+  border: none;
+}
+
+.tech-badge.k8s {
+  background: linear-gradient(135deg, #326CE5 0%, #285ACB 100%);
+  color: #FFFFFF;
+  border: none;
+}
+
+.tech-badge.pytorch {
+  background: linear-gradient(135deg, #EE4C2C 0%, #D63A1C 100%);
+  color: #FFFFFF;
+  border: none;
+}
+
+.tech-badge.python {
+  background: linear-gradient(135deg, #3776AB 0%, #2C5C8D 100%);
+  color: #FFFFFF;
+  border: none;
+}
+
+.tech-badge.fastapi {
+  background: linear-gradient(135deg, #009688 0%, #00796B 100%);
+  color: #FFFFFF;
+  border: none;
+}
+
+.tech-badge.azure {
+  background: linear-gradient(135deg, #0078D4 0%, #005A9E 100%);
+  color: #FFFFFF;
+  border: none;
+}
+
+.tech-badge.bert {
+  background: linear-gradient(135deg, #1E90FF 0%, #0068B8 100%);
+  color: #FFFFFF;
+  border: none;
+}
+
+.tech-badge.huggingface {
+  background: linear-gradient(135deg, #FFD43B 0%, #FFC107 100%);
+  color: #333333;
+  border: none;
+}
+
+.tech-badge.flask {
+  background: linear-gradient(135deg, #009688 0%, #00796B 100%);
+  color: #FFFFFF;
+  border: none;
+}
+
+.tech-badge.rest {
+  background: #F5F5F5;
+  color: #5C6B7F;
+  border: 1px solid #E5E5E5;
+}
+
+/* Dark Mode Experience */
+.theme-dark .experience-card {
+  background: #1A1A1A;
+  border-color: #333333;
+}
+
+.theme-dark .experience-header {
+  border-bottom-color: #333333;
+}
+
+.theme-dark .achievement-item {
+  background: #2A2A2A;
+}
+
+.theme-dark .achievement-icon {
+  color: #E5E5E5;
+}
+
+.theme-dark .achievement-text {
+  color: #A0A0A0;
+}
+
+.theme-dark .experience-desc {
+  color: #A0A0A0;
+  border-left-color: #1A73E8;
+}
+
+.theme-dark .tech-stack {
+  border-top-color: #333333;
+}
+
+.theme-dark .tech-badge {
+  background: #333333;
+  color: #A0A0A0;
+}
+
+.theme-dark .tech-badge.vllm, .theme-dark .tech-badge.k8s,
+.theme-dark .tech-badge.pytorch, .theme-dark .tech-badge.python,
+.theme-dark .tech-badge.fastapi, .theme-dark .tech-badge.azure,
+.theme-dark .tech-badge.bert {
+  opacity: 0.9;
+}
+
+.theme-dark .tech-badge.huggingface {
+  color: #333333;
+  opacity: 0.9;
+}
+
+.theme-dark .tech-badge.rest {
+  background: #333333;
+  border-color: #444444;
+  color: #A0A0A0;
+}
+
+.theme-dark .metric-label {
+  color: #A0A0A0;
+}
+
+.experience-view-all {
+  margin-top: 96px;
+  text-align: center;
+}
+
+/* ========================================
+   PROJECT DETAILS SECTION STYLES
+   ======================================== */
+.project-details-3 {
+  margin-bottom: 32px;
+}
+
+.project-details-3 h4 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #1A73E8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.project-details-3 ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 32px;
+}
+
+.project-details-3 li {
+  font-size: 0.8125rem;
+  color: #5C6B7F;
+  line-height: 1.6;
+  padding-left: 16px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.project-details-3 li::before {
+  content: "•";
+  color: #1A73E8;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.project-role-3 {
+  font-size: 0.875rem;
+  color: #5C6B7F;
+  line-height: 1.6;
+  margin: 0;
+  padding: 16px;
+  background: #F5F5F5;
+  border-radius: 6px;
+}
+
+.theme-dark .project-role-3 {
+  background: #333333;
+  color: #A0A0A0;
+}
+
+.theme-dark .project-details-3 li {
+  color: #A0A0A0;
+}
+
+.theme-dark .project-details-3 li::before {
+  color: #1A73E8;
+}
+
+/* More Projects Section Styles */
+#more-projects {
+  padding: 96px 0;
+}
+
+.project-links-3 a.project-link-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.project-links-3 a.project-link-3:hover {
+  background: #1A73E8;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.project-links-3 a.project-link-3:hover .github-icon,
+.project-links-3 a.project-link-3:hover .docs-icon {
+  fill: #FFFFFF;
+}
+
+.theme-dark .project-links-3 a.project-link-3:hover {
+  background: #1A73E8;
+  color: #FFFFFF;
+}
+
+/* Responsive for project details */
+@media (max-width: 768px) {
+  .project-details-3 li {
+    font-size: 0.75rem;
+    padding-left: 8px;
+  }
+  .project-details-3 li::before {
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 480px) {
+  .project-details-3 h4 {
+    font-size: 0.6875rem;
+  }
+}
 /* =========================================
    MOBILE NAVIGATION - Centered logo, nav-right, socials below
    ========================================= */
