@@ -1,0 +1,202 @@
+{
+  "profile": {
+    "name": "Surjit Singh",
+    "title": "AI Infrastructure & LLM Platform Engineer",
+    "summary": "AI/ML & Python Engineer with 4+ years of experience building scalable LLM platforms and distributed ML systems. Proven ability to modernize legacy architectures, integrate AI into production, and drive significant 27% cloud cost reduction and 30% API latency reduction. Expertise in GPU infrastructure, Kubernetes orchestration, and end-to-end ML/LLM pipeline development.",
+    "location": "India",
+    "email": "singhsurjit7@outlook.com",
+    "linkedin": "https://linkedin.com/in/surjit7",
+    "github": "https://github.com/surjit7",
+    "portfolio": "https://surjitsingh.github.io"
+  },
+  "experience": [
+    {
+      "company": "BJS Home Delivery",
+      "role": "AI/ML & Python Engineer",
+      "duration": "2023 – Present",
+      "location": "Remote",
+      "achievements": [
+        "Built self-hosted LLM platform (vLLM, Ollama, PyTorch, Chroma) with SSO & RBAC",
+        "Deployed GPU workloads on Kubernetes enabling scalable ML & LLM inference",
+        "Automated distributed training & deployment using Ray",
+        "Integrated AI workflows into legacy & new applications",
+        "27% Cloud Cost Savings",
+        "30% API Latency Reduction",
+        "5 Systems Modernized"
+      ],
+      "techStack": ["vLLM", "Ollama", "PyTorch", "Kubernetes", "Azure Pipelines", "Ray", "Chroma", "SSO", "RBAC"]
+    },
+    {
+      "company": "Connoisseur Infotech",
+      "role": "Software Engineer (Python)",
+      "duration": "2021 – 2022",
+      "location": "Remote",
+      "achievements": [
+        "Developed and optimized deep learning NLP models (BERT/Huggingface)",
+        "Improved BERT F1 score from 71 to 91 through model optimization",
+        "Reduced inference time by 20% through quantization and batch processing",
+        "Built Python REST APIs using Flask and FastAPI",
+        "Prepared and processed multilingual datasets"
+      ],
+      "techStack": ["BERT", "Huggingface", "Flask", "FastAPI", "NLP", "PyTorch", "Scikit-learn"]
+    },
+    {
+      "company": "Extech Digital",
+      "role": "Python Developer",
+      "duration": "2021",
+      "location": "India",
+      "achievements": [
+        "Developed Python-based backend solutions using Flask",
+        "Contributed to front-end integration and API development",
+        "Built RESTful APIs for client applications"
+      ],
+      "techStack": ["Flask", "REST APIs", "Python", "JavaScript", "HTML/CSS"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Enterprise Identity Platform",
+      "description": "Built a comprehensive identity management system with SSO and RBAC capabilities for enterprise customers.",
+      "techStack": ["Python", "FastAPI", "OAuth 2.0", "PostgreSQL", "Redis"],
+      "github": "https://github.com/surjit7",
+      "achievements": [
+        "Implemented SSO with multiple identity providers",
+        "Built fine-grained RBAC system with 100+ permission types",
+        "Achieved 99.99% uptime with distributed architecture"
+      ]
+    },
+    {
+      "title": "LLM Platform",
+      "description": "Self-hosted LLM inference platform with GPU orchestration and workflow automation.",
+      "techStack": ["vLLM", "Ollama", "PyTorch", "Kubernetes", "Ray"],
+      "github": "https://github.com/surjit7",
+      "achievements": [
+        "Deployed 10+ LLM models on shared GPU infrastructure",
+        "Achieved 30% faster inference with vLLM optimization",
+        "Built automated model deployment pipelines"
+      ]
+    },
+    {
+      "title": "LLM Platform (Alternative)",
+      "description": "Alternative LLM implementation with different stack configuration.",
+      "techStack": ["FastAPI", "PyTorch", "Transformers", "Chroma", "Redis"],
+      "github": "https://github.com/surjit7",
+      "achievements": [
+        "Built document retrieval system with RAG architecture",
+        "Implemented semantic search with Chroma vector database",
+        "Achieved 71% accuracy on model benchmarks"
+      ]
+    },
+    {
+      "title": "ML Workflow Platform",
+      "description": "End-to-end ML pipeline with training, evaluation, and deployment capabilities.",
+      "techStack": ["Ray", "PyTorch", "MLflow", "Kubernetes"],
+      "github": "https://github.com/surjit7",
+      "achievements": [
+        "Built automated training pipeline with 10x speedup",
+        "Implemented experiment tracking with MLflow",
+        "Deployed models with Kubernetes and autoscaling"
+      ]
+    },
+    {
+      "title": "Legacy Modernization",
+      "description": "Modernized legacy enterprise applications with new microservices architecture.",
+      "techStack": ["Python", "FastAPI", "Django", "PostgreSQL", "Docker"],
+      "github": "https://github.com/surjit7",
+      "achievements": [
+        "Migrated 5 legacy systems to modern stack",
+        "Reduced infrastructure costs by 27%",
+        "Improved system performance by 30%"
+      ]
+    },
+    {
+      "title": "AI Chat Platform",
+      "description": "Conversational AI platform with RAG and multi-turn对话 support.",
+      "techStack": ["FastAPI", "PyTorch", "Chroma", "Redis", "LangChain"],
+      "github": "https://github.com/surjit7",
+      "achievements": [
+        "Built conversational interface with 500+ daily active users",
+        "Implemented RAG for context-aware responses",
+        "Achieved 91% F1 score on intent classification"
+      ]
+    },
+    {
+      "title": "AML Scaler",
+      "description": "Automated ML model scaling solution for dynamic workloads.",
+      "techStack": ["Python", "Kubernetes", "Prometheus", "Grafana"],
+      "github": "https://github.com/surjit7",
+      "achievements": [
+        "Built auto-scaling for GPU workloads based on demand",
+        "Integrated with Kubernetes HPA for seamless scaling",
+        "Reduced GPU costs by 27% through efficient scaling"
+      ]
+    },
+    {
+      "title": "Notifications Service",
+      "description": "Scalable notification system supporting multiple channels.",
+      "techStack": ["Python", "Kafka", "Redis", "Celery", "FastAPI"],
+      "github": "https://github.com/surjit7",
+      "achievements": [
+        "Built async notification pipeline with Kafka",
+        "Achieved 99.9% delivery rate with retry logic",
+        "Supported 10k+ notifications per minute"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Technology in Computer Science",
+      "university": "Guru Gobind Singh Indraprastha University",
+      "duration": "2017 – 2021",
+      "location": "New Delhi, India"
+    }
+  ],
+  "skills": {
+    "programmingLanguages": {
+      "title": "Programming Languages",
+      "tags": ["Python", "JavaScript", "SQL", "Bash", "TypeScript"]
+    },
+    "backend": {
+      "title": "Backend & APIs",
+      "tags": ["FastAPI", "Flask", "Django", "REST APIs", "GraphQL", "OAuth 2.0", "gRPC"]
+    },
+    "aiMl": {
+      "title": "AI & Machine Learning",
+      "tags": ["PyTorch", "Transformers", "BERT", "LLMs", "NLP", "RAG", "Fine-tuning", "vLLM", "Huggingface"]
+    },
+    "cloud": {
+      "title": "Cloud & DevOps",
+      "tags": ["Azure", "AWS", "Kubernetes", "Docker", "CI/CD", "ArgoCD", "Terraform", "Linux", "Shell"]
+    },
+    "databases": {
+      "title": "Databases",
+      "tags": ["PostgreSQL", "MySQL", "Redis", "Kafka", "MongoDB", "Elasticsearch", "SQL"]
+    },
+    "infrastructure": {
+      "title": "Infrastructure & Tools",
+      "tags": ["Git", "Bitbucket", "Jira", "Confluence", "Agile", "Microservices", "System Design"]
+    }
+  },
+  "achievements": [
+    {
+      "title": "27% Cloud Cost Savings",
+      "category": "Cost Optimization",
+      "description": "Optimized cloud infrastructure through rightsizing, reserved instances, and efficient resource utilization"
+    },
+    {
+      "title": "30% API Latency Reduction",
+      "category": "Performance",
+      "description": "Improved API response times through caching, query optimization, and code refactoring"
+    },
+    {
+      "title": "71% Model Accuracy",
+      "category": "AI/ML",
+      "description": "Achieved state-of-the-art model performance through fine-tuning and data optimization"
+    },
+    {
+      "title": "500+ Daily Users",
+      "category": "Scale",
+      "description": "Built systems serving 500+ active daily users with 99.9% uptime"
+    }
+  ]
+}

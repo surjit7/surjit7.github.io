@@ -1907,6 +1907,432 @@ a:hover {
   background: #333333;
 }
 
+/* ============================
+   RESUME SECTION STYLES
+   Premium FAANG-level Design
+   ============================ */
+
+.resume-section {
+  padding: $spacing-xxxl 0;
+  background: $color-bg;
+}
+
+.resume-card {
+  background: $color-bg;
+  border: 1px solid $color-border;
+  border-radius: 12px;
+  padding: $spacing-lg;
+  margin-bottom: $spacing-xl;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.resume-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(10, 102, 255, 0.02) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.resume-card:hover {
+  transform: translateY(-4px);
+  border-color: $color-accent;
+  box-shadow: 0 12px 30px rgba(10, 102, 255, 0.08);
+}
+
+.resume-card:hover::before {
+  opacity: 1;
+}
+
+.resume-header {
+  margin-bottom: $spacing-md;
+}
+
+.resume-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $color-text;
+  margin-bottom: $spacing-xs;
+  letter-spacing: -0.02em;
+}
+
+.resume-card-subtitle {
+  font-size: 1rem;
+  color: $color-text-secondary;
+  font-weight: 500;
+}
+
+.resume-description {
+  font-size: 1rem;
+  color: $color-text-secondary;
+  line-height: 1.7;
+  margin-bottom: $spacing-md;
+}
+
+.resume-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-md;
+  margin-top: $spacing-md;
+}
+
+.resume-contact-item {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  font-size: 0.9375rem;
+  color: $color-text-secondary;
+  transition: all 0.2s ease;
+}
+
+.resume-contact-item:hover {
+  color: $color-accent;
+  transform: translateX(4px);
+}
+
+/* Resume Timeline */
+.resume-timeline-item {
+  position: relative;
+  padding-left: $spacing-xl;
+  margin-bottom: $spacing-xl;
+}
+
+.resume-timeline-marker {
+  position: absolute;
+  left: $spacing-sm;
+  top: $spacing-md;
+  width: 12px;
+  height: 12px;
+  background: $color-accent;
+  border-radius: 50%;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(10, 102, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.resume-timeline-item:hover .resume-timeline-marker {
+  transform: scale(1.25);
+  box-shadow: 0 0 0 3px rgba(10, 102, 255, 0.2);
+}
+
+.resume-timeline-content {
+  transition: all 0.3s ease;
+}
+
+.resume-job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: $spacing-sm;
+}
+
+.resume-job-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $color-text;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.resume-job-date {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: $color-gray;
+  background: #F5F5F5;
+  padding: $spacing-xs $spacing-sm;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.resume-job-company {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: $color-accent;
+  margin-bottom: $spacing-sm;
+}
+
+.resume-job-location {
+  font-size: 0.875rem;
+  color: $color-text-secondary;
+  margin-bottom: $spacing-sm;
+}
+
+.resume-job-date {
+  font-size: 0.875rem;
+  color: $color-gray;
+  font-weight: 500;
+}
+
+.resume-achievements {
+  list-style: none;
+  margin-bottom: $spacing-md;
+}
+
+.resume-achievements li {
+  position: relative;
+  padding-left: $spacing-sm;
+  margin-bottom: $spacing-xs;
+  font-size: 0.9375rem;
+  color: $color-text-secondary;
+  line-height: 1.6;
+}
+
+.resume-achievements li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: $color-accent;
+  font-weight: 700;
+}
+
+.resume-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-xs;
+  margin-top: $spacing-md;
+}
+
+/* Resume Projects */
+.resume-project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $color-text;
+  margin-bottom: $spacing-sm;
+}
+
+.resume-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: $spacing-sm;
+}
+
+.resume-card-link {
+  display: flex;
+  align-items: center;
+  gap: $spacing-xs;
+  font-size: 0.875rem;
+  color: $color-accent;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  padding: $spacing-xs $spacing-sm;
+  background: #F5F5F5;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.resume-card-link:hover {
+  background: $color-accent;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.resume-card-achievements {
+  margin-top: $spacing-lg;
+  padding-top: $spacing-md;
+  border-top: 1px solid $color-border;
+}
+
+.resume-card-achievement {
+  display: flex;
+  align-items: flex-start;
+  gap: $spacing-sm;
+  padding: $spacing-xs 0;
+  color: $color-text-secondary;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.resume-card-achievement svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: $color-accent;
+  margin-top: 2px;
+}
+
+/* Resume Skills */
+.resume-section-content {
+  margin-bottom: $spacing-xxl;
+}
+
+/* Resume Achievements */
+.resume-achievement-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $color-text;
+  margin-bottom: $spacing-xs;
+}
+
+.resume-achievement-category {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: $color-accent;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: $spacing-sm;
+}
+
+/* Resume Download Section */
+.resume-download {
+  text-align: center;
+  padding: $spacing-xxl;
+  background: linear-gradient(135deg, #F8F9FC 0%, #F0F4FF 100%);
+  border-radius: 16px;
+  margin-top: $spacing-xl;
+}
+
+.resume-download .section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: $color-text;
+  margin-bottom: $spacing-sm;
+}
+
+.resume-download .section-subtitle {
+  font-size: 1.125rem;
+  color: $color-text-secondary;
+  margin-bottom: $spacing-xl;
+}
+
+.resume-footer-note {
+  margin-top: $spacing-lg;
+  font-size: 0.875rem;
+  color: $color-gray;
+}
+
+/* Dark Mode Resume */
+.theme-dark .resume-card {
+  background: #1A1A1A;
+  border-color: #333333;
+}
+
+.theme-dark .resume-card-title,
+.theme-dark .resume-job-title,
+.theme-dark .resume-project-title {
+  color: #E5E5E5;
+}
+
+.theme-dark .resume-description,
+.theme-dark .resume-job-location,
+.theme-dark .resume-contact-item {
+  color: #A0A0A0;
+}
+
+.theme-dark .resume-job-date {
+  background: #333333;
+  color: #A0A0A0;
+}
+
+.theme-dark .resume-achievements li {
+  color: #A0A0A0;
+}
+
+.theme-dark .resume-achievements li::before {
+  color: $color-accent;
+}
+
+.theme-dark .resume-card-link {
+  background: #333333;
+  color: #A0A0A0;
+}
+
+.theme-dark .resume-card-link:hover {
+  background: $color-accent;
+  color: #FFFFFF;
+}
+
+.theme-dark .resume-card-achievement {
+  color: #A0A0A0;
+}
+
+.theme-dark .resume-card-achievement svg {
+  color: #64B5F6;
+}
+
+.theme-dark .resume-tech-stack .tech-badge {
+  background: #333333;
+  color: #A0A0A0;
+}
+
+.theme-dark .resume-tech-stack .tech-badge:hover {
+  border-color: $color-accent;
+}
+
+.theme-dark .resume-download {
+  background: linear-gradient(135deg, #1A1A2E 0%, #16213E 100%);
+}
+
+/* Resume Animations */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-animate].visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.resume-timeline-item[data-animate] {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.resume-timeline-item[data-animate].visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Responsive Resume */
+@media (max-width: 768px) {
+  .resume-section {
+    padding: $spacing-xl 0;
+  }
+
+  .resume-card {
+    padding: $spacing-md;
+  }
+
+  .resume-job-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $spacing-xs;
+  }
+
+  .resume-tech-stack {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .resume-contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-project-title {
+    font-size: 1.25rem;
+  }
+
+  .resume-job-title {
+    font-size: 1.25rem;
+  }
+
+  .resume-contact-item {
+    font-size: 0.875rem;
+  }
+}
+
 /* Enhanced Hero Section - GPU/Kubernetes Focus */
 .hero-subtitle-highlight {
   color: $color-accent;
