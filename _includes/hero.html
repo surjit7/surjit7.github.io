@@ -6,15 +6,16 @@
   <div class="container">
     <div class="hero-content">
       <div class="hero-header">
-        <div class="hero-greeting">AI Infrastructure Engineer</div>
-        <h1 class="hero-title">Building AI Systems That Scale to 10M+ Users<span class="hero-cursor">_</span></h1>
+        <div class="hero-greeting">Hello, I'm</div>
+        <h1 class="hero-title">Surjit<span class="hero-cursor">_</span></h1>
+        <h2 class="hero-subtitle-highlight">AI Infrastructure & LLM Platform Engineer</h2>
       </div>
       <div class="hero-subtitle-container">
         <h2 class="hero-subtitle" id="typewriter"></h2>
       </div>
       <p class="hero-description">
-        Senior Software Engineer specializing in <span class="highlight-text">scalable AI infrastructure</span>, <span class="highlight-text">LLM platforms</span>, and <span class="highlight-text">distributed systems</span>. 
-        Proven track record of modernizing legacy architectures, integrating AI into production, and driving significant <span class="highlight-text">27% cloud cost reduction</span> and <span class="highlight-text">30% API latency improvement</span>.
+        AI/ML & Python Engineer with <span class="highlight-text">4+ years</span> of experience building scalable LLM platforms and distributed ML systems.
+        Proven ability to modernize legacy architectures, integrate AI into production, and drive significant <span class="highlight-text">27% cloud cost reduction</span> and <span class="highlight-text">30% API latency reduction</span>.
       </p>
       <div class="hero-trusted-by">
         <p class="trusted-by-label">Trusted By</p>
@@ -44,24 +45,6 @@
           <div class="impact-label">Daily Users</div>
         </div>
       </div>
-      <div class="hero-stats">
-        <div class="stat-item">
-          <span class="stat-number" data-target="4">0+</span>
-          <span class="stat-label">Years Experience</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number" data-target="27">0%</span>
-          <span class="stat-label">Cost Savings</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number" data-target="30">0%</span>
-          <span class="stat-label">Latency Reduction</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number" data-target="71">0</span>
-          <span class="stat-label">Model Accuracy</span>
-        </div>
-      </div>
       <div class="hero-actions">
         <a href="{{ '/projects/' | relative_url }}" class="btn btn-primary">View Projects</a>
         <a href="https://github.com/surjit7" class="btn btn-secondary github-btn" target="_blank" rel="noopener">
@@ -81,30 +64,5 @@
     if (typeof createHeroParticles === 'function') {
       createHeroParticles();
     }
-    // Animate counters on scroll
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          document.querySelectorAll('.stat-number').forEach(el => {
-            const target = parseInt(el.getAttribute('data-target'));
-            const duration = 2000;
-            const steps = 60;
-            const increment = target / steps;
-            let current = 0;
-            const timer = setInterval(() => {
-              current += increment;
-              if (current >= target) {
-                el.textContent = target + (el.textContent.includes('%') ? '%' : '+');
-                clearInterval(timer);
-              } else {
-                el.textContent = Math.floor(current) + (el.textContent.includes('%') ? '%' : '+');
-              }
-            }, duration / steps);
-          });
-          observer.disconnect();
-        }
-      });
-    }, { threshold: 0.1 });
-    observer.observe(document.querySelector('.hero-stats'));
   });
 </script>
