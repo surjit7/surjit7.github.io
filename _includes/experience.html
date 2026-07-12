@@ -1,114 +1,93 @@
-<section id="experience" class="experience-section">
+<section id="experience" class="section experience-section">
   <div class="container">
     <div class="section-header">
-      <h2 class="section-title">Experience</h2>
-      <p class="section-subtitle">Building AI infrastructure from ground up</p>
+      <h2 class="section-title">Professional Experience</h2>
+      <p class="section-subtitle">My journey building AI platforms and backend systems</p>
     </div>
-    
-    <!-- BJS Home Delivery - Hero Experience -->
-    <div class="experience-hero">
-      <div class="experience-hero-header">
-        <div>
-          <h3 class="experience-role">AI/ML & Python Engineer</h3>
-          <p class="experience-company">BJS Home Delivery</p>
-          <p class="experience-period">2023 – Present</p>
+
+    <!-- BJS Home Delivery -->
+    <div class="experience-entry">
+      <div class="experience-header">
+        <div class="experience-title">
+          <h3>AI/ML & Python Engineer</h3>
+          <span class="company-name">BJS Home Delivery</span>
         </div>
-        <div class="experience-hero-metrics">
-          <div class="hero-metric">
-            <span class="hero-metric-value">27%</span>
-            <span class="hero-metric-label">Cost</span>
-          </div>
-          <div class="hero-metric">
-            <span class="hero-metric-value">30%</span>
-            <span class="hero-metric-label">Latency</span>
-          </div>
-          <div class="hero-metric">
-            <span class="hero-metric-value">100+</span>
-            <span class="hero-metric-label">Inference</span>
-          </div>
-        </div>
+        <span class="experience-date">2023 – Present</span>
       </div>
-      
-      <div class="experience-grid">
-        <!-- Enterprise AI Platform -->
-        <div class="experience-bento-card experience-bento-card-large">
-          <div class="bento-card-header">
-            <h4 class="bento-card-title">Enterprise AI Platform</h4>
-            <span class="bento-card-badge">Featured</span>
-          </div>
-          <p class="bento-card-desc">Self-hosted LLM inference on in-house GPU infrastructure with vLLM/Ollama</p>
-          <div class="bento-card-tags">
-            <span class="bento-tag">vLLM</span>
-            <span class="bento-tag">Ollama</span>
-            <span class="bento-tag">PyTorch</span>
-            <span class="bento-tag">Chroma DB</span>
-          </div>
-        </div>
-        
-        <!-- Kubernetes Platform -->
-        <div class="experience-bento-card experience-bento-card-large">
-          <div class="bento-card-header">
-            <h4 class="bento-card-title">Kubernetes Infrastructure</h4>
-            <span class="bento-card-badge">Platform</span>
-          </div>
-          <p class="bento-card-desc">Production K8s hosting platform with NGINX, Vault, Argo CD for GitOps</p>
-          <div class="bento-card-tags">
-            <span class="bento-tag">Kubernetes</span>
-            <span class="bento-tag">NGINX</span>
-            <span class="bento-tag">Vault</span>
-            <span class="bento-tag">Argo CD</span>
-          </div>
-        </div>
-        
-        <!-- GPU Infrastructure -->
-        <div class="experience-bento-card experience-bento-card-small">
-          <div class="bento-card-icon">⚡</div>
-          <h5 class="bento-card-subtitle">GPU Infrastructure</h5>
-          <p class="bento-card-text">Distributed training with Ray, scalable inference workloads</p>
-        </div>
-        
-        <!-- Authentication -->
-        <div class="experience-bento-card experience-bento-card-small">
-          <div class="bento-card-icon">🔒</div>
-          <h5 class="bento-card-subtitle">Security</h5>
-          <p class="bento-card-text">SSO & RBAC integration for multi-tenant isolation</p>
-        </div>
+
+      <p class="experience-summary">
+        Leading AI infrastructure initiatives, building production LLM platforms, and scaling GPU workloads on Kubernetes. Focus on cost optimization, latency reduction, and scalable ML operations.
+      </p>
+
+      <ul class="experience-achievements">
+        <li>
+          <strong>Architected self-hosted LLM platform</strong> using vLLM, Ollama, PyTorch, and Chroma DB for RAG. Integrated SSO and RBAC for enterprise-grade security.
+        </li>
+        <li>
+          <strong>Deployed GPU infrastructure on Kubernetes</strong> for scalable ML/LLM inference, reducing API latency by 30% through optimized inference serving.
+        </li>
+        <li>
+          <strong>Designed Enterprise AI Platform</strong> with multi-turn conversational interface, agentic framework, and prompt library for reusability.
+        </li>
+        <li>
+          <strong>Built production Kubernetes hosting platform</strong> with NGINX, Vault, and Argo CD for GitOps deployments across development and production environments.
+        </li>
+        <li>
+          <strong>Optimized cloud infrastructure</strong> through rightsizing and efficient resource utilization, reducing cloud costs by 27%.
+        </li>
+      </ul>
+
+      <div class="tech-tags">
+        <span class="tech-tag">vLLM</span>
+        <span class="tech-tag">Ollama</span>
+        <span class="tech-tag">PyTorch</span>
+        <span class="tech-tag">Kubernetes</span>
+        <span class="tech-tag">Ray</span>
+        <span class="tech-tag">Chroma DB</span>
+        <span class="tech-tag">FastAPI</span>
+        <span class="tech-tag">Redis</span>
+        <span class="tech-tag">PostgreSQL</span>
+        <span class="tech-tag">SSO</span>
+        <span class="tech-tag">RBAC</span>
       </div>
-      
-      <a href="{{ '/projects/' | relative_url }}#enterprise-ai-platform" class="experience-link">
-        View Enterprise AI Platform
-      </a>
     </div>
 
     <!-- Connoisseur Infotech -->
-    <div class="experience-card-grid">
-      <div class="experience-card-small">
-        <div class="experience-small-header">
-          <h3 class="experience-small-role">Software Engineer (Python)</h3>
-          <span class="experience-small-date">2021 – 2022</span>
+    <div class="experience-entry">
+      <div class="experience-header">
+        <div class="experience-title">
+          <h3>Software Engineer (Python)</h3>
+          <span class="company-name">Connoisseur Infotech</span>
         </div>
-        <div class="experience-card-content">
-          <div class="experience-card-text">
-            <p class="experience-card-desc">Optimized BERT/Huggingface NLP models for production inference, improving F1 score from 71 to 91.</p>
-            <div class="experience-card-tags">
-              <span class="bento-tag">BERT</span>
-              <span class="bento-tag">Huggingface</span>
-              <span class="bento-tag">PyTorch</span>
-              <span class="bento-tag">Flask</span>
-              <span class="bento-tag">FastAPI</span>
-            </div>
-          </div>
-          <div class="experience-small-metrics">
-            <div class="small-metric">
-              <span class="small-metric-value">71→91</span>
-              <span class="small-metric-label">F1 Score</span>
-            </div>
-            <div class="small-metric">
-              <span class="small-metric-value">20%</span>
-              <span class="small-metric-label">Latency</span>
-            </div>
-          </div>
-        </div>
+        <span class="experience-date">2021 – 2022</span>
+      </div>
+
+      <p class="experience-summary">
+        Focused on NLP model optimization and production deployment. Improved model accuracy and reduced inference latency for enterprise NLP applications.
+      </p>
+
+      <ul class="experience-achievements">
+        <li>
+          <strong>Optimized BERT/Huggingface NLP models</strong>, improving F1 score from 71 to 91 through fine-tuning and data augmentation.
+        </li>
+        <li>
+          <strong>Reduced inference latency by 20%</strong> via model quantization, batch processing, and efficient memory management.
+        </li>
+        <li>
+          <strong>Built RESTful APIs</strong> using Flask and FastAPI for model serving with reliable production deployment.
+        </li>
+        <li>
+          <strong>Processed multilingual datasets</strong> for NLP model training, handling diverse data formats and languages.
+        </li>
+      </ul>
+
+      <div class="tech-tags">
+        <span class="tech-tag">BERT</span>
+        <span class="tech-tag">Huggingface</span>
+        <span class="tech-tag">PyTorch</span>
+        <span class="tech-tag">Flask</span>
+        <span class="tech-tag">FastAPI</span>
+        <span class="tech-tag">Scikit-learn</span>
       </div>
     </div>
   </div>

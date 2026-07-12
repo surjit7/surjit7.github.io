@@ -553,6 +553,13 @@ a:hover {
   margin-bottom: $spacing-sm;
 }
 
+.experience-summary {
+  font-size: 0.9375rem;
+  color: $color-text-secondary;
+  line-height: 1.6;
+  margin-bottom: $spacing-sm;
+}
+
 .experience-title {
   display: flex;
   flex-direction: column;
@@ -586,22 +593,18 @@ a:hover {
   margin-bottom: $spacing-sm;
 }
 
-.experience-achievements p {
+.experience-achievements li {
   font-size: 0.9375rem;
   color: $color-text;
   margin-bottom: $spacing-xs;
-  line-height: 1.5;
-  padding-left: $spacing-sm;
+  line-height: 1.6;
+  list-style-position: outside;
+  padding-left: 8px;
 }
 
-.experience-achievements p strong {
-  color: $color-accent;
-}
-
-.bullet {
-  color: $color-accent;
+.experience-achievements li strong {
+  color: $color-text;
   font-weight: 700;
-  margin-right: $spacing-xs;
 }
 
 .experience-description {

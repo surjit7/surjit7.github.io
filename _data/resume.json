@@ -1,8 +1,8 @@
 {
   "profile": {
     "name": "Surjit Singh",
-    "title": "AI Infrastructure & LLM Platform Engineer",
-    "summary": "AI/ML & Python Engineer with 4+ years of experience building scalable LLM platforms and distributed ML systems. Proven ability to modernize legacy architectures, integrate AI into production, and drive significant 27% cloud cost reduction and 30% API latency reduction. Expertise in GPU infrastructure, Kubernetes orchestration, and end-to-end ML/LLM pipeline development.",
+    "title": "AI/ML & Python Backend Engineer",
+    "summary": "AI Platform Engineer with 4+ years building production LLM platforms, GPU infrastructure, and distributed systems. Architected self-hosted LLM inference with vLLM/Ollama on Kubernetes, reducing cloud costs by 27% and API latency by 30%. Proven track record modernizing legacy architectures and deploying scalable ML/LLM pipelines from prototype to production.",
     "location": "India",
     "email": "singhsurjit7@outlook.com",
     "linkedin": "https://www.linkedin.com/in/surjitsingh7",
@@ -14,18 +14,16 @@
       "company": "BJS Home Delivery",
       "role": "AI/ML & Python Engineer",
       "duration": "2023 – Present",
-      "location": "",
+      "location": "Hybrid",
       "achievements": [
-        "Built self-hosted LLM platform (vLLM, Ollama, PyTorch, Chroma) with SSO & RBAC",
-        "Deployed GPU workloads on Kubernetes enabling scalable ML/LLM inference",
-        "Created Enterprise AI Platform with multi-turn conversational interface, RAG, and agent framework",
-        "Built K8s Hosting Platform with NGINX, Vault, Argo CD for production-ready deployments",
-        "Automated distributed training & deployment using Ray",
-        "27% Cloud Cost Savings",
-        "30% API Latency Reduction",
-        "2 Microservices Modernized"
+        "Architected self-hosted LLM platform using vLLM, Ollama, PyTorch, and Chroma DB for RAG, integrated SSO and RBAC",
+        "Deployed GPU workloads on Kubernetes for scalable ML/LLM inference, reducing API latency by 30%",
+        "Designed Enterprise AI Platform with multi-turn conversational interface, agentic framework, and prompt library",
+        "Built production Kubernetes hosting platform with NGINX, Vault, and Argo CD for GitOps deployments",
+        "Automated distributed training and deployment using Ray for scalable ML model processing",
+        "Optimized cloud infrastructure through rightsizing, reducing costs by 27%"
       ],
-      "techStack": ["vLLM", "Ollama", "PyTorch", "Kubernetes", "Azure Pipelines", "Ray", "Chroma", "SSO", "RBAC"]
+      "techStack": ["vLLM", "Ollama", "PyTorch", "Kubernetes", "Ray", "Chroma", "FastAPI", "Redis", "PostgreSQL", "SSO", "RBAC"]
     },
     {
       "company": "Connoisseur Infotech",
@@ -33,25 +31,12 @@
       "duration": "2021 – 2022",
       "location": "Remote",
       "achievements": [
-        "Developed and optimized deep learning NLP models (BERT/Huggingface)",
-        "Improved BERT F1 score from 71 to 91 through model optimization",
-        "Reduced inference time by 20% through quantization and batch processing",
-        "Built Python REST APIs using Flask and FastAPI",
-        "Prepared and processed multilingual datasets"
+        "Optimized BERT/Huggingface NLP models, improving F1 score from 71 to 91",
+        "Reduced inference latency by 20% via model quantization and batch processing",
+        "Built RESTful APIs using Flask and FastAPI for model serving",
+        "Processed multilingual datasets for NLP model training"
       ],
-      "techStack": ["BERT", "Huggingface", "Flask", "FastAPI", "NLP", "PyTorch", "Scikit-learn"]
-    },
-    {
-      "company": "Extech Digital",
-      "role": "Python Developer",
-      "duration": "2021",
-      "location": "India",
-      "achievements": [
-        "Developed Python-based backend solutions using Flask",
-        "Contributed to front-end integration and API development",
-        "Built RESTful APIs for client applications"
-      ],
-      "techStack": ["Flask", "REST APIs", "Python", "JavaScript", "HTML/CSS"]
+      "techStack": ["BERT", "Huggingface", "Flask", "FastAPI", "PyTorch", "Scikit-learn"]
     }
   ],
   "projects": [
@@ -59,7 +44,6 @@
       "title": "Enterprise AI Platform",
       "description": "Production-grade conversational AI platform with self-hosted LLM inference on in-house GPU infrastructure using vLLM for high-throughput, low-latency responses. Built as an agentic framework with pre-built agents, prompt libraries, and RBAC for multi-tenant isolation.",
       "techStack": ["vLLM", "PyTorch", "FastAPI", "PostgreSQL", "Redis", "RBAC", "Chroma DB"],
-      "github": "https://surjitsingh.github.io",
       "achievements": [
         "Self-hosted LLM inference pipeline on GPU infrastructure using vLLM for 10x faster inference",
         "ChatGPT-like conversational interface with multi-turn context and enterprise-grade UI",
@@ -94,7 +78,6 @@
       "title": "Notification Service Platform",
       "description": "Stateless FastAPI notification service with Kafka-based async consumers for reliable event-driven messaging.",
       "techStack": ["Python", "FastAPI", "Kafka", "PostgreSQL", "MongoDB", "Twilio", "Protocol Buffers", "Docker"],
-      "github": "https://github.com/surjit7",
       "achievements": [
         "Built stateless API with Protocol Buffers for serialization",
         "Implemented Kafka consumers for async event processing",
@@ -102,6 +85,32 @@
       ]
     }
   ],
+  "skills": {
+    "Languages": {
+      "title": "Languages",
+      "tags": ["Python", "JavaScript", "SQL", "TypeScript"]
+    },
+    "Backend": {
+      "title": "Backend",
+      "tags": ["FastAPI", "Flask", "Django", "REST APIs", "OAuth 2.0"]
+    },
+    "AI/ML": {
+      "title": "AI/ML",
+      "tags": ["PyTorch", "Transformers", "BERT", "LLMs", "NLP", "RAG", "Fine-tuning", "vLLM", "Huggingface"]
+    },
+    "Infrastructure": {
+      "title": "Infrastructure",
+      "tags": ["Kubernetes", "Docker", "CI/CD", "ArgoCD", "Linux", "Shell", "Git"]
+    },
+    "Databases": {
+      "title": "Databases",
+      "tags": ["PostgreSQL", "MySQL", "Redis", "Kafka", "MongoDB", "Elasticsearch"]
+    },
+    "Cloud": {
+      "title": "Cloud",
+      "tags": ["Azure", "AWS"]
+    }
+  },
   "education": [
     {
       "degree": "Master of Computer Science",
@@ -117,32 +126,6 @@
       "location": "Chandigarh, India"
     }
   ],
-  "skills": {
-    "programmingLanguages": {
-      "title": "Programming Languages",
-      "tags": ["Python", "JavaScript", "SQL", "TypeScript"]
-    },
-    "backend": {
-      "title": "Backend & APIs",
-      "tags": ["FastAPI", "Flask", "Django", "REST APIs", "OAuth 2.0"]
-    },
-    "aiMl": {
-      "title": "AI & Machine Learning",
-      "tags": ["PyTorch", "Transformers", "BERT", "LLMs", "NLP", "RAG", "Fine-tuning", "vLLM", "Huggingface"]
-    },
-    "cloud": {
-      "title": "Cloud & DevOps",
-      "tags": ["Azure", "AWS", "Kubernetes", "Docker", "CI/CD", "ArgoCD", "Linux", "Shell"]
-    },
-    "databases": {
-      "title": "Databases",
-      "tags": ["PostgreSQL", "MySQL", "Redis", "Kafka", "MongoDB", "Elasticsearch", "SQL"]
-    },
-    "infrastructure": {
-      "title": "Infrastructure & Tools",
-      "tags": ["Git", "Bitbucket", "Jira", "Confluence", "Agile", "Microservices", "System Design"]
-    }
-  },
   "achievements": [
     {
       "title": "27% Cloud Cost Savings",
