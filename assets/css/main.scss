@@ -910,19 +910,23 @@ a:hover {
 
 /* Contact Section */
 .contact-section {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto;
+  padding: $spacing-lg 0;
+  background: $color-bg-subtle;
 }
 
-.open-to-work-badge {
+.contact-header {
+  text-align: center;
+  margin-bottom: $spacing-xl;
+}
+
+.availability-badge {
   display: inline-flex;
   align-items: center;
   gap: $spacing-xs;
   padding: $spacing-xs $spacing-md;
   background: #E8F5E9;
   border-radius: 20px;
-  margin-bottom: $spacing-lg;
+  margin-bottom: $spacing-md;
 }
 
 .badge-dot {
@@ -947,37 +951,143 @@ a:hover {
 }
 
 .contact-title {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 700;
   margin-bottom: $spacing-md;
-}
-
-.contact-description {
-  font-size: 1.25rem;
-  color: $color-text-secondary;
-  margin-bottom: $spacing-xl;
-}
-
-.contact-list {
-  list-style: none;
-  margin-bottom: $spacing-xl;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: $spacing-sm;
-  margin-bottom: $spacing-sm;
-}
-
-.contact-item a {
-  font-size: 1rem;
   color: $color-text;
 }
 
-.contact-item a:hover {
+.contact-description {
+  font-size: 1.125rem;
+  color: $color-text-secondary;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto $spacing-xl auto;
+}
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  gap: $spacing-sm;
+  flex-wrap: wrap;
+  margin-bottom: $spacing-xxl;
+}
+
+.contact-primary-btn {
+  padding: $spacing-sm $spacing-xl;
+  font-size: 1rem;
+}
+
+.contact-secondary-btn {
+  padding: $spacing-sm $spacing-xl;
+  font-size: 1rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $spacing-md;
+  max-width: 700px;
+  margin: 0 auto $spacing-xl auto;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  padding: $spacing-md;
+  background: $color-bg;
+  border: 1px solid $color-border;
+  border-radius: $radius;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: $color-text;
+}
+
+.contact-card:hover {
+  border-color: $color-accent;
+  transform: translateY(-2px);
+  box-shadow: $shadow;
+}
+
+.contact-card .icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
   color: $color-accent;
+}
+
+.contact-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact-card-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: $color-gray;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contact-card a {
+  font-size: 0.875rem;
+  color: $color-text;
+  font-weight: 500;
+}
+
+.contact-card a:hover {
+  color: $color-accent;
+}
+
+.contact-card span {
+  font-size: 0.875rem;
+  color: $color-text;
+  font-weight: 500;
+}
+
+.contact-footer {
+  text-align: center;
+  margin-top: $spacing-lg;
+}
+
+.contact-closing {
+  font-size: 1rem;
+  color: $color-text-secondary;
+  font-style: italic;
+}
+
+.theme-dark .contact-section {
+  background: #1A1A1A;
+}
+
+.theme-dark .contact-card {
+  background: #2A2A2A;
+  border-color: #333333;
+}
+
+.theme-dark .contact-card a {
+  color: #E5E5E5;
+}
+
+.theme-dark .contact-card-label {
+  color: #A0A0A0;
+}
+
+/* Responsive Contact Section */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-title {
+    font-size: 1.75rem;
+  }
+
+  .contact-description {
+    font-size: 1rem;
+  }
 }
 
 /* Footer */
@@ -5597,7 +5707,7 @@ a:hover {
 /* ==================== */
 
 .contact-section {
-  padding: $spacing-xxxl 0;
+  padding: $spacing-lg 0;
 }
 
 .contact-banner {
