@@ -17,7 +17,7 @@
       "location": "",
       "achievements": [
         "Built self-hosted LLM platform (vLLM, Ollama, PyTorch, Chroma) with SSO & RBAC",
-        "Deployed GPU workloads on Kubernetes enabling scalable ML & LLM inference",
+        "Deployed GPU workloads on Kubernetes enabling scalable ML/LLM inference",
         "Created Enterprise AI Platform with multi-turn conversational interface, RAG, and agent framework",
         "Built K8s Hosting Platform with NGINX, Vault, Argo CD for production-ready deployments",
         "Automated distributed training & deployment using Ray",
@@ -56,91 +56,49 @@
   ],
   "projects": [
     {
+      "title": "Enterprise AI Platform",
+      "description": "Production-grade conversational AI platform with self-hosted LLM inference on in-house GPU infrastructure using vLLM for high-throughput, low-latency responses. Built as an agentic framework with pre-built agents, prompt libraries, and RBAC for multi-tenant isolation.",
+      "techStack": ["vLLM", "PyTorch", "FastAPI", "PostgreSQL", "Redis", "RBAC", "Chroma DB"],
+      "github": "https://surjitsingh.github.io",
+      "achievements": [
+        "Self-hosted LLM inference pipeline on GPU infrastructure using vLLM for 10x faster inference",
+        "ChatGPT-like conversational interface with multi-turn context and enterprise-grade UI",
+        "Agentic framework with pre-built agents, customizable templates, and prompt library for reusability",
+        "Chroma DB for RAG implementation with vector search and semantic retrieval",
+        "Fine-grained RBAC with multi-tenant isolation and integration with OAuth2 identity provider"
+      ]
+    },
+    {
       "title": "Enterprise Identity Platform",
-      "description": "Built a comprehensive identity management system with SSO and RBAC capabilities for enterprise customers.",
-      "techStack": ["Python", "FastAPI", "OAuth 2.0", "PostgreSQL", "Redis"],
-      "github": "https://github.com/surjit7",
+      "description": "OAuth2 & OpenID Connect multi-tenant authentication platform with JWT auth and RBAC for enterprise-scale identity management.",
+      "techStack": ["Python", "Django", "OAuth2", "OIDC", "PostgreSQL", "Redis"],
+      "github": "https://github.com/surjit7/enterprise-identity-platform",
       "achievements": [
-        "Implemented SSO with multiple identity providers",
-        "Built fine-grained RBAC system with 100+ permission types",
-        "Achieved 99.99% uptime with distributed architecture"
+        "Implemented OAuth2 & OpenID Connect compliance from specification",
+        "Designed multi-tenant architecture with secure isolation",
+        "Built fine-grained RBAC system with 100+ permission types"
       ]
     },
     {
-      "title": "LLM Platform",
-      "description": "Self-hosted LLM inference platform with GPU orchestration and workflow automation.",
-      "techStack": ["vLLM", "Ollama", "PyTorch", "Kubernetes", "Ray"],
-      "github": "https://github.com/surjit7",
+      "title": "Kubernetes Hosting Platform",
+      "description": "Production-ready Kubernetes hosting platform with NGINX, Vault, and Argo CD pre-configured on a single VM.",
+      "techStack": ["Kubernetes", "NGINX", "Vault", "Argo CD", "Redis", "Kafka", "PostgreSQL"],
+      "github": "https://marketplace.microsoft.com/en-us/product/bjsallmyitlimited1759407982389.bjs-ml?tab=overview",
       "achievements": [
-        "Deployed 10+ LLM models on shared GPU infrastructure",
-        "Achieved 30% faster inference with vLLM optimization",
-        "Built automated model deployment pipelines"
+        "Configured Kubernetes on single VM for development and production workloads",
+        "Integrated NGINX Ingress Controller and HashiCorp Vault for secret management",
+        "Implemented Argo CD for GitOps-style deployments"
       ]
     },
     {
-      "title": "LLM Platform (Alternative)",
-      "description": "Alternative LLM implementation with different stack configuration.",
-      "techStack": ["FastAPI", "PyTorch", "Transformers", "Chroma", "Redis"],
+      "title": "Notification Service Platform",
+      "description": "Stateless FastAPI notification service with Kafka-based async consumers for reliable event-driven messaging.",
+      "techStack": ["Python", "FastAPI", "Kafka", "PostgreSQL", "MongoDB", "Twilio", "Protocol Buffers", "Docker"],
       "github": "https://github.com/surjit7",
       "achievements": [
-        "Built document retrieval system with RAG architecture",
-        "Implemented semantic search with Chroma vector database",
-        "Achieved 71% accuracy on model benchmarks"
-      ]
-    },
-    {
-      "title": "ML Workflow Platform",
-      "description": "End-to-end ML pipeline with training, evaluation, and deployment capabilities.",
-      "techStack": ["Ray", "PyTorch", "MLflow", "Kubernetes"],
-      "github": "https://github.com/surjit7",
-      "achievements": [
-        "Built automated training pipeline with 10x speedup",
-        "Implemented experiment tracking with MLflow",
-        "Deployed models with Kubernetes and autoscaling"
-      ]
-    },
-    {
-      "title": "Legacy Modernization",
-      "description": "Modernized legacy enterprise applications with new microservices architecture.",
-      "techStack": ["Python", "FastAPI", "Django", "PostgreSQL", "Docker"],
-      "github": "https://github.com/surjit7",
-      "achievements": [
-        "Migrated 5 legacy systems to modern stack",
-        "Reduced infrastructure costs by 27%",
-        "Improved system performance by 30%"
-      ]
-    },
-    {
-      "title": "AI Chat Platform",
-      "description": "Conversational AI platform with RAG and multi-turn对话 support.",
-      "techStack": ["FastAPI", "PyTorch", "Chroma", "Redis", "LangChain"],
-      "github": "https://github.com/surjit7",
-      "achievements": [
-        "Built conversational interface with 500+ daily active users",
-        "Implemented RAG for context-aware responses",
-        "Achieved 91% F1 score on intent classification"
-      ]
-    },
-    {
-      "title": "AML Scaler",
-      "description": "Automated ML model scaling solution for dynamic workloads.",
-      "techStack": ["Python", "Kubernetes", "Prometheus", "Grafana"],
-      "github": "https://github.com/surjit7",
-      "achievements": [
-        "Built auto-scaling for GPU workloads based on demand",
-        "Integrated with Kubernetes HPA for seamless scaling",
-        "Reduced GPU costs by 27% through efficient scaling"
-      ]
-    },
-    {
-      "title": "Notifications Service",
-      "description": "Scalable notification system supporting multiple channels.",
-      "techStack": ["Python", "Kafka", "Redis", "Celery", "FastAPI"],
-      "github": "https://github.com/surjit7",
-      "achievements": [
-        "Built async notification pipeline with Kafka",
-        "Achieved 99.9% delivery rate with retry logic",
-        "Supported 10k+ notifications per minute"
+        "Built stateless API with Protocol Buffers for serialization",
+        "Implemented Kafka consumers for async event processing",
+        "Integrated Twilio for SMS, WhatsApp, and Email delivery"
       ]
     }
   ],
