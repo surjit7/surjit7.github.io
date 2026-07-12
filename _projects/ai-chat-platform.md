@@ -1,5 +1,5 @@
 ---
-title: "Enterprise AI Chat Platform"
+title: "Enterprise AI Platform"
 date: 2024-05-15
 excerpt: "ChatGPT-like conversational AI with enterprise-grade role-based permissions and access control."
 tags: [OpenAI API, Python, FastAPI, PostgreSQL, Redis, RBAC]

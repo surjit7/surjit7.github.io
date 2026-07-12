@@ -14,11 +14,11 @@
       "company": "BJS Home Delivery",
       "role": "AI/ML & Python Engineer",
       "duration": "2023 – Present",
-      "location": "Remote",
+      "location": "",
       "achievements": [
         "Built self-hosted LLM platform (vLLM, Ollama, PyTorch, Chroma) with SSO & RBAC",
         "Deployed GPU workloads on Kubernetes enabling scalable ML & LLM inference",
-        "Created Enterprise AI Chat Platform with multi-turn conversational interface, RAG, and agent framework",
+        "Created Enterprise AI Platform with multi-turn conversational interface, RAG, and agent framework",
         "Built K8s Hosting Platform with NGINX, Vault, Argo CD for production-ready deployments",
         "Automated distributed training & deployment using Ray",
         "27% Cloud Cost Savings",
