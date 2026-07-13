@@ -1,16 +1,33 @@
-title: "Surjit Singh | Software Engineer"
-description: "Personal portfolio of a senior software engineer showcasing AI infrastructure, authentication platforms, and distributed systems."
+title: "Surjit Singh | AI/ML & Python Backend Engineer"
+description: "Portfolio of Surjit Singh, AI/ML & Python Backend Engineer specializing in LLM platforms, GPU infrastructure, and distributed systems. Expert in Python, PyTorch, vLLM, FastAPI, Django, OAuth2, SSO, RBAC."
 url: "https://surjit7.github.io"
 baseurl: ""
 author:
   name: "Surjit Singh"
-  email: "surjit@protonmail.com"
+  email: "singhsurjit7@outlook.com"
   github: "https://github.com/surjit7"
+  linkedin: "https://www.linkedin.com/in/surjitsingh7"
+  discord: "https://discord.com/users/surjit7"
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+jekyll-seo-tag:
+  title: "Surjit Singh | AI/ML & Python Backend Engineer"
+  description: "Portfolio of Surjit Singh, AI/ML & Python Backend Engineer specializing in LLM platforms, GPU infrastructure, and distributed systems"
+  name: "Surjit Singh"
+  url: "https://surjit7.github.io"
+  twitter:
+    card: summary_large_image
+    creator: "@surjit7"
+    site: "@surjit7"
+  logo: "/assets/images/og-image.jpg"
+  same_as:
+    - "https://www.linkedin.com/in/surjitsingh7"
+    - "https://github.com/surjit7"
+    - "https://discord.com/users/surjit7"
+
 collections:
   projects:
     output: true
