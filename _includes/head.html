@@ -4,7 +4,7 @@
   <title>{{ page.title | default: site.title }}</title>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 120 }}">
   <meta name="author" content="Surjit Singh">
   <meta name="keywords" content="Surjit Singh, Surjitsingh, software engineer, AI engineer, Python engineer, LLM engineer, backend engineer, machine learning, artificial intelligence, vLLM, PyTorch, Kubernetes, OAuth2, SSO, RBAC">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
@@ -13,7 +13,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <meta property="og:title" content="{{ page.title | default: site.title }}">
-  <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
+  <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 120 }}">
   <meta property="og:image" content="{{ '/assets/images/og-image.jpg' | prepend: site.url }}">
   <meta property="og:site_name" content="Surjit Singh Portfolio">
   <meta property="og:locale" content="en_US">
@@ -21,7 +21,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page.title | default: site.title }}">
-  <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
+  <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 120 }}">
   <meta name="twitter:image" content="{{ '/assets/images/og-image.jpg' | prepend: site.url }}">
   <meta name="twitter:creator" content="@surjit7">
   
@@ -76,6 +76,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <style>
     body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
   </style>

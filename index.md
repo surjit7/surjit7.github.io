@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Surjit Singh
+title: "Surjit Singh | AI/ML & Python Backend Engineer | LLM Platform Expert"
 ---
 
 {% include hero.html %}
