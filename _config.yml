@@ -1,5 +1,5 @@
-title: "Surjit Singh | AI/ML & Python Backend Engineer"
-description: "Surjit Singh - AI/ML & Python Backend Engineer specializing in LLM platforms, GPU infrastructure, and distributed systems."
+title: "Surjit Singh | AI & Machine Learning Engineer | Python Backend Developer"
+description: "Surjit Singh - AI & Machine Learning Engineer & Python Backend Developer specializing in LLM platforms, GPU infrastructure, and distributed systems."
 url: "https://surjit7.github.io"
 baseurl: ""
 author:
@@ -14,8 +14,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 jekyll-seo-tag:
-  title: "Surjit Singh | AI/ML & Python Backend Engineer"
-  description: "Portfolio of Surjit Singh, AI/ML & Python Backend Engineer specializing in LLM platforms, GPU infrastructure, and distributed systems"
+  title: "Surjit Singh | AI & Machine Learning Engineer | Python Backend Developer"
+  description: "Portfolio of Surjit Singh, AI & Machine Learning Engineer & Python Backend Developer specializing in LLM platforms, GPU infrastructure, and distributed systems"
   name: "Surjit Singh"
   url: "https://surjit7.github.io"
   twitter:
