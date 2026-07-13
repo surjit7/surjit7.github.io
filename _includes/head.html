@@ -2,6 +2,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | default: site.title }}</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
+  <meta name="author" content="Surjit Singh">
+  <meta name="keywords" content="Surjit Singh, Surjitsingh, software engineer, AI engineer, Python engineer, LLM engineer, backend engineer, machine learning, artificial intelligence, vLLM, PyTorch, Kubernetes, OAuth2, SSO, RBAC">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
+  <meta property="og:image" content="{{ '/assets/images/og-image.jpg' | prepend: site.url }}">
+  <meta property="og:site_name" content="Surjit Singh Portfolio">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
+  <meta name="twitter:image" content="{{ '/assets/images/og-image.jpg' | prepend: site.url }}">
+  <meta name="twitter:creator" content="@surjit7">
+  
+  <!-- Schema.org Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Surjit Singh",
+    "url": "{{ site.url }}{{ site.baseurl }}",
+    "image": "https://github.com/surjit7.png",
+    "sameAs": [
+      "https://www.linkedin.com/in/surjitsingh7",
+      "https://github.com/surjit7",
+      "https://discord.com/users/surjit7"
+    ],
+    "jobTitle": "AI/ML & Python Backend Engineer",
+    "worksFor": "BJS Home Delivery",
+    "awardCount": 4,
+    "articleCount": 1,
+    "knowsAbout": ["Python", "PyTorch", "vLLM", "Ollama", "Kubernetes", "FastAPI", "Django", "OAuth2", "OIDC", "PostgreSQL", "Redis", "Machine Learning", "LLMs", "NLP", "RAG", "Distributed Systems"],
+    "knowsLanguage": ["English", "Hindi"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mohali",
+      "addressRegion": "Punjab",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
+  
+  <!-- Person Schema for Experience -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Surjit Singh",
+    "description": "AI/ML & Python Backend Engineer specializing in LLM platforms and distributed systems",
+    "email": "mailto:singhsurjit7@outlook.com",
+    "telephone": "+91-XXXXXXXXXX",
+    "address": "Mohali, Punjab, India",
+    "jobTitle": "AI/ML & Python Backend Engineer",
+    "alumniOf": [
+      "Chandigarh University",
+      "Chandigarh Group of Colleges"
+    ],
+    "url": "{{ site.url }}{{ site.baseurl }}"
+  }
+  </script>
+  
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

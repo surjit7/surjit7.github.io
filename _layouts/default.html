@@ -2,14 +2,11 @@
 <html lang="en">
 <head>
   {% include head.html %}
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title | default: site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
 <body class="theme-light">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   {% include header.html %}
-  <main class="site-main">
+  <main id="main-content" class="site-main">
     {{ content }}
   </main>
   {% include footer.html %}
