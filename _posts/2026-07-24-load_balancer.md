@@ -13,7 +13,7 @@ reading_time: 3
 ---
 
 ## 📑 Table of Contents
-1. [OSI Model Understanding (Staff Engineer View)](#1-osi-model-understanding-staff-engineer-view)
+1. [OSI Model Understanding (Engineer View)](#1-osi-vs.-tcp/ip-model-understanding-engineer-view)
 2. [Layer 4 Mechanics: The TCP 3-Way Handshake](#2-layer-4-mechanics-the-tcp-3-way-handshake)
 3. [Layer 6 Mechanics: The TLS 1.3 Handshake](#3-layer-6-mechanics-the-tls-13-handshake)
 4. [Identity & Security: One-Way TLS vs. Mutual TLS (mTLS)](#4-identity--security-one-way-tls-vs-mutual-tls-mtls)
@@ -26,24 +26,28 @@ reading_time: 3
 
 ---
 
-## 1. OSI Model Understanding (Staff Engineer View)
+## 1. OSI vs. TCP/IP Model Understanding (Engineer View)
 
-The OSI model isn't academic trivia—it is the ultimate mental framework for distributed systems debugging. When a microservice breaks, you isolate the failure by traversing the layers.
+The OSI model isn't academic trivia—it is the ultimate mental framework for distributed systems debugging. While TCP/IP is the practical architecture of how the internet actually runs, we still use the OSI layers for vocabulary and debugging precision. When a microservice breaks, you isolate the failure by traversing the layers.
 
-### The OSI Layer Diagram
+### The Layer Mapping Diagram
 
 ```text
-+-----------------------+----------------------------------------------------+
-| 7. Application Layer  | HTTP, WebSocket, HTTPS (Nginx `http` block)        | <-- Smart Routing (L7)
-| 6. Presentation Layer | TLS/SSL Encryption/Decryption                      |
-| 5. Session Layer      | Connection Coordination                            |
-| 4. Transport Layer    | TCP, UDP (Nginx `stream` block)                    | <-- Blind, Fast Routing (L4)
-| 3. Network Layer      | IP Addressing (Routers)                            |
-| 2. Data Link Layer    | MAC Addressing (Switches)                          |
-| 1. Physical Layer     | Cables, Fiber, RF                                  |
-+-----------------------+----------------------------------------------------+
++-----------------------+------------------------+----------------------------------------------------+
+| OSI Model (Theory)    | TCP/IP Model (Reality) | Protocols & Proxies                                |
++=======================+========================+====================================================+
+| 7. Application Layer  |                        | HTTP, WebSocket, HTTPS (Nginx `http` block)        | <-- Smart Routing (L7)
+| 6. Presentation Layer |  4. Application Layer  | TLS/SSL Encryption/Decryption                      |
+| 5. Session Layer      |                        | Connection Coordination                            |
++-----------------------+------------------------+----------------------------------------------------+
+| 4. Transport Layer    |  3. Transport Layer    | TCP, UDP (Nginx `stream` block)                    | <-- Blind, Fast Routing (L4)
++-----------------------+------------------------+----------------------------------------------------+
+| 3. Network Layer      |  2. Internet Layer     | IP Addressing (Routers)                            |
++-----------------------+------------------------+----------------------------------------------------+
+| 2. Data Link Layer    |                        | MAC Addressing (Switches)                          |
+| 1. Physical Layer     |  1. Network Access     | Cables, Fiber, RF                                  |
++-----------------------+------------------------+----------------------------------------------------+
 ```
-
 ### The Debugging Matrix
 * **L3 Check:** Can the app server reach the database IP? (`ping`, route tables)
 * **L4 Check:** Is TCP port 5432 open? (`nc -zv <ip> 5432`, Security Groups)
@@ -51,11 +55,30 @@ The OSI model isn't academic trivia—it is the ultimate mental framework for di
 * **L7 Check:** Are application credentials and HTTP headers valid? (App logs)
 
 ---
-
 ## 2. Layer 4 Mechanics: The TCP 3-Way Handshake
 
-Occurs strictly at **Layer 4 (Transport)**. It negotiates Initial Sequence Numbers (ISN), window sizes, and establishes a stateful session before any application bytes move.
+Before a single byte of your application data (like a JSON response) can move, the client and server must first agree to open a connection. This happens strictly at **Layer 4** and is essentially a digital handshake to agree on the rules of engagement.
 
+### The Handshake Flow
+
+```text
+CLIENT                                             SERVER
+(Closed)                                           (Listening)
+   
+   | ------- 1. SYN (Can we talk?) -----------------> |
+   |                                                  |
+   | <------ 2. SYN-ACK (Yes, I hear you. Ready?) --- |
+   |                                                  |
+   | ------- 3. ACK (Great, let's start.) ----------> |
+
+(ESTABLISHED)                                      (ESTABLISHED)
+   |                                                  |
+   v       [ Ready to send Layer 7 HTTP data ]        v
+```
+
+The Wire-Level Reality (What you see in Wireshark).
+
+Under the hood, those "hellos" are mathematical sequence numbers used to ensure packets arrive in order and don't get lost.
 ```text
 CLIENT (State: SYN_SENT)                         SERVER (State: LISTEN -> SYN_RCVD)
        |                                                         |
@@ -154,17 +177,19 @@ CLIENT                                                         SERVER
 Operates strictly on TCP/UDP socket parameters.
 
 ```text
-[ Client ] 
-    | (TCP SYN / Port 443 - Raw Bytes)
-    v 
+                        [ Client ] 
+                            | (TCP SYN / Port 443 - Raw Bytes)
+                            v 
 +--------------------------------------------------------+
 | L4 LOAD BALANCER (AWS NLB / HAProxy TCP / IPVS)        |
 | Reads: Src IP:Port -> Dst IP:Port                      |
 | Action: Swaps Dst IP to Backend IP (No TLS Decryption) |
 +--------------------------------------------------------+
-    |
+                             |
     +------------------------+------------------------+
+    |                        |                        |
     v (Raw Forwarded Stream) v                        v
+   
 [ Backend Node 1 ]       [ Backend Node 2 ]       [ Backend Node 3 ]
 ```
 
@@ -172,18 +197,18 @@ Operates strictly on TCP/UDP socket parameters.
 Operates at the HTTP/HTTPS level.
 
 ```text
-[ Client ] 
-    | (HTTP GET /api/v1 - TLS Encrypted)
-    v 
+                        [ Client ] 
+                            | (HTTP GET /api/v1 - TLS Encrypted)
+                            v 
 +------------------------------------------------------------------+
-| L7 LOAD BALANCER (Nginx / Envoy / AWS ALB)                      |
+| L7 LOAD BALANCER (Nginx / Envoy / AWS ALB)                       |
 | 1. Terminates TLS (Decrypts using Server Cert)                   |
 | 2. Parses HTTP Request (Reads URI: "/api/v1")                    |
 | 3. Applies Logic: Route "/api/*" -> API Cluster                  |
 +------------------------------------------------------------------+
-    |
-    v (New Upstream HTTP/TCP Connection)
-[ API Cluster Worker Node ]
+                            |
+                            v (New Upstream HTTP/TCP Connection)
+                [ API Cluster Worker Node ]
 ```
 
 ### Enterprise Hybrid Pattern
@@ -219,12 +244,14 @@ Maps nodes and requests to a mathematical ring. Adding/removing a node only shif
 ### The Leaky Bucket Concept
 ```text
   [ Incoming Requests (Bursty & Unpredictable) ]
-                    |  |  |
-                   \      /
-                    \____/  <-- Memory Zone (The Bucket) stores up to 'burst' limit.
-                      ||     <-- Overflows are instantly dropped (503 Error).
-                      ||
-                      v
+                  | |  |  | | | |
+                 \               /
+                  \             /         
+                   \           /
+                    \_________/  <-- Memory Zone (The Bucket) stores up to 'burst' limit.
+                        ||       <-- Overflows are instantly dropped (503 Error).
+                        ||
+                        v
       [ Steady processing at exact rate (e.g., 5 req/sec) ]
 ```
 
