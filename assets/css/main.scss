@@ -131,7 +131,7 @@ a {
 }
 
 a:hover {
-  color: color.adjust($color-accent, $lightness: -10%);
+  color: darken($color-accent, 10%);
 }
 
 /* Buttons */
@@ -155,7 +155,7 @@ a:hover {
 }
 
 .btn-primary:hover {
-  background: color.adjust($color-accent, $lightness: -10%);
+  background: darken($color-accent, 10%);
 }
 
 .btn-secondary {
@@ -708,7 +708,7 @@ a:hover {
 }
 
 .progress-fill {
-  background: linear-gradient(to bottom, $color-accent 0%, color.adjust($color-accent, $lightness: -10%) 100%);
+  background: linear-gradient(to bottom, $color-accent 0%, darken($color-accent, 10%) 100%);
   width: 100%;
   border-radius: 2px;
   transition: height 1.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1938,7 +1938,7 @@ a:hover {
 }
 
 .project-links-large .btn-primary:hover {
-  background: color.adjust($color-accent, $lightness: -10%);
+  background: darken($color-accent, 10%);
 }
 
 /* Dark Mode Project Featured */
@@ -2282,8 +2282,8 @@ a:hover {
 }
 
 .hero-cta-primary:hover {
-  background: color.adjust($color-accent, $lightness: -10%);
-  border-color: color.adjust($color-accent, $lightness: -10%);
+  background: darken($color-accent, 10%);
+  border-color: darken($color-accent, 10%);
   transform: translateY(-1px);
 }
 
@@ -2552,7 +2552,7 @@ a:hover {
 }
 
 .hero-cta-link:hover {
-  color: color.adjust($color-accent, $lightness: -10%);
+  color: darken($color-accent, 10%);
   text-decoration: underline;
 }
 
@@ -2700,7 +2700,7 @@ a:hover {
 
 .hero-cta-secondary:hover {
   background: #F5F5F5;
-  border-color: color.adjust($color-border, $lightness: -10%);
+  border-color: darken($color-border, 10%);
 }
 
 .hero-cta-text {
@@ -3335,7 +3335,7 @@ a:hover {
 }
 
 .hero-cta-link:hover {
-  color: color.adjust($color-accent, $lightness: -10%);
+  color: darken($color-accent, 10%);
 }
 
 .hero-title {
@@ -3470,8 +3470,8 @@ a:hover {
 
 
 .hero-cta-primary:hover {
-  background: color.adjust($color-accent, $lightness: -10%);
-  border-color: color.adjust($color-accent, $lightness: -10%);
+  background: darken($color-accent, 10%);
+  border-color: darken($color-accent, 10%);
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(10, 102, 255, 0.2);
 }
@@ -4051,7 +4051,7 @@ a:hover {
 
 
 .progress-bar:hover {
-  background: color.adjust($color-border, $lightness: -10%);
+  background: darken($color-border, 10%);
 }
 
 /* ==================== */
