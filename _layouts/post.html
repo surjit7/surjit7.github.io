@@ -1,0 +1,149 @@
+---
+layout: default
+---
+
+<article class="premium-blog-post">
+  
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      <span>•</span>
+      <span>{{ page.reading_time }} min read</span>
+    </div>
+  </header>
+
+  <div class="post-content">
+    <style>
+      .premium-blog-post {
+        max-width: 1000px;
+        margin: 100px auto 80px auto;
+        padding: 0 24px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #374151;
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+      .post-header {
+        margin-bottom: 40px;
+        border-bottom: 1px solid #E5E7EB;
+        padding-bottom: 24px;
+      }
+      .post-title {
+        font-size: clamp(1.75rem, 5vw, 2.5rem);
+        font-weight: 800;
+        color: #111827;
+        line-height: 1.25;
+        letter-spacing: -0.02em;
+        margin-bottom: 12px;
+      }
+      .post-meta {
+        font-family: ui-monospace, SFMono-Regular, monospace;
+        font-size: 0.85rem;
+        color: #6B7280;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .post-content h1, .post-content h2, .post-content h3 {
+        color: #111827;
+        font-weight: 700;
+        margin-top: 2em;
+        margin-bottom: 0.8em;
+        line-height: 1.3;
+        letter-spacing: -0.01em;
+      }
+      .post-content h1 { font-size: 1.8rem; }
+      .post-content h2 { font-size: 1.5rem; border-bottom: 1px solid #F3F4F6; padding-bottom: 0.3em; }
+      .post-content h3 { font-size: 1.25rem; }
+      .post-content p { margin-top: 1.25em; margin-bottom: 1.25em; }
+      .post-content a { color: #2563EB; text-decoration: none; font-weight: 500; }
+      .post-content a:hover { text-decoration: underline; }
+      .post-content strong { color: #111827; font-weight: 600; }
+      .post-content blockquote {
+        font-weight: 500;
+        font-style: italic;
+        color: #4B5563;
+        border-left: 4px solid #D1D5DB;
+        margin: 1.6em 0;
+        padding-left: 1em;
+        background: #F9FAFB;
+        padding: 1em;
+        border-radius: 0 8px 8px 0;
+      }
+      .post-content pre {
+        background-color: #111827;
+        color: #E5E7EB;
+        overflow-x: auto;
+        font-size: 0.85rem;
+        line-height: 1.5;
+        margin: 1.5em 0;
+        border-radius: 8px;
+        padding: 1.25em;
+      }
+      .post-content code {
+        color: #111827;
+        font-weight: 600;
+        font-size: 0.85em;
+        background-color: #F3F4F6;
+        padding: 0.2em 0.4em;
+        border-radius: 4px;
+        font-family: ui-monospace, SFMono-Regular, monospace;
+      }
+      .post-content pre code {
+        background-color: transparent;
+        padding: 0;
+        font-weight: 400;
+        color: inherit;
+        font-size: inherit;
+      }
+      .post-content ul, .post-content ol {
+        padding-left: 1.5em;
+        margin: 1.25em 0;
+      }
+      .post-content li { margin-bottom: 0.5em; }
+      .post-content table {
+        width: 100%;
+        text-align: left;
+        margin: 2em 0;
+        font-size: 0.85rem;
+        border-collapse: collapse;
+      }
+      .post-content th {
+        font-weight: 600;
+        padding: 12px;
+        border-bottom: 2px solid #D1D5DB;
+        background: #F9FAFB;
+      }
+      .post-content td {
+        padding: 12px;
+        border-bottom: 1px solid #E5E7EB;
+      }
+      
+      /* Mobile Responsiveness */
+      @media (max-width: 640px) {
+        .premium-blog-post {
+          margin-top: 80px; /* Reduce massive top gap on mobile */
+          margin-bottom: 40px;
+          padding: 0 16px;
+          font-size: 1rem; /* Smaller body text for mobile readability */
+        }
+        .post-title {
+          font-size: 1.75rem; /* Cap title size on mobile */
+          margin-bottom: 8px;
+        }
+        .post-header {
+          margin-bottom: 24px;
+          padding-bottom: 16px;
+        }
+        .post-content h2 { font-size: 1.35rem; }
+        .post-content h3 { font-size: 1.15rem; }
+        .post-content pre { padding: 1em; font-size: 0.8rem; }
+      }
+    </style>
+    
+    {{ content }}
+    
+  </div>
+</article>

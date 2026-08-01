@@ -1,15 +1,233 @@
-<section id="projects" class="section projects-section">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="section-title">Featured Projects</h2>
-      <p class="section-subtitle">Building production-grade platforms that other engineers build on</p>
+<section id="projects" class="projects-section" {% if page.permalink == "/projects/" %}style="padding-top: 80px !important;"{% endif %}>
+  <!-- Premium Ambient Orbs -->
+  <div style="position: absolute; top: 0; right: 0; width: 600px; height: 600px; background: rgba(59, 130, 246, 0.08); filter: blur(120px); border-radius: 50%; pointer-events: none; z-index: 1;"></div>
+  <div style="position: absolute; bottom: 10%; left: -10%; width: 500px; height: 500px; background: rgba(139, 92, 246, 0.08); filter: blur(120px); border-radius: 50%; pointer-events: none; z-index: 1;"></div>
+
+  <style>
+    .projects-section {
+      padding: 64px 0;
+      background: #F8FAFC; /* Slate 50 instead of flat gray */
+      border-top: 1px solid #F1F5F9;
+      position: relative;
+      overflow: hidden;
+    }
+    .projects-container {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 2;
+    }
+    .projects-header {
+      text-align: left;
+      margin-bottom: 40px;
+    }
+    .projects-title {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #111827;
+      margin-bottom: 8px;
+      line-height: 1.1;
+    }
+    .projects-subtitle {
+      font-size: 1.15rem;
+      color: #64748B;
+      max-width: 600px;
+      margin: 0;
+    }
+    .projects-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      gap: 32px;
+    }
+    @media (max-width: 768px) {
+      .projects-grid-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+    .project-card-3 {
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.5) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 24px;
+      padding: 36px;
+      position: relative;
+      box-shadow: 
+        0 10px 30px -10px rgba(37, 99, 235, 0.05), 
+        inset 0 1px 0 rgba(255, 255, 255, 1);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+    }
+    .project-card-3:hover {
+      transform: translateY(-6px);
+      box-shadow: 
+        0 24px 48px -12px rgba(37, 99, 235, 0.15), 
+        inset 0 1px 0 rgba(255, 255, 255, 1);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .project-badge-3 {
+      margin-bottom: 24px;
+      min-height: 24px;
+    }
+    .project-badge-3 .badge {
+      font-family: ui-monospace, SFMono-Regular, monospace;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      display: inline-block;
+    }
+    .badge-flagship { 
+      background: #0F172A; 
+      color: #38BDF8; 
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      box-shadow: 0 4px 12px rgba(56, 189, 248, 0.1);
+      letter-spacing: 0.08em;
+    }
+    .badge-opensource { 
+      background: #0F172A; 
+      color: #A78BFA; 
+      border: 1px solid rgba(167, 139, 250, 0.3);
+      box-shadow: 0 4px 12px rgba(167, 139, 250, 0.1);
+      letter-spacing: 0.08em;
+    }
+    
+    .project-title-3 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #0F172A;
+      margin: 0 0 12px 0;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+    .project-desc-3 {
+      font-size: 1rem;
+      color: #475569;
+      line-height: 1.6;
+      margin: 0 0 24px 0;
+    }
+    
+    .project-details-container {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .project-details-3 {
+      margin-bottom: 24px;
+    }
+    .project-details-3 h4 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #94A3B8;
+      font-weight: 700;
+      margin: 0 0 12px 0;
+      border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+      padding-bottom: 8px;
+    }
+    .project-details-3 ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .project-details-3 li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+      color: #475569;
+      line-height: 1.6;
+    }
+    .project-details-3 li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #3B82F6; /* Vibrant Blue Arrow */
+      font-family: ui-monospace, monospace;
+      font-weight: 800;
+    }
+    .project-role-3 {
+      font-size: 0.95rem;
+      color: #475569;
+      line-height: 1.5;
+      margin: 0;
+      font-style: italic;
+    }
+    
+    .project-tech-stack-3 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+      padding-top: 20px;
+      margin-bottom: 24px;
+    }
+    .project-tech-3 {
+      font-family: ui-monospace, SFMono-Regular, monospace;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 6px 12px;
+      background: rgba(241, 245, 249, 0.8); /* Slate 100 translucent */
+      border: 1px solid #E2E8F0;
+      color: #64748B;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+    .project-card-3:hover .project-tech-3 {
+      background: rgba(59, 130, 246, 0.05); /* Tint blue on hover */
+      border-color: rgba(59, 130, 246, 0.2);
+      color: #1E3A8A;
+    }
+    
+    .project-links-3 {
+      display: flex;
+      gap: 16px;
+      border-top: 1px solid rgba(226, 232, 240, 0.8);
+      padding-top: 24px;
+    }
+    .project-link-3 {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #3B82F6;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .project-link-3:hover {
+      color: #1D4ED8;
+      transform: translateX(2px);
+    }
+    .project-link-3 .icon {
+      width: 18px;
+      height: 18px;
+    }
+    
+    @media (max-width: 768px) {
+      .projects-section { padding: 80px 0; }
+      .projects-container { padding: 0 16px; }
+      .project-card-3 { padding: 24px; }
+    }
+  </style>
+
+  <div class="projects-container">
+    <div class="projects-header">
+      <h2 class="projects-title">Featured Projects.</h2>
+      <p class="projects-subtitle">Building production-grade platforms that other engineers build on.</p>
     </div>
 
     <div class="projects-grid-3">
       <!-- 1. Kubernetes Hosting Platform (Hero Project) -->
       <article class="project-card-3">
         <div class="project-badge-3">
-          <span class="badge badge-ai">Hero Project</span>
+          <span class="badge badge-flagship">Flagship Architecture</span>
         </div>
         <h3 class="project-title-3">Kubernetes Hosting Platform</h3>
         <p class="project-desc-3">Production-ready Kubernetes platform engineering project with GitOps (ArgoCD), HashiCorp Vault auto-init/unseal, NGINX Ingress, and essential cloud-native tooling. Enables instant application deployment with zero DevOps expertise required.</p>
@@ -51,7 +269,7 @@
       <!-- 2. Enterprise AI Platform (Hero Project) -->
       <article class="project-card-3">
         <div class="project-badge-3">
-          <span class="badge badge-ai">Hero Project</span>
+          <span class="badge badge-flagship">Flagship Architecture</span>
         </div>
         <h3 class="project-title-3">Enterprise AI Platform</h3>
         <p class="project-desc-3">Production-grade conversational AI platform with self-hosted LLM infrastructure using vLLM for GPU inference, agentic AI framework with pre-built agents, RAG via ChromaDB, and comprehensive RBAC for enterprise security.</p>
@@ -88,7 +306,7 @@
       <!-- 3. Enterprise Identity Platform -->
       <article class="project-card-3">
         <div class="project-badge-3">
-          <span class="badge badge-auth">Open Source</span>
+          <span class="badge badge-opensource">Open Source Core</span>
         </div>
         <h3 class="project-title-3">Enterprise Identity Platform</h3>
         <p class="project-desc-3">Production-grade Identity Provider (IdP) implementing OpenID Connect (OIDC) and OAuth 2.0 with full multi-tenant isolation, RBAC, and JIT 2FA. Serves as the central authentication foundation that other services depend on for secure authentication and authorization.</p>
@@ -167,6 +385,49 @@
         <div class="project-links-3">
         </div>
       </article>
+
+      <!-- 5. Kubernetes Play (Open Source) -->
+      <article class="project-card-3">
+        <div class="project-badge-3">
+          <span class="badge badge-opensource">Open Source Guide</span>
+        </div>
+        <h3 class="project-title-3">Kubernetes Zero-Trust Architecture</h3>
+        <p class="project-desc-3">A comprehensive, open-source guided journey through modern cloud-native networking. Explores the entire stack from raw containers up to TLS termination, eBPF routing, and GitOps-driven deployment.</p>
+        
+        <div class="project-details-container">
+          <div class="project-details-3">
+            <h4>Key Engineering Challenges Solved</h4>
+            <ul>
+              <li>Replaced traditional kube-proxy with Cilium (eBPF) for high-performance L4 routing</li>
+              <li>Implemented complete Zero-Trust pod-to-pod communication via NetworkPolicies</li>
+              <li>Engineered a full TLS PKI foundation for secure L7 Ingress termination</li>
+              <li>Automated the entire cluster lifecycle and application delivery using ArgoCD (GitOps)</li>
+            </ul>
+          </div>
+          
+          <div class="project-details-3">
+            <h4>My Role & Contribution</h4>
+            <p class="project-role-3">Authored the entire repository, creating deep-dive architectural diagrams and repeatable labs to teach advanced Kubernetes concepts.</p>
+          </div>
+          
+          <div class="project-tech-stack-3">
+            <span class="project-tech-3" title="Kubernetes">Kubernetes</span>
+            <span class="project-tech-3" title="Cilium">Cilium (eBPF)</span>
+            <span class="project-tech-3" title="ArgoCD">ArgoCD</span>
+            <span class="project-tech-3" title="TLS/PKI">TLS/PKI</span>
+            <span class="project-tech-3" title="Zero Trust">Zero Trust</span>
+            <span class="project-tech-3" title="Nginx Ingress">NGINX Ingress</span>
+          </div>
+          
+          <div class="project-links-3">
+             <a href="https://github.com/surjit7/k8s-zero-trust-architecture" target="_blank" rel="noopener" class="project-link-3">
+              <svg class="icon github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub Repository
+            </a>
+          </div>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>

@@ -6241,3 +6241,864 @@ a:hover {
     margin-bottom: $spacing-xs !important;
   }
 }
+
+/* ==========================================================================
+   PREMIUM LIGHT MODE UPGRADE (Stripe / Vercel Aesthetic)
+   ========================================================================== */
+
+/* 1. Refined Color Palette & Base */
+:root {
+  --premium-bg: #FAFAFA;
+  --premium-surface: #FFFFFF;
+  --premium-text-main: #111827;
+  --premium-text-muted: #6B7280;
+  --premium-border: #E5E7EB;
+  --premium-accent: #0F172A; /* High contrast dark blue/black for serious tone */
+  --premium-accent-hover: #374151;
+  --premium-radius: 12px;
+  --premium-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --premium-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --premium-shadow-hover: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+}
+
+body {
+  background-color: var(--premium-bg) !important;
+  color: var(--premium-text-main) !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  letter-spacing: -0.01em !important;
+}
+
+h1, h2, h3, h4, .hero-title, .section-title {
+  color: var(--premium-text-main) !important;
+  letter-spacing: -0.03em !important;
+  font-weight: 700 !important;
+}
+
+p, .hero-description, .hero-subtitle, .project-desc-3, .experience-summary {
+  color: var(--premium-text-muted) !important;
+}
+
+/* 2. Glassmorphism Navbar */
+.site-header {
+  background: rgba(250, 250, 250, 0.75) !important;
+  backdrop-filter: blur(12px) saturate(150%) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(150%) !important;
+  border-bottom: 1px solid rgba(229, 231, 235, 0.5) !important;
+}
+
+.nav-list a {
+  color: var(--premium-text-muted) !important;
+  font-weight: 500 !important;
+  transition: color 0.2s ease !important;
+}
+
+.nav-list a:hover {
+  color: var(--premium-text-main) !important;
+  background: transparent !important;
+}
+
+.nav-logo {
+  color: var(--premium-text-main) !important;
+  letter-spacing: -0.04em !important;
+}
+
+/* 3. Hero Section Modernization */
+.hero-bg {
+  background: radial-gradient(circle at top right, rgba(15, 23, 42, 0.03) 0%, transparent 40%),
+              radial-gradient(circle at bottom left, rgba(15, 23, 42, 0.02) 0%, transparent 40%) !important;
+}
+
+.hero-bg-gradient {
+  background: var(--premium-bg) !important;
+}
+
+/* 4. High-Contrast Buttons */
+.btn-primary, .hero-cta-primary {
+  background: var(--premium-accent) !important;
+  color: #FFFFFF !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.01em !important;
+  box-shadow: var(--premium-shadow-sm) !important;
+  border: 1px solid transparent !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-primary:hover, .hero-cta-primary:hover {
+  background: var(--premium-accent-hover) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: var(--premium-shadow-md) !important;
+}
+
+.btn-secondary, .hero-cta-secondary {
+  background: var(--premium-surface) !important;
+  color: var(--premium-text-main) !important;
+  border: 1px solid var(--premium-border) !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  box-shadow: var(--premium-shadow-sm) !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-secondary:hover, .hero-cta-secondary:hover {
+  background: #F3F4F6 !important;
+  border-color: #D1D5DB !important;
+}
+
+/* 5. Premium Cards (Projects, Skills) */
+.project-card, .project-card-3, .experience-entry {
+  background: var(--premium-surface) !important;
+  border: 1px solid var(--premium-border) !important;
+  border-radius: var(--premium-radius) !important;
+  box-shadow: var(--premium-shadow-sm) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  padding: 32px !important;
+}
+
+.project-card:hover, .project-card-3:hover {
+  border-color: #D1D5DB !important;
+  box-shadow: var(--premium-shadow-hover) !important;
+  transform: translateY(-2px) !important;
+}
+
+.project-card-3 {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.project-details-3 {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+/* 6. Refined Tags */
+.tech-tag, .project-tech-3, .skill-tag {
+  background: #F3F4F6 !important;
+  color: #374151 !important;
+  border: 1px solid transparent !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+  padding: 4px 10px !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.02em !important;
+}
+
+.tech-tag:hover, .project-tech-3:hover, .skill-tag:hover {
+  background: #E5E7EB !important;
+  color: #111827 !important;
+}
+
+/* 7. Subtle Section Backgrounds */
+.skills-section, .blog-section {
+  background: var(--premium-bg) !important;
+  border-top: 1px solid var(--premium-border) !important;
+  border-bottom: 1px solid var(--premium-border) !important;
+}
+
+.section {
+  padding: 96px 0 !important;
+}
+
+/* 8. Links */
+a {
+  color: var(--premium-accent) !important;
+}
+
+a:hover {
+  text-decoration: underline !important;
+}
+
+/* Metrics / Stats */
+.hero-metric-value, .impact-value {
+  color: var(--premium-text-main) !important;
+}
+
+
+/* ==========================================================================
+   ULTRA PREMIUM LIGHT MODE UPGRADE (Stripe / Vercel Aesthetic V2)
+   ========================================================================== */
+
+/* 1. Global Refinements & Core Variables */
+:root {
+  --up-bg: #FFFFFF;
+  --up-surface: #FFFFFF;
+  --up-text-primary: #111827;
+  --up-text-secondary: #6B7280;
+  --up-border: rgba(229, 231, 235, 0.8);
+  --up-accent: #000000;
+  --up-radius: 16px;
+  --up-shadow-card: 0 1px 2px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.04), 0 4px 24px rgba(0,0,0,0.02);
+  --up-shadow-hover: 0 4px 12px rgba(0,0,0,0.05), 0 12px 32px rgba(0,0,0,0.05), 0 24px 64px rgba(0,0,0,0.03);
+}
+
+::selection {
+  background: rgba(17, 24, 39, 0.1) !important;
+  color: #111827 !important;
+}
+
+body {
+  background-color: var(--up-bg) !important;
+  color: var(--up-text-primary) !important;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+/* 2. Stunning Typography */
+h1, h2, h3, h4, .hero-title, .section-title {
+  color: var(--up-text-primary) !important;
+  letter-spacing: -0.04em !important;
+  font-weight: 800 !important;
+  line-height: 1.1 !important;
+}
+
+.hero-title {
+  background: linear-gradient(180deg, #111827 0%, #4B5563 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-size: clamp(2.5rem, 5vw, 4.5rem) !important; /* Responsive fluid size */
+}
+
+.section-title {
+  font-size: 2.25rem !important;
+  margin-bottom: 8px !important;
+}
+
+.section-subtitle {
+  color: var(--up-text-secondary) !important;
+  font-size: 1.125rem !important;
+  letter-spacing: -0.01em !important;
+  margin-bottom: 64px !important;
+}
+
+p, .hero-description, .hero-subtitle, .project-desc-3, .experience-summary {
+  color: var(--up-text-secondary) !important;
+  line-height: 1.6 !important;
+  letter-spacing: -0.01em !important;
+}
+
+/* 3. Sleek Navbar */
+.site-header {
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border-bottom: 1px solid rgba(229, 231, 235, 0.4) !important;
+  transition: all 0.3s ease !important;
+}
+
+.nav-logo {
+  font-weight: 800 !important;
+  letter-spacing: -0.05em !important;
+  color: var(--up-text-primary) !important;
+}
+
+/* 4. Elegant Hero Background (Dot Grid) */
+.hero-bg {
+  background-image: radial-gradient(rgba(0,0,0,0.06) 1px, transparent 1px) !important;
+  background-size: 32px 32px !important;
+  mask-image: linear-gradient(to bottom, black 40%, transparent 100%) !important;
+  -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%) !important;
+  z-index: -1 !important;
+  height: 120% !important;
+}
+
+/* 5. Smooth Entrance Animation */
+@keyframes fadeUpSmooth {
+  0% { opacity: 0; transform: translateY(24px) scale(0.99); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.hero-content {
+  animation: fadeUpSmooth 1s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+}
+
+/* 6. Precision Cards */
+.project-card, .project-card-3, .experience-entry {
+  background: var(--up-surface) !important;
+  border: 1px solid var(--up-border) !important;
+  border-radius: var(--up-radius) !important;
+  box-shadow: var(--up-shadow-card) !important;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  padding: 40px !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.project-card::before, .project-card-3::before, .experience-entry::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important; left: 0 !important; right: 0 !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,1), transparent) !important;
+  opacity: 0.5 !important;
+}
+
+.project-card:hover, .project-card-3:hover, .experience-entry:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: var(--up-shadow-hover) !important;
+  border-color: rgba(209, 213, 219, 1) !important;
+}
+
+/* 7. Beautiful Tags & Badges */
+.tech-tag, .project-tech-3, .skill-tag, .badge {
+  background: #F9FAFB !important;
+  color: #4B5563 !important;
+  border: 1px solid rgba(229, 231, 235, 0.8) !important;
+  border-radius: 999px !important; /* Fully rounded pills */
+  font-weight: 500 !important;
+  padding: 6px 14px !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.01em !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02) !important;
+}
+
+.tech-tag:hover, .project-tech-3:hover, .skill-tag:hover {
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  border-color: #D1D5DB !important;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05) !important;
+}
+
+/* 8. High-End Buttons */
+.btn-primary, .hero-cta-primary {
+  background: #000000 !important;
+  color: #FFFFFF !important;
+  border-radius: 999px !important;
+  font-weight: 600 !important;
+  padding: 12px 24px !important;
+  letter-spacing: -0.01em !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.btn-primary:hover, .hero-cta-primary:hover {
+  transform: scale(1.02) translateY(-1px) !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15) !important;
+  background: #111827 !important;
+}
+
+.btn-secondary, .hero-cta-secondary {
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  border-radius: 999px !important;
+  font-weight: 600 !important;
+  padding: 12px 24px !important;
+  border: 1px solid rgba(229, 231, 235, 1) !important;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.btn-secondary:hover, .hero-cta-secondary:hover {
+  background: #F9FAFB !important;
+  border-color: #D1D5DB !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+}
+
+/* 9. Sections */
+.section {
+  padding: 120px 0 !important;
+}
+
+.skills-section, .blog-section {
+  background: linear-gradient(180deg, #FAFAFA 0%, #FFFFFF 100%) !important;
+  border-top: 1px solid var(--up-border) !important;
+}
+
+/* 10. Links */
+a {
+  color: var(--up-text-primary) !important;
+  font-weight: 500 !important;
+}
+a:hover {
+  text-decoration: underline !important;
+  text-underline-offset: 4px !important;
+}
+
+
+/* ==========================================================================
+   ULTRA PREMIUM V3: The "Friendly & Skillful" Upgrade
+   ========================================================================== */
+
+/* Hero Container */
+.hero-premium {
+  position: relative;
+  padding: 60px 0; /* Fallback padding */
+  overflow: hidden;
+  min-height: 90vh; /* Takes up most of the screen perfectly */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* Gorgeous Warm Glowing Orbs Background */
+.hero-premium-bg {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  background: var(--up-bg);
+  /* Subtle dot grid over the glows */
+  background-image: radial-gradient(rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+  animation: floatOrb 12s ease-in-out infinite alternate;
+}
+
+.glow-orb-1 {
+  width: 600px; height: 600px;
+  background: #3B82F6; /* Warm tech blue */
+  top: -200px; right: -100px;
+}
+
+.glow-orb-2 {
+  width: 500px; height: 500px;
+  background: #8B5CF6; /* Subtle purple for creativity */
+  bottom: -100px; left: -200px;
+  animation-delay: -5s;
+}
+
+@keyframes floatOrb {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-50px, 50px) scale(1.1); }
+}
+
+/* Content Layout */
+.hero-premium-content {
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeUpSmooth 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.hero-premium-title {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  margin-bottom: 14px;
+  padding-bottom: 10px; /* Fix for cut off descenders like 'g' */
+  background: linear-gradient(135deg, #111827 0%, #4B5563 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-premium-subtitle {
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  color: #4B5563;
+  line-height: 1.6;
+  max-width: 750px;
+  margin-bottom: 40px;
+}
+
+/* Tech Pills */
+.hero-premium-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 56px;
+}
+
+.tech-pill {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(229, 231, 235, 0.8);
+  color: #374151;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+  transition: all 0.3s ease;
+}
+
+.tech-pill:hover {
+  transform: translateY(-2px);
+  background: #FFFFFF;
+  border-color: #D1D5DB;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+  color: #111827;
+}
+
+/* CTAs */
+.hero-premium-ctas {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 80px;
+}
+
+.btn-premium {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-size: 1.05rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none !important;
+}
+
+.btn-premium-primary {
+  background: #111827;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 12px rgba(17, 24, 39, 0.2);
+  border: 1px solid transparent;
+}
+
+.btn-premium-primary:hover {
+  background: #000000;
+  transform: scale(1.02) translateY(-2px);
+  box-shadow: 0 8px 24px rgba(17, 24, 39, 0.3);
+}
+
+.btn-premium-secondary {
+  background: #FFFFFF;
+  color: #111827 !important;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+.btn-premium-secondary:hover {
+  background: #F9FAFB;
+  border-color: #D1D5DB;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+/* Bento Glass Metrics */
+.hero-premium-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.metric-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 4px 24px -4px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 1);
+  transition: all 0.3s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 1);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.metric-value {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  color: #111827;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Responsive Overrides */
+@media (max-width: 768px) {
+  .hero-premium {
+    padding: 60px 0 80px; /* Safe padding for mobile bottom */
+    min-height: 95vh;
+    text-align: left; /* Keep left alignment, reads better */
+  }
+  
+  .hero-premium-title {
+    font-size: 2.75rem;
+  }
+  
+  .hero-premium-metrics {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .metric-card {
+    padding: 24px;
+  }
+  
+  .metric-value {
+    font-size: 2.5rem;
+  }
+  
+  .hero-premium-ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btn-premium {
+    width: 100%;
+  }
+}
+
+
+/* Fix for Resume Page Spacing */
+.resume-section {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+  min-height: calc(100vh - 80px); /* Fill the screen */
+  display: flex;
+  align-items: flex-start; /* Or center if you want the resume vertically centered, but typically resumes scroll */
+}
+
+@media (max-width: 768px) {
+  .resume-section {
+    padding-top: 40px !important;
+  }
+}
+
+
+/* ==========================================================================
+   MOBILE HEADER SCROLL MINIMIZATION
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Only hide the text links (Projects, Resume, etc) on scroll, keep original design */
+  .site-header.scrolled .nav-center {
+    display: none !important;
+  }
+}
+
+
+/* ==========================================================================
+   ULTRA PREMIUM FOOTER
+   ========================================================================== */
+.footer-premium {
+  background-color: var(--up-surface);
+  border-top: 1px solid rgba(229, 231, 235, 0.8);
+  padding: 80px 0 40px;
+  margin-top: 80px;
+}
+
+.footer-premium-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  margin-bottom: 64px;
+}
+
+.footer-brand {
+  max-width: 400px;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  color: #111827 !important;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.footer-description {
+  color: #6B7280;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social-icon {
+  color: #9CA3AF !important;
+  transition: color 0.2s ease;
+  display: flex;
+}
+
+.footer-social-icon:hover {
+  color: #111827 !important;
+}
+
+.footer-links-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.footer-col-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #111827;
+  margin-bottom: 24px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-col a {
+  color: #6B7280 !important;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+  color: #111827 !important;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(229, 231, 235, 0.8);
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #9CA3AF;
+  font-size: 0.875rem;
+}
+
+.footer-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #10B981;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.5);
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+  .footer-premium-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
+
+
+/* ==========================================================================
+   PREMIUM BLOG LAYOUT
+   ========================================================================== */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(229, 231, 235, 0.8);
+  border-radius: 16px;
+  padding: 32px;
+  text-decoration: none !important;
+  color: inherit;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 24px -4px rgba(0, 0, 0, 0.02);
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.9);
+  border-color: #D1D5DB;
+  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.blog-card-meta {
+  flex-shrink: 0;
+  width: 140px;
+  padding-top: 4px;
+}
+
+.blog-card-date {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.85rem;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.blog-card-content {
+  flex-grow: 1;
+}
+
+.blog-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+.blog-card-excerpt {
+  color: #4B5563;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+}
+
+.blog-card-read-more {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #3B82F6;
+  display: flex;
+  align-items: center;
+  transition: gap 0.2s ease;
+  gap: 4px;
+}
+
+.blog-card:hover .blog-card-read-more {
+  gap: 8px; /* Pushes the arrow slightly right on hover */
+}
+
+@media (max-width: 768px) {
+  .blog-card {
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+  }
+  .blog-card-meta {
+    width: auto;
+    padding-top: 0;
+  }
+}

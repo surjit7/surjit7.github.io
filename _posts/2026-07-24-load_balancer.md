@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Guide to Load Balancer, Nginx & Production Edge Architecture."
 date: 2026-07-24 10:00:00 +0000
 excerpt: "Load Balancer and Nginx."
