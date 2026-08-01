@@ -4,6 +4,7 @@ title: "Request Flow: From Browser to Python Pod"
 date: 2026-07-24 10:00:00 +0530
 excerpt: "The exact path a network packet takes from the public internet into a Kubernetes Python application."
 tags: [kubernetes, python, networking, ingress, gunicorn]
+reading_time: 5
 ---
 
 # The Anatomy of a Web Request
@@ -104,35 +105,29 @@ When your browser sends a simple `GET /api/users` request, it doesn't just send 
 ### What the Request Looks Like at Each Layer
 
 ```text
-CLIENT (Going Down the Stack)                                           SERVER (Going Up the Stack)
+CLIENT (Going Down the Stack)                             SERVER (Going Up the Stack)
 
-[Layer 7 - Application]                                                 [Layer 7 - Application]
-Payload: [ HTTP Header: GET /api/users ]                                Nginx reads the HTTP URI and routes the request.
-                  |                                                             ^
-                  v                                                             |
-[Layer 6 - Presentation]                                                [Layer 6 - Presentation]
-Payload: [ TLS Header | Encrypted HTTP Data ]                           Nginx terminates TLS, unlocking the encrypted data.
-                  |                                                             ^
-                  v                                                             |
-[Layer 4 - Transport]                                                   [Layer 4 - Transport]
-Payload: [ TCP Header (Src Port: 54321, Dst Port: 443)                  | TLS Header | Encrypted HTTP Data ]
-                  |                                                             ^
-                  v                                                             |
-[Layer 3 - Network]                                                     [Layer 3 - Network]
-Payload: [ IP Header (Src IP, Dst IP) | TCP Header 
-| TLS Header | Encrypted HTTP Data ]
-                  |                                                             ^
-                  v                                                             |
-[Layer 2 - Data Link]                                                   [Layer 2 - Data Link]
-Payload: [ MAC Header (Src MAC, Dst MAC) | IP Header 
-| TCP Header | TLS Header | Encrypted Data | Frame Footer ]
-                  |                                                             ^
-                  v                                                             |
-[Layer 1 - Physical]                                                    [Layer 1 - Physical]
-The entire packet is converted into 1s and 0s                   ->      The server's Network Interface Card (NIC) 
-and transmitted over fiber/copper as electrical/                ->      receives the electrical signals and 
-light pulses.                                                           reassembles the frame.
-
-
-
-
+[Layer 7 - Application]                                   [Layer 7 - Application]
+Payload: [ HTTP Header: GET /api/users ]                  Nginx reads the HTTP URI and routes the request.
+                  |                                                 ^
+                  v                                                 |
+[Layer 6 - Presentation]                                  [Layer 6 - Presentation]
+Payload: [ TLS Header | Encrypted HTTP Data ]             Nginx terminates TLS, unlocking the encrypted data.
+                  |                                                 ^
+                  v                                                 |
+[Layer 4 - Transport]                                     [Layer 4 - Transport]
+Payload: [ TCP Header (Src/Dst Port) | TLS | Data ]       Linux kernel reads port 443, routes to Nginx socket.
+                  |                                                 ^
+                  v                                                 |
+[Layer 3 - Network]                                       [Layer 3 - Network]
+Payload: [ IP Header | TCP Header | TLS | Data ]          Kernel processes IP Header, confirms Destination IP.
+                  |                                                 ^
+                  v                                                 |
+[Layer 2 - Data Link]                                     [Layer 2 - Data Link]
+Payload: [ MAC Header | IP Header | TCP Header ... ]      Hypervisor/Switch strips MAC Header & Frame Footer.
+                  |                                                 ^
+                  v                                                 |
+[Layer 1 - Physical]                                      [Layer 1 - Physical]
+Entire packet is converted into 1s and 0s         ->      Server's Network Interface Card (NIC) receives
+and transmitted over fiber/copper as pulses.      ->      the electrical signals and reassembles the frame.
+```
