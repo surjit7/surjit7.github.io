@@ -76,9 +76,7 @@ style.textContent = `
     background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
   }
   
-  .theme-dark .hero-bg-gradient {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-  }
+
   
   .particle {
     position: absolute;

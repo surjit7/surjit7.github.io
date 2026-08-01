@@ -10,27 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Dark mode handling
-  var themeToggle = document.getElementById('theme-toggle');
-  var root = document.body;
 
-  // Load saved preference
-  var savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark') {
-    root.classList.remove('theme-light');
-    root.classList.add('theme-dark');
-  }
-
-  themeToggle.addEventListener('click', function () {
-    if (root.classList.contains('theme-dark')) {
-      root.classList.remove('theme-dark');
-      root.classList.add('theme-light');
-      localStorage.setItem('theme', 'light');
-    } else {
-      root.classList.remove('theme-light');
-      root.classList.add('theme-dark');
-      localStorage.setItem('theme', 'dark');
-    }
-  });
 
 });
