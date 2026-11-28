@@ -3,8 +3,11 @@
     .exp-2026 {
       padding: 64px 0;
       {% if page.permalink == '/experience/' %}padding-top: 84px;{% endif %}
-      background: #FAFAFA;
-      border-bottom: 1px solid #E4E4E7;
+      background:
+        radial-gradient(circle at 12% 20%, rgba(37, 99, 235, 0.08) 0%, transparent 45%),
+        radial-gradient(circle at 90% 80%, rgba(16, 185, 129, 0.06) 0%, transparent 40%),
+        #F8FAFC;
+      border-bottom: 1px solid #E2E8F0;
     }
     .exp-2026-inner {
       max-width: 1040px;
@@ -71,20 +74,21 @@
       left: 6px;
       top: 10px;
       bottom: 10px;
-      width: 1px;
-      background: #D4D4D8;
+      width: 2px;
+      background: linear-gradient(to bottom, #10B981 0%, #2563EB 45%, #CBD5E1 100%);
+      border-radius: 2px;
     }
     .exp-2026-card {
       position: relative;
-      background: #FFFFFF;
-      border: 1px solid #E4E4E7;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid #E2E8F0;
       border-radius: 12px;
       padding: 28px 32px;
       transition: border-color 0.15s ease, box-shadow 0.15s ease;
     }
     .exp-2026-card:hover {
-      border-color: #D4D4D8;
-      box-shadow: 0 10px 28px -16px rgba(9, 9, 11, 0.12);
+      border-color: rgba(37, 99, 235, 0.35);
+      box-shadow: 0 14px 32px -16px rgba(37, 99, 235, 0.18);
     }
     .exp-2026-node {
       position: absolute;
@@ -122,10 +126,11 @@
     .exp-2026-company {
       font-size: 0.95rem;
       font-weight: 600;
-      color: #3F3F46;
+      color: #2563EB;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
-      gap: 8px;
+      gap: 6px 8px;
     }
     .exp-2026-company-loc {
       color: #71717A;
@@ -172,7 +177,7 @@
       font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
       font-size: 0.8rem;
       font-weight: 700;
-      color: #71717A;
+      color: #059669;
     }
     .exp-2026-list strong {
       color: #09090B;
@@ -200,6 +205,9 @@
         padding: 44px 0;
         {% if page.permalink == '/experience/' %}padding-top: 64px;{% endif %}
       }
+      .exp-2026-inner {
+        padding: 0 16px;
+      }
       .exp-2026-timeline {
         padding-left: 22px;
       }
@@ -224,7 +232,6 @@
   <div class="exp-2026-inner">
     <div class="exp-2026-header">
       <div>
-        <div class="exp-2026-kicker">01 // Career Timeline</div>
         <h2 class="exp-2026-title">Experience</h2>
         <p class="exp-2026-subtitle">Production AI platforms, Kubernetes infrastructure, and distributed Python services.</p>
       </div>

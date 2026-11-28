@@ -2,8 +2,10 @@
   <style>
     .blog-2026 {
       padding: 64px 0;
-      background: #FFFFFF;
-      border-bottom: 1px solid #E4E4E7;
+      background:
+        radial-gradient(circle at 85% 15%, rgba(59, 130, 246, 0.07) 0%, transparent 42%),
+        #FFFFFF;
+      border-bottom: 1px solid #E2E8F0;
     }
     .blog-2026-inner {
       max-width: 1040px;
@@ -63,8 +65,8 @@
       gap: 18px;
     }
     .blog-2026-card {
-      background: #FAFAFA;
-      border: 1px solid #E4E4E7;
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
       border-radius: 12px;
       padding: 24px;
       display: flex;
@@ -74,8 +76,8 @@
     }
     .blog-2026-card:hover {
       background: #FFFFFF;
-      border-color: #D4D4D8;
-      box-shadow: 0 12px 28px -18px rgba(9, 9, 11, 0.14);
+      border-color: rgba(37, 99, 235, 0.35);
+      box-shadow: 0 14px 30px -18px rgba(37, 99, 235, 0.18);
     }
     .blog-2026-meta {
       display: flex;
@@ -85,7 +87,7 @@
       font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
       font-size: 0.72rem;
       font-weight: 600;
-      color: #71717A;
+      color: #2563EB;
       text-transform: uppercase;
       letter-spacing: 0.04em;
       margin-bottom: 14px;
@@ -148,6 +150,9 @@
       .blog-2026 {
         padding: 44px 0;
       }
+      .blog-2026-inner {
+        padding: 0 16px;
+      }
       .blog-2026-card {
         padding: 20px 18px;
       }
@@ -157,7 +162,6 @@
   <div class="blog-2026-inner">
     <div class="blog-2026-header">
       <div>
-        <div class="blog-2026-kicker">04 // Engineering Log</div>
         <h2 class="blog-2026-title">Latest Writing</h2>
         <p class="blog-2026-subtitle">Deep dives on self-hosted LLM infrastructure, distributed systems, and backend engineering.</p>
       </div>
