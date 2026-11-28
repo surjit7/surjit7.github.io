@@ -1,234 +1,63 @@
-<section id="contact" class="contact-2026">
-  <style>
-    .contact-2026 {
-      padding: 64px 0;
-      {% if page.permalink == '/contact/' %}padding-top: 84px; min-height: 72vh; display: flex; align-items: center;{% endif %}
-      background: #FAFAFA;
-      border-bottom: 1px solid #E4E4E7;
-    }
-    .contact-2026-inner {
-      width: 100%;
-      max-width: 1040px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-    .contact-2026-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin-bottom: 32px;
-    }
-    .contact-2026-kicker {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.74rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #71717A;
-      margin-bottom: 8px;
-    }
-    .contact-2026-title {
-      font-size: clamp(1.85rem, 3.6vw, 2.45rem);
-      font-weight: 800;
-      letter-spacing: -0.04em;
-      color: #09090B;
-      margin: 0 0 6px 0;
-      line-height: 1.1;
-    }
-    .contact-2026-subtitle {
-      font-size: 1rem;
-      color: #52525B !important;
-      margin: 0;
-      max-width: 600px;
-    }
-    .contact-2026-status {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 12px;
-      border-radius: 6px;
-      background: rgba(16, 185, 129, 0.08);
-      border: 1px solid rgba(16, 185, 129, 0.24);
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.74rem;
-      font-weight: 600;
-      color: #047857;
-      white-space: nowrap;
-    }
-    .contact-2026-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: #10B981;
-    }
-    .contact-2026-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      border: 1px solid #E4E4E7;
-      border-radius: 12px;
-      background: #FFFFFF;
-      overflow: hidden;
-    }
-    .contact-2026-cell {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      padding: 22px 24px;
-      border-right: 1px solid #E4E4E7;
-      border-bottom: 1px solid #E4E4E7;
-      text-decoration: none !important;
-      transition: background-color 0.15s ease;
-      min-width: 0;
-    }
-    a.contact-2026-cell:hover {
-      background: #FAFAFA;
-    }
-    .contact-2026-cell:nth-child(2n) {
-      border-right: none;
-    }
-    .contact-2026-cell:nth-last-child(-n+2) {
-      border-bottom: none;
-    }
-    .contact-2026-left {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      min-width: 0;
-    }
-    .contact-2026-icon {
-      width: 38px;
-      height: 38px;
-      border-radius: 8px;
-      background: #FAFAFA;
-      border: 1px solid #E4E4E7;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-    .contact-2026-meta {
-      min-width: 0;
-    }
-    .contact-2026-label {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #71717A;
-      margin-bottom: 3px;
-    }
-    .contact-2026-value {
-      font-size: 0.98rem;
-      font-weight: 600;
-      color: #09090B;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .contact-2026-sub {
-      font-size: 0.8rem;
-      color: #52525B;
-      margin-top: 2px;
-      line-height: 1.4;
-    }
-    .contact-2026-arrow {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.85rem;
-      color: #A1A1AA;
-      flex-shrink: 0;
-      transition: color 0.15s ease, transform 0.15s ease;
-    }
-    a.contact-2026-cell:hover .contact-2026-arrow {
-      color: #09090B;
-      transform: translateX(2px);
-    }
-    @media (max-width: 720px) {
-      .contact-2026 {
-        padding: 44px 0;
-        {% if page.permalink == '/contact/' %}padding-top: 64px; min-height: auto;{% endif %}
-      }
-      .contact-2026-grid {
-        grid-template-columns: 1fr;
-      }
-      .contact-2026-cell {
-        border-right: none !important;
-        border-bottom: 1px solid #E4E4E7 !important;
-        padding: 18px;
-      }
-      .contact-2026-cell:last-child {
-        border-bottom: none !important;
-      }
-    }
-  </style>
+<section id="contact" class="hero-premium" style="min-height: 85vh;">
+  <div class="hero-premium-bg">
+    <!-- Distinctive glowing orbs for the contact page -->
+    <div class="glow-orb glow-orb-1" style="background: #10B981; top: -100px; right: 10%;"></div>
+    <div class="glow-orb glow-orb-2" style="background: #3B82F6; bottom: -100px; left: 10%;"></div>
+  </div>
+  
+  <div class="container" style="width: 100%;">
+    <div class="hero-premium-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
+      
+      <h2 class="hero-premium-title" style="margin-bottom: 16px; padding-bottom: 10px;">Get In Touch</h2>
+      
+      <p class="hero-premium-subtitle" style="margin: 0 auto 48px auto;">
+        I'm seeking roles focused on AI infrastructure, LLM platforms, and distributed systems. 
+        Whether you need help building scalable ML pipelines or designing enterprise AI platforms, let's talk.
+      </p>
 
-  <div class="contact-2026-inner">
-    <div class="contact-2026-header">
-      <div>
-        <div class="contact-2026-kicker">05 // Connect</div>
-        <h2 class="contact-2026-title">Get in Touch</h2>
-        <p class="contact-2026-subtitle">Open to AI Infrastructure, LLM Platform, and Senior Python Backend roles. Let's talk about scalable inference and distributed systems.</p>
-      </div>
-      <div class="contact-2026-status">
-        <span class="contact-2026-dot" aria-hidden="true"></span>
-        Hybrid: Delhi NCR &bull; Remote: Bengaluru / Anywhere
-      </div>
-    </div>
-
-    <div class="contact-2026-grid">
-      <a href="mailto:singhsurjit7@outlook.com" class="contact-2026-cell">
-        <div class="contact-2026-left">
-          <div class="contact-2026-icon" style="color: #2563EB;">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      <!-- Glassmorphism Bento Grid for Contact Info -->
+      <div class="hero-premium-metrics" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; text-align: left;">
+        
+        <a href="mailto:singhsurjit7@outlook.com" class="metric-card" style="text-decoration: none; display: flex; align-items: center; gap: 20px; padding: 24px 32px;">
+          <div style="color: #3B82F6; flex-shrink: 0;">
+            <svg class="icon mail-icon" viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
           </div>
-          <div class="contact-2026-meta">
-            <div class="contact-2026-label">Email</div>
-            <div class="contact-2026-value">singhsurjit7@outlook.com</div>
+          <div style="overflow: hidden;">
+            <div class="metric-label" style="margin-bottom: 4px;">Email</div>
+            <div class="metric-value" style="font-size: 1.1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">singhsurjit7@outlook.com</div>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/surjitsingh7" target="_blank" rel="noopener" class="metric-card" style="text-decoration: none; display: flex; align-items: center; gap: 20px; padding: 24px 32px;">
+          <div style="color: #0A66C2; flex-shrink: 0;">
+            <svg class="icon linkedin-icon" viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </div>
+          <div style="overflow: hidden;">
+            <div class="metric-label" style="margin-bottom: 4px;">LinkedIn</div>
+            <div class="metric-value" style="font-size: 1.1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">in/surjitsingh7</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/surjit7" target="_blank" rel="noopener" class="metric-card" style="text-decoration: none; display: flex; align-items: center; gap: 20px; padding: 24px 32px;">
+          <div style="color: #111827; flex-shrink: 0;">
+            <svg class="icon github-icon" viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </div>
+          <div style="overflow: hidden;">
+            <div class="metric-label" style="margin-bottom: 4px;">GitHub</div>
+            <div class="metric-value" style="font-size: 1.1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">surjit7</div>
+          </div>
+        </a>
+
+        <div class="metric-card" style="display: flex; align-items: center; gap: 20px; padding: 24px 32px;">
+          <div style="color: #EF4444; flex-shrink: 0;">
+            <svg class="icon location-icon" viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+          <div style="overflow: hidden;">
+            <div class="metric-label" style="margin-bottom: 4px;">Location</div>
+            <div class="metric-value" style="font-size: 1.1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Mohali, India</div>
           </div>
         </div>
-        <span class="contact-2026-arrow" aria-hidden="true">&#8599;</span>
-      </a>
-
-      <a href="https://www.linkedin.com/in/surjitsingh7" target="_blank" rel="noopener" class="contact-2026-cell">
-        <div class="contact-2026-left">
-          <div class="contact-2026-icon" style="color: #0A66C2;">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-          </div>
-          <div class="contact-2026-meta">
-            <div class="contact-2026-label">LinkedIn</div>
-            <div class="contact-2026-value">in/surjitsingh7</div>
-          </div>
-        </div>
-        <span class="contact-2026-arrow" aria-hidden="true">&#8599;</span>
-      </a>
-
-      <a href="https://github.com/surjit7" target="_blank" rel="noopener" class="contact-2026-cell">
-        <div class="contact-2026-left">
-          <div class="contact-2026-icon" style="color: #09090B;">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          </div>
-          <div class="contact-2026-meta">
-            <div class="contact-2026-label">GitHub</div>
-            <div class="contact-2026-value">github.com/surjit7</div>
-          </div>
-        </div>
-        <span class="contact-2026-arrow" aria-hidden="true">&#8599;</span>
-      </a>
-
-      <div class="contact-2026-cell">
-        <div class="contact-2026-left">
-          <div class="contact-2026-icon" style="color: #059669;">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          </div>
-          <div class="contact-2026-meta">
-            <div class="contact-2026-label">Work Preferences</div>
-            <div class="contact-2026-value">Hybrid: Delhi / Gurugram / Noida</div>
-            <div class="contact-2026-sub">Remote: Bengaluru or Anywhere &bull; Based in Mohali, India</div>
-          </div>
-        </div>
+        
       </div>
     </div>
   </div>
