@@ -3,8 +3,11 @@
     .contact-2026 {
       padding: 64px 0;
       {% if page.permalink == '/contact/' %}padding-top: 84px; min-height: 72vh; display: flex; align-items: center;{% endif %}
-      background: #FAFAFA;
-      border-bottom: 1px solid #E4E4E7;
+      background:
+        radial-gradient(circle at 88% 15%, rgba(16, 185, 129, 0.11) 0%, transparent 44%),
+        radial-gradient(circle at 12% 85%, rgba(59, 130, 246, 0.10) 0%, transparent 44%),
+        #F8FAFC;
+      border-bottom: 1px solid #E2E8F0;
     }
     .contact-2026-inner {
       width: 100%;
@@ -66,9 +69,10 @@
     .contact-2026-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      border: 1px solid #E4E4E7;
+      border: 1px solid #E2E8F0;
       border-radius: 12px;
-      background: #FFFFFF;
+      background: rgba(255, 255, 255, 0.94);
+      box-shadow: 0 12px 32px -20px rgba(15, 23, 42, 0.14);
       overflow: hidden;
     }
     .contact-2026-cell {
@@ -77,14 +81,14 @@
       justify-content: space-between;
       gap: 16px;
       padding: 22px 24px;
-      border-right: 1px solid #E4E4E7;
-      border-bottom: 1px solid #E4E4E7;
+      border-right: 1px solid #E2E8F0;
+      border-bottom: 1px solid #E2E8F0;
       text-decoration: none !important;
       transition: background-color 0.15s ease;
       min-width: 0;
     }
     a.contact-2026-cell:hover {
-      background: #FAFAFA;
+      background: #F8FAFC;
     }
     .contact-2026-cell:nth-child(2n) {
       border-right: none;
@@ -151,12 +155,24 @@
         padding: 44px 0;
         {% if page.permalink == '/contact/' %}padding-top: 64px; min-height: auto;{% endif %}
       }
+      .contact-2026-inner {
+        padding: 0 16px;
+      }
+      .contact-2026-status {
+        white-space: normal;
+        line-height: 1.4;
+      }
+      .contact-2026-value {
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+      }
       .contact-2026-grid {
         grid-template-columns: 1fr;
       }
       .contact-2026-cell {
         border-right: none !important;
-        border-bottom: 1px solid #E4E4E7 !important;
+        border-bottom: 1px solid #E2E8F0 !important;
         padding: 18px;
       }
       .contact-2026-cell:last-child {
@@ -168,7 +184,6 @@
   <div class="contact-2026-inner">
     <div class="contact-2026-header">
       <div>
-        <div class="contact-2026-kicker">05 // Connect</div>
         <h2 class="contact-2026-title">Get in Touch</h2>
         <p class="contact-2026-subtitle">Open to AI Infrastructure, LLM Platform, and Senior Python Backend roles. Let's talk about scalable inference and distributed systems.</p>
       </div>

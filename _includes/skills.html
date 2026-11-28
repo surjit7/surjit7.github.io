@@ -2,8 +2,11 @@
   <style>
     .skills-2026 {
       padding: 64px 0;
-      background: #FAFAFA;
-      border-bottom: 1px solid #E4E4E7;
+      background:
+        radial-gradient(circle at 86% 18%, rgba(16, 185, 129, 0.08) 0%, transparent 42%),
+        radial-gradient(circle at 12% 82%, rgba(99, 102, 241, 0.08) 0%, transparent 42%),
+        #F8FAFC;
+      border-bottom: 1px solid #E2E8F0;
     }
     .skills-2026-inner {
       max-width: 1040px;
@@ -60,19 +63,20 @@
     .skills-2026-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      border: 1px solid #E4E4E7;
+      border: 1px solid #E2E8F0;
       border-radius: 12px;
-      background: #FFFFFF;
+      background: rgba(255, 255, 255, 0.94);
+      box-shadow: 0 12px 32px -20px rgba(15, 23, 42, 0.14);
       overflow: hidden;
     }
     .skill-2026-cell {
       padding: 24px;
-      border-right: 1px solid #E4E4E7;
-      border-bottom: 1px solid #E4E4E7;
+      border-right: 1px solid #E2E8F0;
+      border-bottom: 1px solid #E2E8F0;
       transition: background-color 0.15s ease;
     }
     .skill-2026-cell:hover {
-      background: #FAFAFA;
+      background: #F8FAFC;
     }
     .skill-2026-cell:nth-child(3n) {
       border-right: none;
@@ -111,10 +115,7 @@
       margin: 0;
     }
     .skill-2026-num {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.72rem;
-      font-weight: 600;
-      color: #A1A1AA;
+      display: none;
     }
     .skill-2026-tags {
       display: flex;
@@ -152,12 +153,16 @@
       .skills-2026 {
         padding: 44px 0;
       }
+      .skills-2026-inner {
+        padding: 0 16px;
+      }
       .skills-2026-grid {
         grid-template-columns: 1fr;
       }
       .skill-2026-cell {
+        padding: 20px 18px;
         border-right: none !important;
-        border-bottom: 1px solid #E4E4E7 !important;
+        border-bottom: 1px solid #E2E8F0 !important;
       }
       .skill-2026-cell:last-child {
         border-bottom: none !important;
@@ -168,7 +173,6 @@
   <div class="skills-2026-inner">
     <div class="skills-2026-header">
       <div>
-        <div class="skills-2026-kicker">03 // Technical Stack</div>
         <h2 class="skills-2026-title">Skills &amp; Capabilities</h2>
         <p class="skills-2026-subtitle">Core technologies across LLM inference, Python microservices, Kubernetes, and data systems.</p>
       </div>
