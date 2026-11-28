@@ -1,104 +1,91 @@
-<section id="resume" class="resume-2026">
+<section id="resume" class="resume-clean">
   <style>
-    .resume-2026 {
-      padding: 48px 0 72px;
-      background:
-        radial-gradient(circle at 88% 8%, rgba(37, 99, 235, 0.08) 0%, transparent 40%),
-        #F8FAFC;
-      min-height: 85vh;
-    }
-    .resume-2026-wrap {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    .resume-2026-paper {
+    .resume-clean {
+      padding: 64px 0 88px;
       background: #FFFFFF;
-      border: 1px solid #E2E8F0;
-      border-radius: 14px;
-      padding: 44px 48px;
-      box-shadow: 0 12px 32px -20px rgba(15, 23, 42, 0.14);
+      color: #1E293B;
     }
-    .resume-2026-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      gap: 20px;
-      padding-bottom: 24px;
-      border-bottom: 1px solid #E2E8F0;
-      margin-bottom: 26px;
+    .resume-clean-container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
     }
-    .resume-2026-name {
-      font-size: clamp(1.85rem, 3.5vw, 2.35rem);
+    .resume-clean-header {
+      text-align: center;
+      padding-bottom: 28px;
+      margin-bottom: 36px;
+      border-bottom: 2px solid #0F172A;
+    }
+    .resume-clean-name {
+      font-size: clamp(2.1rem, 4vw, 2.75rem);
       font-weight: 800;
-      letter-spacing: -0.04em;
+      letter-spacing: -0.03em;
       color: #0F172A;
-      margin: 0 0 4px 0;
+      margin: 0 0 8px 0;
       line-height: 1.1;
     }
-    .resume-2026-role {
-      font-size: 1.05rem;
+    .resume-clean-role {
+      font-size: 1.15rem;
       font-weight: 600;
-      color: #2563EB;
-      margin: 0 0 8px 0;
+      color: #334155;
+      margin: 0 0 6px 0;
     }
-    .resume-2026-meta {
-      font-size: 0.88rem;
-      color: #475569;
-      margin: 0 0 10px 0;
+    .resume-clean-loc {
+      font-size: 0.95rem;
+      color: #64748B;
+      margin: 0 0 18px 0;
     }
-    .resume-2026-links {
+    .resume-clean-links {
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
-      gap: 14px;
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.78rem;
+      gap: 18px;
+      margin-bottom: 20px;
+      font-size: 0.94rem;
     }
-    .resume-2026-links a {
-      color: #334155 !important;
-      text-decoration: none !important;
-      font-weight: 600;
-    }
-    .resume-2026-links a:hover {
+    .resume-clean-links a {
       color: #2563EB !important;
+      text-decoration: none;
+      font-weight: 500;
     }
-    .resume-2026-actions {
+    .resume-clean-links a:hover {
+      text-decoration: underline;
+    }
+    .resume-clean-actions {
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
-      gap: 8px;
-      align-items: center;
+      gap: 10px;
     }
-    .resume-2026-btn {
+    .resume-clean-btn {
       display: inline-flex;
       align-items: center;
       gap: 7px;
-      padding: 9px 15px;
+      padding: 9px 18px;
       border-radius: 8px;
-      font-size: 0.84rem;
+      font-size: 0.9rem;
       font-weight: 600;
       cursor: pointer;
       text-decoration: none !important;
-      border: 1px solid #E2E8F0;
+      border: 1px solid #CBD5E1;
       background: #FFFFFF;
       color: #0F172A !important;
-      transition: border-color 0.15s ease, background-color 0.15s ease;
+      transition: background-color 0.15s ease, border-color 0.15s ease;
     }
-    .resume-2026-btn:hover {
+    .resume-clean-btn:hover {
       background: #F8FAFC;
-      border-color: #CBD5E1;
+      border-color: #94A3B8;
     }
-    .resume-2026-btn.primary {
+    .resume-clean-btn.primary {
       background: #111827;
       color: #FFFFFF !important;
       border-color: #111827;
     }
-    .resume-2026-btn.primary:hover {
+    .resume-clean-btn.primary:hover {
       background: #000000;
     }
     .copy-feedback {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.74rem;
+      font-size: 0.82rem;
       font-weight: 600;
       color: #059669;
       opacity: 0;
@@ -107,243 +94,227 @@
     .copy-feedback.visible {
       opacity: 1;
     }
-    .resume-2026-section {
-      margin-bottom: 26px;
-    }
-    .resume-2026-section:last-child {
-      margin-bottom: 0;
-    }
-    .resume-2026-h2 {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.78rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #2563EB;
-      margin: 0 0 14px 0;
-      padding-bottom: 6px;
-      border-bottom: 1px solid #E2E8F0;
-    }
-    .resume-2026-summary {
-      font-size: 0.96rem;
-      line-height: 1.65;
+    .resume-clean-summary {
+      font-size: 1.05rem;
+      line-height: 1.72;
       color: #334155 !important;
-      margin: 0;
+      margin: 0 0 36px 0;
     }
-    .resume-2026-job {
-      margin-bottom: 22px;
+    .resume-clean-h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #0F172A;
+      letter-spacing: -0.02em;
+      margin: 0 0 20px 0;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #E2E8F0;
     }
-    .resume-2026-job:last-child {
+    .resume-clean-section {
+      margin-bottom: 40px;
+    }
+    .resume-clean-job {
+      margin-bottom: 30px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #F1F5F9;
+    }
+    .resume-clean-job:last-child {
       margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
     }
-    .resume-2026-job-top {
+    .resume-clean-job-head {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
       flex-wrap: wrap;
       gap: 8px;
-      margin-bottom: 8px;
+      margin-bottom: 4px;
     }
-    .resume-2026-job-title {
-      font-size: 1.06rem;
+    .resume-clean-job-title {
+      font-size: 1.2rem;
       font-weight: 700;
       color: #0F172A;
       margin: 0;
     }
-    .resume-2026-job-org {
-      font-size: 0.92rem;
+    .resume-clean-job-date {
+      font-size: 0.94rem;
       font-weight: 600;
       color: #475569;
-      font-style: italic;
     }
-    .resume-2026-job-date {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.78rem;
-      font-weight: 600;
+    .resume-clean-job-company {
+      font-size: 1rem;
+      font-weight: 500;
       color: #475569;
-      white-space: nowrap;
+      margin: 0 0 14px 0;
     }
-    .resume-2026-bullets {
-      list-style: none;
-      padding: 0;
+    .resume-clean-list {
+      padding-left: 20px;
       margin: 0;
     }
-    .resume-2026-bullets li {
-      position: relative;
-      padding-left: 18px;
-      margin-bottom: 8px;
-      font-size: 0.97rem;
-      line-height: 1.62;
+    .resume-clean-list li {
+      font-size: 1rem;
+      line-height: 1.68;
       color: #334155;
-    }
-    .resume-2026-bullets li:last-child {
-      margin-bottom: 0;
-    }
-    .resume-2026-bullets li::before {
-      content: '–';
-      position: absolute;
-      left: 0;
-      color: #64748B;
-      font-weight: 700;
-    }
-    .resume-2026-bullets strong {
-      color: #0F172A;
-      font-weight: 600;
-    }
-    .resume-2026-skills {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      font-size: 0.97rem;
-      line-height: 1.6;
-      color: #334155;
-    }
-    .resume-2026-skills strong {
-      color: #0F172A;
-    }
-    .resume-2026-edu-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      flex-wrap: wrap;
-      gap: 8px;
       margin-bottom: 10px;
     }
-    .resume-2026-edu-row:last-child {
+    .resume-clean-list li:last-child {
       margin-bottom: 0;
     }
-    @media (max-width: 680px) {
-      .resume-2026 {
-        padding: 24px 0 48px;
+    .resume-clean-list strong {
+      color: #0F172A;
+      font-weight: 600;
+    }
+    .resume-clean-skill-group {
+      margin-bottom: 14px;
+      font-size: 1rem;
+      line-height: 1.65;
+      color: #334155;
+    }
+    .resume-clean-skill-group:last-child {
+      margin-bottom: 0;
+    }
+    .resume-clean-skill-group strong {
+      color: #0F172A;
+      font-weight: 700;
+    }
+    .resume-clean-edu {
+      margin-bottom: 18px;
+    }
+    .resume-clean-edu:last-child {
+      margin-bottom: 0;
+    }
+    .resume-clean-edu-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .resume-clean-edu h3 {
+      font-size: 1.12rem;
+      font-weight: 700;
+      color: #0F172A;
+      margin: 0 0 4px 0;
+    }
+    .resume-clean-edu p {
+      font-size: 0.98rem;
+      color: #475569 !important;
+      margin: 0;
+    }
+    @media (max-width: 640px) {
+      .resume-clean {
+        padding: 40px 0 64px;
       }
-      .resume-2026-wrap {
-        padding: 0 14px;
+      .resume-clean-container {
+        padding: 0 16px;
       }
-      .resume-2026-paper {
-        padding: 24px 18px;
+      .resume-clean-list li,
+      .resume-clean-summary,
+      .resume-clean-skill-group {
+        font-size: 0.96rem;
       }
     }
     @media print {
-      .site-header, .footer-2026, .resume-2026-actions, .skip-link {
+      .site-header, .footer-2026, .resume-clean-actions, .skip-link {
         display: none !important;
       }
-      .resume-2026 {
+      .resume-clean {
         padding: 0 !important;
-        background: #FFFFFF !important;
-        min-height: auto !important;
       }
-      .resume-2026-wrap {
+      .resume-clean-container {
         max-width: 100% !important;
-        padding: 0 !important;
-      }
-      .resume-2026-paper {
-        border: none !important;
-        box-shadow: none !important;
         padding: 0 !important;
       }
     }
   </style>
 
-  <div class="resume-2026-wrap">
-    <div class="resume-2026-paper">
-      <div class="resume-2026-head">
-        <div>
-          <h1 class="resume-2026-name">Surjit Singh</h1>
-          <div class="resume-2026-role">AI Platform Engineer &amp; Senior Backend Engineer</div>
-          <p class="resume-2026-meta">Mohali, India</p>
-          <div class="resume-2026-links">
-            <a href="mailto:singhsurjit7@outlook.com">singhsurjit7@outlook.com</a>
-            <a href="https://github.com/surjit7" target="_blank" rel="noopener">github.com/surjit7</a>
-            <a href="https://www.linkedin.com/in/surjitsingh7" target="_blank" rel="noopener">linkedin.com/in/surjitsingh7</a>
-            <a href="https://surjit7.github.io" target="_blank" rel="noopener">surjit7.github.io</a>
-          </div>
-        </div>
+  <div class="resume-clean-container">
+    <div class="resume-clean-header">
+      <h1 class="resume-clean-name">Surjit Singh</h1>
+      <p class="resume-clean-role">AI Platform Engineer &amp; Senior Backend Engineer</p>
+      <p class="resume-clean-loc">Mohali, India</p>
+      <div class="resume-clean-links">
+        <a href="mailto:singhsurjit7@outlook.com">singhsurjit7@outlook.com</a>
+        <a href="https://github.com/surjit7" target="_blank" rel="noopener">github.com/surjit7</a>
+        <a href="https://www.linkedin.com/in/surjitsingh7" target="_blank" rel="noopener">linkedin.com/in/surjitsingh7</a>
+        <a href="https://surjit7.github.io" target="_blank" rel="noopener">surjit7.github.io</a>
+      </div>
+      <div class="resume-clean-actions">
+        <a href="{{ '/resume.pdf' | relative_url }}" class="resume-clean-btn primary" download>Download PDF</a>
+        <button type="button" class="resume-clean-btn" onclick="window.print()">Print / Save PDF</button>
+        <button type="button" class="resume-clean-btn" id="copy-email-btn" data-email="singhsurjit7@outlook.com">
+          Copy Email
+          <span id="copy-email-feedback" class="copy-feedback" aria-live="polite">Copied</span>
+        </button>
+      </div>
+    </div>
 
-        <div class="resume-2026-actions">
-          <a href="{{ '/resume.pdf' | relative_url }}" class="resume-2026-btn primary" download>
-            Download PDF
-          </a>
-          <button type="button" class="resume-2026-btn" onclick="window.print()">
-            Print / Save PDF
-          </button>
-          <button type="button" class="resume-2026-btn" id="copy-email-btn" data-email="singhsurjit7@outlook.com">
-            Copy Email
-            <span id="copy-email-feedback" class="copy-feedback" aria-live="polite">Copied</span>
-          </button>
+    <div class="resume-clean-section">
+      <h2 class="resume-clean-h2">Summary</h2>
+      <p class="resume-clean-summary">
+        AI/ML Platform and Python Backend Engineer with 5 years of experience specializing in high-performance distributed systems, Kubernetes infrastructure, and production LLM deployments. Proven track record of architecting scalable identity providers, event-driven microservices, and bare-metal GPU clusters that drastically reduce inference latency and cloud costs. Strong focus on zero-trust security, resilient messaging, and agentic AI architectures.
+      </p>
+    </div>
+
+    <div class="resume-clean-section">
+      <h2 class="resume-clean-h2">Experience</h2>
+
+      <div class="resume-clean-job">
+        <div class="resume-clean-job-head">
+          <h3 class="resume-clean-job-title">AI Platform Engineer &amp; Senior Backend Engineer</h3>
+          <span class="resume-clean-job-date">Jan 2023 – Present</span>
         </div>
+        <div class="resume-clean-job-company">BJS Home Delivery &bull; Mohali, India</div>
+        <ul class="resume-clean-list">
+          <li><strong>Enterprise AI Platform:</strong> Architected a FastAPI and LangChain platform serving 300+ employees with department-level RBAC for identity-gated AI agents; powered inference via bare-metal <strong>vLLM</strong> and <strong>ChromaDB</strong>, optimizing 15k-token context pipelines to slash P99 latency from 8.0s to 3.5s and reduce OpEx by 27%.</li>
+          <li><strong>Enterprise Identity Platform (IdP):</strong> Built a custom Python IdP (OAuth2, PKCE, TOTP) for 600+ employees; engineered a stateless authentication mesh using <strong>asymmetric JWTs (public-key)</strong> with 15-minute TTLs, enabling zero-network-hop token verification alongside secure Redis-backed session revocation.</li>
+          <li><strong>AMT Concrete &amp; Scaler:</strong> Engineered a zero-touch Kubernetes appliance for the Azure Marketplace; automated bare-metal cluster bootstrapping, dynamic node enrollment via <strong>KEDA</strong>, and human-free <strong>Vault</strong> auto-unsealing, delivering enterprise deployments without managed K8s dependencies.</li>
+          <li><strong>Notify:</strong> Developed an event-driven Python FastAPI notification service utilizing Kafka consumers, Protocol Buffers, and idempotent processing for guaranteed delivery of <strong>120k+ daily emails and messages</strong> across multi-channel APIs.</li>
+          <li><strong>Enterprise AI Integration:</strong> Engineered lightweight completion API hooks connected to UI/bot buttons within legacy apps, <strong>automating critical workflows</strong> (such as delivery price predictions) and empowering Customer Service and Delivery Hub teams to execute backend operations and query knowledge bases instantly.</li>
+          <li><strong>Technical Leadership:</strong> Directed a team of 4 junior engineers, overseeing sprint execution, enforcing code quality standards, and mentoring the team on modern Python architecture and system design best practices.</li>
+        </ul>
       </div>
 
-      <div class="resume-2026-section">
-        <h2 class="resume-2026-h2">Summary</h2>
-        <p class="resume-2026-summary">
-          AI/ML Platform and Python Backend Engineer with 5 years of experience specializing in high-performance distributed systems, Kubernetes infrastructure, and production LLM deployments. Proven track record of architecting scalable identity providers, event-driven microservices, and bare-metal GPU clusters that drastically reduce inference latency and cloud costs. Strong focus on zero-trust security, resilient messaging, and agentic AI architectures.
-        </p>
+      <div class="resume-clean-job">
+        <div class="resume-clean-job-head">
+          <h3 class="resume-clean-job-title">Software Engineer (ML)</h3>
+          <span class="resume-clean-job-date">Oct 2021 – Nov 2022</span>
+        </div>
+        <div class="resume-clean-job-company">Connoisseur Infotech Pvt. Ltd. (RChilli Inc.) &bull; Mohali, India</div>
+        <ul class="resume-clean-list">
+          <li>Spearheaded the modernization of the core resume parsing engine, replacing legacy rules-based Regex and Bi-LSTM models with state-of-the-art <strong>Transformer architectures</strong>.</li>
+          <li>Orchestrated a 14-person cross-functional team to curate a proprietary, high-quality annotation dataset of 5,000+ complex edge cases for Named Entity Recognition (NER).</li>
+          <li>Trained and fine-tuned custom <strong>BERT</strong> models on the proprietary dataset, surging extraction accuracy for highly variable fields from 71% to a production-ready <strong>94.6%</strong>.</li>
+          <li>Engineered the inference migration from CPU-bound pipelines to <strong>NVIDIA T4 GPUs</strong>, achieving a <strong>40% reduction</strong> in serving latency while increasing model parameter count.</li>
+          <li>Deployed the optimized NLP models via REST APIs utilizing <strong>Flask</strong>, enabling high-throughput ingestion for downstream enterprise clients.</li>
+        </ul>
       </div>
+    </div>
 
-      <div class="resume-2026-section">
-        <h2 class="resume-2026-h2">Experience</h2>
+    <div class="resume-clean-section">
+      <h2 class="resume-clean-h2">Skills</h2>
+      <div class="resume-clean-skill-group"><strong>Backend &amp; Distributed Systems:</strong> Python, FastAPI, Flask, Django, Kafka, Protocol Buffers (Protobuf), Redis</div>
+      <div class="resume-clean-skill-group"><strong>AI/ML &amp; NLP:</strong> PyTorch, Hugging Face, BERT, vLLM, Ollama, LangChain, Agentic RAG, ChromaDB, Model Fine-tuning</div>
+      <div class="resume-clean-skill-group"><strong>Infrastructure &amp; Cloud:</strong> Kubernetes, Docker, Helm, Azure VMs, Bare-Metal GPU Provisioning (H200, T4), Linux, Bash, Git</div>
+      <div class="resume-clean-skill-group"><strong>Security &amp; Identity:</strong> OAuth 2.0, OpenID Connect (OIDC), PKCE, JWT, TOTP 2FA, Role-Based Access Control (RBAC)</div>
+      <div class="resume-clean-skill-group"><strong>Databases:</strong> PostgreSQL, MySQL, Redis, ChromaDB</div>
+    </div>
 
-        <div class="resume-2026-job">
-          <div class="resume-2026-job-top">
-            <div>
-              <h3 class="resume-2026-job-title">AI Platform Engineer &amp; Senior Backend Engineer</h3>
-              <div class="resume-2026-job-org">BJS Home Delivery &bull; Mohali, India</div>
-            </div>
-            <div class="resume-2026-job-date">Jan 2023 – Present</div>
-          </div>
-          <ul class="resume-2026-bullets">
-            <li><strong>Enterprise AI Platform:</strong> Architected a FastAPI and LangChain platform serving 300+ employees with department-level RBAC for identity-gated AI agents; powered inference via bare-metal <strong>vLLM</strong> and <strong>ChromaDB</strong>, optimizing 15k-token context pipelines to slash P99 latency from 8.0s to 3.5s and reduce OpEx by 27%.</li>
-            <li><strong>Enterprise Identity Platform (IdP):</strong> Built a custom Python IdP (OAuth2, PKCE, TOTP) for 600+ employees; engineered a stateless authentication mesh using <strong>asymmetric JWTs (public-key)</strong> with 15-minute TTLs, enabling zero-network-hop token verification alongside secure Redis-backed session revocation.</li>
-            <li><strong>AMT Concrete &amp; Scaler:</strong> Engineered a zero-touch Kubernetes appliance for the Azure Marketplace; automated bare-metal cluster bootstrapping, dynamic node enrollment via <strong>KEDA</strong>, and human-free <strong>Vault</strong> auto-unsealing, delivering enterprise deployments without managed K8s dependencies.</li>
-            <li><strong>Notify:</strong> Developed an event-driven Python FastAPI notification service utilizing Kafka consumers, Protocol Buffers, and idempotent processing for guaranteed delivery of <strong>120k+ daily emails and messages</strong> across multi-channel APIs.</li>
-            <li><strong>Enterprise AI Integration:</strong> Engineered lightweight completion API hooks connected to UI/bot buttons within legacy apps, <strong>automating critical workflows</strong> (such as delivery price predictions) and empowering Customer Service and Delivery Hub teams to execute backend operations and query knowledge bases instantly.</li>
-            <li><strong>Technical Leadership:</strong> Directed a team of 4 junior engineers, overseeing sprint execution, enforcing code quality standards, and mentoring the team on modern Python architecture and system design best practices.</li>
-          </ul>
+    <div class="resume-clean-section" style="margin-bottom: 0;">
+      <h2 class="resume-clean-h2">Education</h2>
+      <div class="resume-clean-edu">
+        <div class="resume-clean-edu-top">
+          <h3>Master of Computer Applications (MCA)</h3>
+          <span class="resume-clean-job-date">2019 – 2021</span>
         </div>
-
-        <div class="resume-2026-job">
-          <div class="resume-2026-job-top">
-            <div>
-              <h3 class="resume-2026-job-title">Software Engineer (ML)</h3>
-              <div class="resume-2026-job-org">Connoisseur Infotech Pvt. Ltd. (RChilli Inc.) &bull; Mohali, India</div>
-            </div>
-            <div class="resume-2026-job-date">Oct 2021 – Nov 2022</div>
-          </div>
-          <ul class="resume-2026-bullets">
-            <li>Spearheaded the modernization of the core resume parsing engine, replacing legacy rules-based Regex and Bi-LSTM models with state-of-the-art <strong>Transformer architectures</strong>.</li>
-            <li>Orchestrated a 14-person cross-functional team to curate a proprietary, high-quality annotation dataset of 5,000+ complex edge cases for Named Entity Recognition (NER).</li>
-            <li>Trained and fine-tuned custom <strong>BERT</strong> models on the proprietary dataset, surging extraction accuracy for highly variable fields from 71% to a production-ready <strong>94.6%</strong>.</li>
-            <li>Engineered the inference migration from CPU-bound pipelines to <strong>NVIDIA T4 GPUs</strong>, achieving a <strong>40% reduction</strong> in serving latency while increasing model parameter count.</li>
-            <li>Deployed the optimized NLP models via REST APIs utilizing <strong>Flask</strong>, enabling high-throughput ingestion for downstream enterprise clients.</li>
-          </ul>
-        </div>
+        <p>Chandigarh University &bull; Punjab, India &bull; Specialization in Machine Learning</p>
       </div>
-
-      <div class="resume-2026-section">
-        <h2 class="resume-2026-h2">Skills</h2>
-        <div class="resume-2026-skills">
-          <div><strong>Backend &amp; Distributed Systems:</strong> Python, FastAPI, Flask, Django, Kafka, Protocol Buffers (Protobuf), Redis</div>
-          <div><strong>AI/ML &amp; NLP:</strong> PyTorch, Hugging Face, BERT, vLLM, Ollama, LangChain, Agentic RAG, ChromaDB, Model Fine-tuning</div>
-          <div><strong>Infrastructure &amp; Cloud:</strong> Kubernetes, Docker, Helm, Azure VMs, Bare-Metal GPU Provisioning (H200, T4), Linux, Bash, Git</div>
-          <div><strong>Security &amp; Identity:</strong> OAuth 2.0, OpenID Connect (OIDC), PKCE, JWT, TOTP 2FA, Role-Based Access Control (RBAC)</div>
-          <div><strong>Databases:</strong> PostgreSQL, MySQL, Redis, ChromaDB</div>
+      <div class="resume-clean-edu">
+        <div class="resume-clean-edu-top">
+          <h3>Bachelor of Computer Applications (BCA)</h3>
+          <span class="resume-clean-job-date">2016 – 2019</span>
         </div>
-      </div>
-
-      <div class="resume-2026-section">
-        <h2 class="resume-2026-h2">Education</h2>
-        <div class="resume-2026-edu-row">
-          <div>
-            <strong>Chandigarh University</strong> &mdash; <em>Master of Computer Applications (MCA), Specialization in Machine Learning</em>
-          </div>
-          <div class="resume-2026-job-date">2019 – 2021 &bull; Punjab, India</div>
-        </div>
-        <div class="resume-2026-edu-row">
-          <div>
-            <strong>Chandigarh Group of Colleges</strong> &mdash; <em>Bachelor of Computer Applications (BCA)</em>
-          </div>
-          <div class="resume-2026-job-date">2016 – 2019 &bull; Punjab, India</div>
-        </div>
+        <p>Chandigarh Group of Colleges &bull; Punjab, India</p>
       </div>
     </div>
   </div>
