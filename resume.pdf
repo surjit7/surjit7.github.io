@@ -1,1 +1,136 @@
-Placeholder PDF for resume. Replace with actual PDF.
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+3 0 obj
+<< /Length 9753 >>
+stream
+BT /F2 20.50 Tf 0.060 0.090 0.160 rg 1 0 0 1 228.40 758.00 Tm (SURJIT SINGH) Tj ET
+BT /F1 9.50 Tf 0.300 0.350 0.420 rg 1 0 0 1 164.54 742.00 Tm (AI Platform Engineer & Senior Backend Engineer  |  Mohali, India) Tj ET
+BT /F1 9.20 Tf 0.140 0.390 0.920 rg 1 0 0 1 99.51 729.00 Tm (singhsurjit7@outlook.com) Tj ET
+BT /F1 9.20 Tf 0.500 0.550 0.620 rg 1 0 0 1 206.23 729.00 Tm (  |  ) Tj ET
+BT /F1 9.20 Tf 0.140 0.390 0.920 rg 1 0 0 1 220.95 729.00 Tm (github.com/surjit7) Tj ET
+BT /F1 9.20 Tf 0.500 0.550 0.620 rg 1 0 0 1 297.77 729.00 Tm (  |  ) Tj ET
+BT /F1 9.20 Tf 0.140 0.390 0.920 rg 1 0 0 1 312.49 729.00 Tm (linkedin.com/in/surjitsingh7) Tj ET
+BT /F1 9.20 Tf 0.500 0.550 0.620 rg 1 0 0 1 432.27 729.00 Tm (  |  ) Tj ET
+BT /F1 9.20 Tf 0.140 0.390 0.920 rg 1 0 0 1 446.99 729.00 Tm (surjit7.github.io) Tj ET
+BT /F2 10.60 Tf 0.060 0.090 0.160 rg 1 0 0 1 36.00 712.00 Tm (SUMMARY) Tj ET
+0.200 0.250 0.330 RG 0.75 w 36.00 708.00 m 576.00 708.00 l S
+BT /F1 9.60 Tf 0.160 0.200 0.270 rg 1 0 0 1 36.00 694.50 Tm (AI/ML Platform and Python Backend Engineer with 5 years of experience specializing in high-performance distributed) Tj ET
+BT /F1 9.60 Tf 0.160 0.200 0.270 rg 1 0 0 1 36.00 681.90 Tm (systems, Kubernetes infrastructure, and production LLM deployments. Proven track record of architecting scalable identity) Tj ET
+BT /F1 9.60 Tf 0.160 0.200 0.270 rg 1 0 0 1 36.00 669.30 Tm (providers, event-driven microservices, and bare-metal GPU clusters that drastically reduce inference latency and cloud) Tj ET
+BT /F1 9.60 Tf 0.160 0.200 0.270 rg 1 0 0 1 36.00 656.70 Tm (costs. Strong focus on zero-trust security, resilient messaging, and agentic AI architectures.) Tj ET
+BT /F2 10.60 Tf 0.060 0.090 0.160 rg 1 0 0 1 36.00 635.10 Tm (EXPERIENCE) Tj ET
+0.200 0.250 0.330 RG 0.75 w 36.00 631.10 m 576.00 631.10 l S
+BT /F2 10.40 Tf 0.060 0.090 0.160 rg 1 0 0 1 36.00 617.60 Tm (AI Platform Engineer & Senior Backend Engineer) Tj ET
+BT /F1 9.30 Tf 0.300 0.350 0.420 rg 1 0 0 1 494.25 617.60 Tm (Jan 2023 - Present) Tj ET
+BT /F1 9.50 Tf 0.300 0.350 0.420 rg 1 0 0 1 36.00 605.10 Tm (BJS Home Delivery) Tj ET
+BT /F1 9.20 Tf 0.350 0.400 0.480 rg 1 0 0 1 521.63 605.10 Tm (Mohali, India) Tj ET
+BT /F2 9.40 Tf 0.200 0.250 0.330 rg 1 0 0 1 38.00 592.10 Tm (-) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 592.10 Tm (Enterprise AI Platform: Architected a FastAPI and LangChain platform serving 300+ employees with department-level) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 579.80 Tm (RBAC for identity-gated AI agents; powered inference via bare-metal vLLM and ChromaDB, optimizing 15k-token context) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 567.50 Tm (pipelines to slash P99 latency from 8.0s to 3.5s and reduce OpEx by 27%.) Tj ET
+BT /F2 9.40 Tf 0.200 0.250 0.330 rg 1 0 0 1 38.00 553.40 Tm (-) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 553.40 Tm (Enterprise Identity Platform \(IdP\): Built a custom Python IdP \(OAuth2, PKCE, TOTP\) for 600+ employees; engineered a) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 541.10 Tm (stateless authentication mesh using asymmetric JWTs \(public-key\) with 15-minute TTLs, enabling zero-network-hop token) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 528.80 Tm (verification alongside secure Redis-backed session revocation.) Tj ET
+BT /F2 9.40 Tf 0.200 0.250 0.330 rg 1 0 0 1 38.00 514.70 Tm (-) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 514.70 Tm (AMT Concrete & Scaler: Engineered a zero-touch Kubernetes appliance for the Azure Marketplace; automated bare-metal) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 502.40 Tm (cluster bootstrapping, dynamic node enrollment via KEDA, and human-free Vault auto-unsealing, delivering enterprise) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 490.10 Tm (deployments without managed K8s dependencies.) Tj ET
+BT /F2 9.40 Tf 0.200 0.250 0.330 rg 1 0 0 1 38.00 476.00 Tm (-) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 476.00 Tm (Notify: Developed an event-driven Python FastAPI notification service utilizing Kafka consumers, Protocol Buffers, and) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 463.70 Tm (idempotent processing for guaranteed delivery of 120k+ daily emails and messages across multi-channel APIs.) Tj ET
+BT /F2 9.40 Tf 0.200 0.250 0.330 rg 1 0 0 1 38.00 449.60 Tm (-) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 449.60 Tm (Enterprise AI Integration: Engineered lightweight completion API hooks connected to UI/bot buttons within legacy apps,) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 437.30 Tm (automating critical workflows \(such as delivery price predictions\) and empowering Customer Service and Delivery Hub) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 425.00 Tm (teams to execute backend operations and query knowledge bases instantly.) Tj ET
+BT /F2 9.40 Tf 0.200 0.250 0.330 rg 1 0 0 1 38.00 410.90 Tm (-) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 410.90 Tm (Technical Leadership: Directed a team of 4 junior engineers, overseeing sprint execution, enforcing code quality standards,) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 398.60 Tm (and mentoring the team on modern Python architecture and system design best practices.) Tj ET
+BT /F2 10.40 Tf 0.060 0.090 0.160 rg 1 0 0 1 36.00 379.50 Tm (Software Engineer \(ML\)) Tj ET
+BT /F1 9.30 Tf 0.300 0.350 0.420 rg 1 0 0 1 488.12 379.50 Tm (Oct 2021 - Nov 2022) Tj ET
+BT /F1 9.50 Tf 0.300 0.350 0.420 rg 1 0 0 1 36.00 367.00 Tm (Connoisseur Infotech Pvt. Ltd. \(RChilli Inc.\)) Tj ET
+BT /F1 9.20 Tf 0.350 0.400 0.480 rg 1 0 0 1 521.63 367.00 Tm (Mohali, India) Tj ET
+BT /F2 9.40 Tf 0.200 0.250 0.330 rg 1 0 0 1 38.00 354.00 Tm (-) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 354.00 Tm (Spearheaded the modernization of the core resume parsing engine, replacing legacy rules-based Regex and Bi-LSTM) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 341.70 Tm (models with state-of-the-art Transformer architectures.) Tj ET
+BT /F2 9.40 Tf 0.200 0.250 0.330 rg 1 0 0 1 38.00 327.60 Tm (-) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 327.60 Tm (Orchestrated a 14-person cross-functional team to curate a proprietary, high-quality annotation dataset of 5,000+ complex) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 315.30 Tm (edge cases for Named Entity Recognition \(NER\).) Tj ET
+BT /F2 9.40 Tf 0.200 0.250 0.330 rg 1 0 0 1 38.00 301.20 Tm (-) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 301.20 Tm (Trained and fine-tuned custom BERT models on the proprietary dataset, surging extraction accuracy for highly variable) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 288.90 Tm (fields from 71% to a production-ready 94.6%.) Tj ET
+BT /F2 9.40 Tf 0.200 0.250 0.330 rg 1 0 0 1 38.00 274.80 Tm (-) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 274.80 Tm (Engineered the inference migration from CPU-bound pipelines to NVIDIA T4 GPUs, achieving a 40% reduction in serving) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 262.50 Tm (latency while increasing model parameter count.) Tj ET
+BT /F2 9.40 Tf 0.200 0.250 0.330 rg 1 0 0 1 38.00 248.40 Tm (-) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 248.40 Tm (Deployed the optimized NLP models via REST APIs utilizing Flask, enabling high-throughput ingestion for downstream) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 47.00 236.10 Tm (enterprise clients.) Tj ET
+BT /F2 10.60 Tf 0.060 0.090 0.160 rg 1 0 0 1 36.00 208.00 Tm (SKILLS) Tj ET
+0.200 0.250 0.330 RG 0.75 w 36.00 204.00 m 576.00 204.00 l S
+BT /F2 9.40 Tf 0.060 0.090 0.160 rg 1 0 0 1 36.00 190.50 Tm (Backend & Distributed Systems:) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 186.62 190.50 Tm (Python, FastAPI, Flask, Django, Kafka, Protocol Buffers \(Protobuf\), Redis) Tj ET
+BT /F2 9.40 Tf 0.060 0.090 0.160 rg 1 0 0 1 36.00 177.90 Tm (AI/ML & NLP:) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 106.57 177.90 Tm (PyTorch, Hugging Face, BERT, vLLM, Ollama, LangChain, Agentic RAG, ChromaDB, Model Fine-tuning) Tj ET
+BT /F2 9.40 Tf 0.060 0.090 0.160 rg 1 0 0 1 36.00 165.30 Tm (Infrastructure & Cloud:) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 142.20 165.30 Tm (Kubernetes, Docker, Helm, Azure VMs, Bare-Metal GPU Provisioning \(H200, T4\), Linux, Bash, Git) Tj ET
+BT /F2 9.40 Tf 0.060 0.090 0.160 rg 1 0 0 1 36.00 152.70 Tm (Security & Identity:) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 127.30 152.70 Tm (OAuth 2.0, OpenID Connect \(OIDC\), PKCE, JWT, TOTP 2FA, Role-Based Access Control \(RBAC\)) Tj ET
+BT /F2 9.40 Tf 0.060 0.090 0.160 rg 1 0 0 1 36.00 140.10 Tm (Databases:) Tj ET
+BT /F1 9.40 Tf 0.160 0.200 0.270 rg 1 0 0 1 90.09 140.10 Tm (PostgreSQL, MySQL, Redis, ChromaDB) Tj ET
+BT /F2 10.60 Tf 0.060 0.090 0.160 rg 1 0 0 1 36.00 118.50 Tm (EDUCATION) Tj ET
+0.200 0.250 0.330 RG 0.75 w 36.00 114.50 m 576.00 114.50 l S
+BT /F2 9.90 Tf 0.060 0.090 0.160 rg 1 0 0 1 36.00 101.00 Tm (Chandigarh University) Tj ET
+BT /F1 9.20 Tf 0.350 0.400 0.480 rg 1 0 0 1 520.89 101.00 Tm (Punjab, India) Tj ET
+BT /F1 9.40 Tf 0.250 0.300 0.380 rg 1 0 0 1 36.00 88.80 Tm (Master of Computer Applications \(MCA\), Specialization in Machine Learning) Tj ET
+BT /F1 9.20 Tf 0.350 0.400 0.480 rg 1 0 0 1 526.23 88.80 Tm (2019 - 2021) Tj ET
+BT /F2 9.90 Tf 0.060 0.090 0.160 rg 1 0 0 1 36.00 74.80 Tm (Chandigarh Group of Colleges) Tj ET
+BT /F1 9.20 Tf 0.350 0.400 0.480 rg 1 0 0 1 520.89 74.80 Tm (Punjab, India) Tj ET
+BT /F1 9.40 Tf 0.250 0.300 0.380 rg 1 0 0 1 36.00 62.60 Tm (Bachelor of Computer Applications \(BCA\)) Tj ET
+BT /F1 9.20 Tf 0.350 0.400 0.480 rg 1 0 0 1 526.23 62.60 Tm (2016 - 2019) Tj ET
+endstream
+endobj
+4 0 obj
+<< /Type /Annot /Subtype /Link /Rect [99.51 727.00 206.23 739.00] /Border [0 0 0] /A << /S /URI /URI (mailto:singhsurjit7@outlook.com) >> >>
+endobj
+5 0 obj
+<< /Type /Annot /Subtype /Link /Rect [220.95 727.00 297.77 739.00] /Border [0 0 0] /A << /S /URI /URI (https://github.com/surjit7) >> >>
+endobj
+6 0 obj
+<< /Type /Annot /Subtype /Link /Rect [312.49 727.00 432.27 739.00] /Border [0 0 0] /A << /S /URI /URI (https://www.linkedin.com/in/surjitsingh7) >> >>
+endobj
+7 0 obj
+<< /Type /Annot /Subtype /Link /Rect [446.99 727.00 512.49 739.00] /Border [0 0 0] /A << /S /URI /URI (https://surjit7.github.io) >> >>
+endobj
+8 0 obj
+<< /Type /Pages /Kids [9 0 R] /Count 1 >>
+endobj
+9 0 obj
+<< /Type /Page /Parent 8 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 3 0 R /Annots [4 0 R 5 0 R 6 0 R 7 0 R] >>
+endobj
+10 0 obj
+<< /Type /Catalog /Pages 8 0 R >>
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000015 00000 n 
+0000000112 00000 n 
+0000000214 00000 n 
+0000010019 00000 n 
+0000010175 00000 n 
+0000010327 00000 n 
+0000010493 00000 n 
+0000010644 00000 n 
+0000010701 00000 n 
+0000010871 00000 n 
+trailer
+<< /Size 11 /Root 10 0 R >>
+startxref
+10921
+%%EOF
