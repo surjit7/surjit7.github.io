@@ -1,220 +1,310 @@
-<section id="skills" class="skills-section-premium">
-  <div class="skills-container-premium">
-    <div class="skills-header-premium">
-      <h2 class="skills-title-premium">Skills & Expertise.</h2>
-      <p class="skills-subtitle-premium">Technical capabilities across AI/ML, Python, and Cloud Engineering</p>
+<section id="skills" class="skills-2026">
+  <style>
+    .skills-2026 {
+      padding: 64px 0;
+      background: #FAFAFA;
+      border-bottom: 1px solid #E4E4E7;
+    }
+    .skills-2026-inner {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .skills-2026-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+    .skills-2026-kicker {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #71717A;
+      margin-bottom: 8px;
+    }
+    .skills-2026-title {
+      font-size: clamp(1.85rem, 3.6vw, 2.45rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: #09090B;
+      margin: 0 0 6px 0;
+      line-height: 1.1;
+    }
+    .skills-2026-subtitle {
+      font-size: 1rem;
+      color: #52525B !important;
+      margin: 0;
+      max-width: 560px;
+    }
+    .skills-2026-link {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #09090B !important;
+      background: #FFFFFF;
+      border: 1px solid #E4E4E7;
+      border-radius: 8px;
+      padding: 8px 14px;
+      text-decoration: none !important;
+      transition: border-color 0.15s ease, background-color 0.15s ease;
+    }
+    .skills-2026-link:hover {
+      border-color: #A1A1AA;
+      background: #F4F4F5;
+    }
+    .skills-2026-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      border: 1px solid #E4E4E7;
+      border-radius: 12px;
+      background: #FFFFFF;
+      overflow: hidden;
+    }
+    .skill-2026-cell {
+      padding: 24px;
+      border-right: 1px solid #E4E4E7;
+      border-bottom: 1px solid #E4E4E7;
+      transition: background-color 0.15s ease;
+    }
+    .skill-2026-cell:hover {
+      background: #FAFAFA;
+    }
+    .skill-2026-cell:nth-child(3n) {
+      border-right: none;
+    }
+    .skill-2026-cell:nth-last-child(-n+3) {
+      border-bottom: none;
+    }
+    .skill-2026-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .skill-2026-title-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .skill-2026-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: #FAFAFA;
+      border: 1px solid #E4E4E7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .skill-2026-name {
+      font-size: 1.02rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #09090B;
+      margin: 0;
+    }
+    .skill-2026-num {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #A1A1AA;
+    }
+    .skill-2026-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .skill-2026-tag {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.73rem;
+      font-weight: 600;
+      padding: 4px 9px;
+      background: #FAFAFA;
+      border: 1px solid #E4E4E7;
+      color: #3F3F46;
+      border-radius: 6px;
+    }
+    @media (max-width: 920px) {
+      .skills-2026-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .skill-2026-cell:nth-child(3n) {
+        border-right: 1px solid #E4E4E7;
+      }
+      .skill-2026-cell:nth-child(2n) {
+        border-right: none;
+      }
+      .skill-2026-cell:nth-last-child(-n+3) {
+        border-bottom: 1px solid #E4E4E7;
+      }
+      .skill-2026-cell:nth-last-child(-n+2) {
+        border-bottom: none;
+      }
+    }
+    @media (max-width: 640px) {
+      .skills-2026 {
+        padding: 44px 0;
+      }
+      .skills-2026-grid {
+        grid-template-columns: 1fr;
+      }
+      .skill-2026-cell {
+        border-right: none !important;
+        border-bottom: 1px solid #E4E4E7 !important;
+      }
+      .skill-2026-cell:last-child {
+        border-bottom: none !important;
+      }
+    }
+  </style>
+
+  <div class="skills-2026-inner">
+    <div class="skills-2026-header">
+      <div>
+        <div class="skills-2026-kicker">03 // Technical Stack</div>
+        <h2 class="skills-2026-title">Skills &amp; Capabilities</h2>
+        <p class="skills-2026-subtitle">Core technologies across LLM inference, Python microservices, Kubernetes, and data systems.</p>
+      </div>
+      <a href="{{ '/resume/' | relative_url }}" class="skills-2026-link" target="_blank">Technical Resume &#8599;</a>
     </div>
 
-    <style>
-      .skills-section-premium {
-        padding: 64px 0;
-        background: #F8FAFC;
-        position: relative;
-        border-top: 1px solid #F1F5F9;
-      }
-      .skills-container-premium {
-        max-width: 1050px;
-        margin: 0 auto;
-        padding: 0 24px;
-        position: relative;
-        z-index: 2;
-      }
-      .skills-header-premium {
-        text-align: left;
-        margin-bottom: 40px;
-      }
-      .skills-title-premium {
-        font-size: clamp(2rem, 4vw, 2.75rem);
-        font-weight: 800;
-        letter-spacing: -0.03em;
-        color: #111827;
-        margin-bottom: 8px;
-        line-height: 1.1;
-      }
-      .skills-subtitle-premium {
-        font-size: 1.15rem;
-        color: #64748B;
-        max-width: 600px;
-        margin: 0;
-      }
-      .skills-grid-premium {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 24px;
-      }
-      .skill-card-premium {
-        background: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.5) 100%);
-        border: 1px solid rgba(255, 255, 255, 0.8);
-        border-radius: 24px;
-        padding: 32px;
-        box-shadow: 0 10px 30px -10px rgba(37, 99, 235, 0.05), inset 0 1px 0 rgba(255, 255, 255, 1);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      }
-      .skill-card-premium:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 24px 48px -12px rgba(37, 99, 235, 0.15), inset 0 1px 0 rgba(255, 255, 255, 1);
-        border-color: rgba(59, 130, 246, 0.3);
-      }
-      .skill-card-header {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin-bottom: 20px;
-      }
-      .skill-icon-wrapper {
-        width: 40px;
-        height: 40px;
-        background: #F1F5F9;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #3B82F6;
-      }
-      .skill-card-title {
-        font-size: 1.2rem;
-        font-weight: 700;
-        color: #0F172A;
-        margin: 0;
-      }
-      .skill-tags-premium {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-      }
-      .skill-tag-premium {
-        font-family: ui-monospace, SFMono-Regular, monospace;
-        font-size: 0.8rem;
-        font-weight: 600;
-        padding: 6px 12px;
-        background: rgba(241, 245, 249, 0.8);
-        border: 1px solid #E2E8F0;
-        color: #475569;
-        border-radius: 8px;
-        transition: all 0.2s ease;
-      }
-      .skill-card-premium:hover .skill-tag-premium {
-        background: rgba(59, 130, 246, 0.05);
-        border-color: rgba(59, 130, 246, 0.2);
-        color: #1E3A8A;
-      }
-      .skills-view-all-premium {
-        margin-top: 48px;
-        text-align: center;
-      }
-      .skills-view-all-premium a {
-        display: inline-flex;
-        align-items: center;
-        font-weight: 600;
-        color: #3B82F6;
-        text-decoration: none;
-        transition: color 0.2s;
-      }
-      .skills-view-all-premium a:hover {
-        color: #1D4ED8;
-      }
-    </style>
-
-    <div class="skills-grid-premium">
-      <!-- AI & LLMs -->
-      <div class="skill-card-premium">
-        <div class="skill-card-header">
-          <div class="skill-icon-wrapper">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+    <div class="skills-2026-grid">
+      <div class="skill-2026-cell">
+        <div class="skill-2026-top">
+          <div class="skill-2026-title-group">
+            <div class="skill-2026-icon" style="color: #2563EB;">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+            </div>
+            <h3 class="skill-2026-name">AI &amp; LLM Inference</h3>
           </div>
-          <h3 class="skill-card-title">AI & LLMs</h3>
+          <span class="skill-2026-num">[01]</span>
         </div>
-        <div class="skill-tags-premium">
-          <span class="skill-tag-premium">LLMs</span>
-          <span class="skill-tag-premium">NLP</span>
-          <span class="skill-tag-premium">Model Fine-tuning</span>
-          <span class="skill-tag-premium">Ray</span>
-          <span class="skill-tag-premium">Chroma</span>
-          <span class="skill-tag-premium">BERT</span>
-          <span class="skill-tag-premium">Transformers</span>
-          <span class="skill-tag-premium">vLLM</span>
-          <span class="skill-tag-premium">Ollama</span>
+        <div class="skill-2026-tags">
+          <span class="skill-2026-tag">vLLM</span>
+          <span class="skill-2026-tag">PyTorch</span>
+          <span class="skill-2026-tag">Ollama</span>
+          <span class="skill-2026-tag">Transformers</span>
+          <span class="skill-2026-tag">BERT / NER</span>
+          <span class="skill-2026-tag">Agentic RAG</span>
+          <span class="skill-2026-tag">Fine-tuning</span>
+          <span class="skill-2026-tag">Ray</span>
         </div>
       </div>
 
-      <!-- Python & Libraries -->
-      <div class="skill-card-premium">
-        <div class="skill-card-header">
-          <div class="skill-icon-wrapper" style="color: #10B981;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+      <div class="skill-2026-cell">
+        <div class="skill-2026-top">
+          <div class="skill-2026-title-group">
+            <div class="skill-2026-icon" style="color: #059669;">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+            </div>
+            <h3 class="skill-2026-name">Python &amp; Backend</h3>
           </div>
-          <h3 class="skill-card-title">Python Stack</h3>
+          <span class="skill-2026-num">[02]</span>
         </div>
-        <div class="skill-tags-premium">
-          <span class="skill-tag-premium">Python</span>
-          <span class="skill-tag-premium">PyTorch</span>
-          <span class="skill-tag-premium">FastAPI</span>
-          <span class="skill-tag-premium">Flask</span>
-          <span class="skill-tag-premium">Django</span>
-          <span class="skill-tag-premium">Pandas</span>
-          <span class="skill-tag-premium">NumPy</span>
-          <span class="skill-tag-premium">Scikit-Learn</span>
+        <div class="skill-2026-tags">
+          <span class="skill-2026-tag">Python</span>
+          <span class="skill-2026-tag">FastAPI</span>
+          <span class="skill-2026-tag">Django</span>
+          <span class="skill-2026-tag">Flask</span>
+          <span class="skill-2026-tag">gRPC</span>
+          <span class="skill-2026-tag">Protobuf</span>
+          <span class="skill-2026-tag">Celery</span>
+          <span class="skill-2026-tag">REST APIs</span>
         </div>
       </div>
 
-      <!-- Cloud & DevOps -->
-      <div class="skill-card-premium">
-        <div class="skill-card-header">
-          <div class="skill-icon-wrapper" style="color: #F59E0B;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 12 12 17 22 12"></polyline><polyline points="2 17 12 22 22 17"></polyline></svg>
+      <div class="skill-2026-cell">
+        <div class="skill-2026-top">
+          <div class="skill-2026-title-group">
+            <div class="skill-2026-icon" style="color: #D97706;">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 12 12 17 22 12"></polyline><polyline points="2 17 12 22 22 17"></polyline></svg>
+            </div>
+            <h3 class="skill-2026-name">Cloud &amp; Kubernetes</h3>
           </div>
-          <h3 class="skill-card-title">Cloud & DevOps</h3>
+          <span class="skill-2026-num">[03]</span>
         </div>
-        <div class="skill-tags-premium">
-          <span class="skill-tag-premium">Azure</span>
-          <span class="skill-tag-premium">Kubernetes</span>
-          <span class="skill-tag-premium">GPU Workloads</span>
-          <span class="skill-tag-premium">CI/CD</span>
-          <span class="skill-tag-premium">ArgoCD</span>
-          <span class="skill-tag-premium">Git</span>
-          <span class="skill-tag-premium">Linux</span>
+        <div class="skill-2026-tags">
+          <span class="skill-2026-tag">Kubernetes</span>
+          <span class="skill-2026-tag">Azure / VMSS</span>
+          <span class="skill-2026-tag">Bare-Metal GPU</span>
+          <span class="skill-2026-tag">ArgoCD</span>
+          <span class="skill-2026-tag">KEDA</span>
+          <span class="skill-2026-tag">Docker</span>
+          <span class="skill-2026-tag">Helm</span>
+          <span class="skill-2026-tag">Linux</span>
         </div>
       </div>
 
-      <!-- Backend & APIs -->
-      <div class="skill-card-premium">
-        <div class="skill-card-header">
-          <div class="skill-icon-wrapper" style="color: #8B5CF6;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+      <div class="skill-2026-cell">
+        <div class="skill-2026-top">
+          <div class="skill-2026-title-group">
+            <div class="skill-2026-icon" style="color: #7C3AED;">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            </div>
+            <h3 class="skill-2026-name">Security &amp; Identity</h3>
           </div>
-          <h3 class="skill-card-title">Backend & Auth</h3>
+          <span class="skill-2026-num">[04]</span>
         </div>
-        <div class="skill-tags-premium">
-          <span class="skill-tag-premium">REST APIs</span>
-          <span class="skill-tag-premium">OAuth 2.0</span>
-          <span class="skill-tag-premium">SSO</span>
-          <span class="skill-tag-premium">RBAC</span>
-          <span class="skill-tag-premium">Modernization</span>
+        <div class="skill-2026-tags">
+          <span class="skill-2026-tag">OAuth 2.0</span>
+          <span class="skill-2026-tag">OIDC</span>
+          <span class="skill-2026-tag">PKCE</span>
+          <span class="skill-2026-tag">JWT (RS256)</span>
+          <span class="skill-2026-tag">WebAuthn</span>
+          <span class="skill-2026-tag">TOTP 2FA</span>
+          <span class="skill-2026-tag">RBAC</span>
+          <span class="skill-2026-tag">HashiCorp Vault</span>
         </div>
       </div>
 
-      <!-- Databases -->
-      <div class="skill-card-premium">
-        <div class="skill-card-header">
-          <div class="skill-icon-wrapper" style="color: #EC4899;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+      <div class="skill-2026-cell">
+        <div class="skill-2026-top">
+          <div class="skill-2026-title-group">
+            <div class="skill-2026-icon" style="color: #DB2777;">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+            </div>
+            <h3 class="skill-2026-name">Data &amp; Messaging</h3>
           </div>
-          <h3 class="skill-card-title">Databases</h3>
+          <span class="skill-2026-num">[05]</span>
         </div>
-        <div class="skill-tags-premium">
-          <span class="skill-tag-premium">PostgreSQL</span>
-          <span class="skill-tag-premium">MySQL</span>
-          <span class="skill-tag-premium">Redis</span>
-          <span class="skill-tag-premium">Kafka</span>
-          <span class="skill-tag-premium">SQL</span>
+        <div class="skill-2026-tags">
+          <span class="skill-2026-tag">PostgreSQL</span>
+          <span class="skill-2026-tag">Redis</span>
+          <span class="skill-2026-tag">Kafka</span>
+          <span class="skill-2026-tag">RabbitMQ</span>
+          <span class="skill-2026-tag">ChromaDB</span>
+          <span class="skill-2026-tag">MongoDB</span>
+          <span class="skill-2026-tag">MySQL</span>
         </div>
       </div>
-    </div>
 
-    <div class="skills-view-all-premium">
-      <a href="{{ '/resume/' | relative_url }}">View Full Technical Resume &rarr;</a>
+      <div class="skill-2026-cell">
+        <div class="skill-2026-top">
+          <div class="skill-2026-title-group">
+            <div class="skill-2026-icon" style="color: #0891B2;">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            </div>
+            <h3 class="skill-2026-name">Networking &amp; MLOps</h3>
+          </div>
+          <span class="skill-2026-num">[06]</span>
+        </div>
+        <div class="skill-2026-tags">
+          <span class="skill-2026-tag">Cilium (eBPF)</span>
+          <span class="skill-2026-tag">NGINX Ingress</span>
+          <span class="skill-2026-tag">NetworkPolicy</span>
+          <span class="skill-2026-tag">MLflow</span>
+          <span class="skill-2026-tag">Kubeflow</span>
+          <span class="skill-2026-tag">Prometheus</span>
+          <span class="skill-2026-tag">Git / CI-CD</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
