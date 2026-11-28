@@ -1,446 +1,466 @@
-<section id="projects" class="projects-section" {% if page.permalink == "/projects/" %}style="padding-top: 80px !important;"{% endif %}>
-  <!-- Premium Ambient Orbs -->
-  <div style="position: absolute; top: 0; right: 0; width: 600px; height: 600px; background: rgba(59, 130, 246, 0.08); filter: blur(120px); border-radius: 50%; pointer-events: none; z-index: 1;"></div>
-  <div style="position: absolute; bottom: 10%; left: -10%; width: 500px; height: 500px; background: rgba(139, 92, 246, 0.08); filter: blur(120px); border-radius: 50%; pointer-events: none; z-index: 1;"></div>
-
+<section id="projects" class="proj-2026">
   <style>
-    .projects-section {
+    .proj-2026 {
       padding: 64px 0;
-      background: #F8FAFC; /* Slate 50 instead of flat gray */
-      border-top: 1px solid #F1F5F9;
-      position: relative;
-      overflow: hidden;
+      {% if page.permalink == "/projects/" %}padding-top: 84px;{% endif %}
+      background: #FFFFFF;
+      border-bottom: 1px solid #E4E4E7;
     }
-    .projects-container {
-      max-width: 1050px;
+    .proj-2026-inner {
+      max-width: 1040px;
       margin: 0 auto;
       padding: 0 24px;
-      position: relative;
-      z-index: 2;
     }
-    .projects-header {
-      text-align: left;
-      margin-bottom: 40px;
+    .proj-2026-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 36px;
     }
-    .projects-title {
-      font-size: clamp(2rem, 4vw, 2.75rem);
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      color: #111827;
+    .proj-2026-kicker {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #71717A;
       margin-bottom: 8px;
+    }
+    .proj-2026-title {
+      font-size: clamp(1.85rem, 3.6vw, 2.45rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: #09090B;
+      margin: 0 0 6px 0;
       line-height: 1.1;
     }
-    .projects-subtitle {
-      font-size: 1.15rem;
-      color: #64748B;
-      max-width: 600px;
-      margin: 0;
-    }
-    .projects-grid-3 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-      gap: 32px;
-    }
-    @media (max-width: 768px) {
-      .projects-grid-3 {
-        grid-template-columns: 1fr;
-      }
-    }
-    .project-card-3 {
-      background: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.5) 100%);
-      border: 1px solid rgba(255, 255, 255, 0.8);
-      border-radius: 24px;
-      padding: 36px;
-      position: relative;
-      box-shadow: 
-        0 10px 30px -10px rgba(37, 99, 235, 0.05), 
-        inset 0 1px 0 rgba(255, 255, 255, 1);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      display: flex;
-      flex-direction: column;
-    }
-    .project-card-3:hover {
-      transform: translateY(-6px);
-      box-shadow: 
-        0 24px 48px -12px rgba(37, 99, 235, 0.15), 
-        inset 0 1px 0 rgba(255, 255, 255, 1);
-      border-color: rgba(59, 130, 246, 0.3);
-    }
-    .project-badge-3 {
-      margin-bottom: 24px;
-      min-height: 24px;
-    }
-    .project-badge-3 .badge {
-      font-family: ui-monospace, SFMono-Regular, monospace;
-      font-size: 0.75rem;
-      font-weight: 700;
-      padding: 6px 12px;
-      border-radius: 8px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      display: inline-block;
-    }
-    .badge-flagship { 
-      background: #0F172A; 
-      color: #38BDF8; 
-      border: 1px solid rgba(56, 189, 248, 0.3);
-      box-shadow: 0 4px 12px rgba(56, 189, 248, 0.1);
-      letter-spacing: 0.08em;
-    }
-    .badge-opensource { 
-      background: #0F172A; 
-      color: #A78BFA; 
-      border: 1px solid rgba(167, 139, 250, 0.3);
-      box-shadow: 0 4px 12px rgba(167, 139, 250, 0.1);
-      letter-spacing: 0.08em;
-    }
-    
-    .project-title-3 {
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: #0F172A;
-      margin: 0 0 12px 0;
-      letter-spacing: -0.02em;
-      line-height: 1.2;
-    }
-    .project-desc-3 {
+    .proj-2026-subtitle {
       font-size: 1rem;
-      color: #475569;
-      line-height: 1.6;
-      margin: 0 0 24px 0;
+      color: #52525B !important;
+      margin: 0;
+      max-width: 560px;
     }
-    
-    .project-details-container {
-      flex-grow: 1;
+    .proj-2026-all-link {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #09090B !important;
+      background: #FAFAFA;
+      border: 1px solid #E4E4E7;
+      border-radius: 8px;
+      padding: 8px 14px;
+      text-decoration: none !important;
+      transition: border-color 0.15s ease, background-color 0.15s ease;
+    }
+    .proj-2026-all-link:hover {
+      border-color: #A1A1AA;
+      background: #F4F4F5;
+    }
+    .proj-2026-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+    .proj-2026-card {
+      background: #FAFAFA;
+      border: 1px solid #E4E4E7;
+      border-radius: 12px;
+      padding: 28px;
       display: flex;
       flex-direction: column;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
     }
-    
-    .project-details-3 {
-      margin-bottom: 24px;
+    .proj-2026-card:hover {
+      background: #FFFFFF;
+      border-color: #D4D4D8;
+      box-shadow: 0 12px 30px -18px rgba(9, 9, 11, 0.14);
     }
-    .project-details-3 h4 {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #94A3B8;
+    .proj-2026-card.wide {
+      grid-column: 1 / -1;
+    }
+    .proj-2026-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .proj-2026-badge {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.7rem;
       font-weight: 700;
-      margin: 0 0 12px 0;
-      border-bottom: 1px solid rgba(226, 232, 240, 0.6);
-      padding-bottom: 8px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 4px 9px;
+      border-radius: 6px;
+      border: 1px solid #E4E4E7;
+      background: #FFFFFF;
+      color: #3F3F46;
     }
-    .project-details-3 ul {
+    .proj-2026-badge.flagship {
+      color: #1D4ED8;
+      background: rgba(37, 99, 235, 0.06);
+      border-color: rgba(37, 99, 235, 0.22);
+    }
+    .proj-2026-badge.opensource {
+      color: #047857;
+      background: rgba(16, 185, 129, 0.08);
+      border-color: rgba(16, 185, 129, 0.24);
+    }
+    .proj-2026-index {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.74rem;
+      font-weight: 600;
+      color: #A1A1AA;
+    }
+    .proj-2026-name {
+      font-size: 1.32rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      color: #09090B;
+      margin: 0 0 10px 0;
+      line-height: 1.25;
+    }
+    .proj-2026-desc {
+      font-size: 0.94rem;
+      color: #52525B !important;
+      line-height: 1.6;
+      margin: 0 0 20px 0;
+    }
+    .proj-2026-section-lbl {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #71717A;
+      margin: 0 0 10px 0;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #E4E4E7;
+    }
+    .proj-2026-points {
       list-style: none;
       padding: 0;
-      margin: 0;
+      margin: 0 0 20px 0;
     }
-    .project-details-3 li {
+    .proj-2026-points li {
       position: relative;
-      padding-left: 24px;
-      margin-bottom: 12px;
-      font-size: 0.95rem;
-      color: #475569;
-      line-height: 1.6;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+      color: #3F3F46;
+      line-height: 1.55;
     }
-    .project-details-3 li::before {
-      content: '→';
+    .proj-2026-points li:last-child {
+      margin-bottom: 0;
+    }
+    .proj-2026-points li::before {
+      content: '->';
       position: absolute;
       left: 0;
-      color: #3B82F6; /* Vibrant Blue Arrow */
-      font-family: ui-monospace, monospace;
-      font-weight: 800;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: #71717A;
     }
-    .project-role-3 {
-      font-size: 0.95rem;
-      color: #475569;
-      line-height: 1.5;
-      margin: 0;
-      font-style: italic;
+    .proj-2026-wide-cols {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 28px;
+      align-items: start;
     }
-    
-    .project-tech-stack-3 {
+    .proj-2026-tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 6px;
       margin-top: auto;
-      padding-top: 20px;
-      margin-bottom: 24px;
+      padding-top: 14px;
+      margin-bottom: 16px;
     }
-    .project-tech-3 {
-      font-family: ui-monospace, SFMono-Regular, monospace;
-      font-size: 0.75rem;
-      font-weight: 700;
-      padding: 6px 12px;
-      background: rgba(241, 245, 249, 0.8); /* Slate 100 translucent */
-      border: 1px solid #E2E8F0;
-      color: #64748B;
-      border-radius: 8px;
-      transition: all 0.2s ease;
+    .proj-2026-tag {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 4px 9px;
+      background: #FFFFFF;
+      border: 1px solid #E4E4E7;
+      color: #3F3F46;
+      border-radius: 6px;
     }
-    .project-card-3:hover .project-tech-3 {
-      background: rgba(59, 130, 246, 0.05); /* Tint blue on hover */
-      border-color: rgba(59, 130, 246, 0.2);
-      color: #1E3A8A;
-    }
-    
-    .project-links-3 {
+    .proj-2026-footer {
       display: flex;
+      align-items: center;
+      flex-wrap: wrap;
       gap: 16px;
-      border-top: 1px solid rgba(226, 232, 240, 0.8);
-      padding-top: 24px;
+      padding-top: 14px;
+      border-top: 1px solid #E4E4E7;
     }
-    .project-link-3 {
+    .proj-2026-link {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      font-size: 0.9rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.8rem;
       font-weight: 600;
-      color: #3B82F6;
-      text-decoration: none;
-      transition: all 0.2s ease;
+      color: #09090B !important;
+      text-decoration: none !important;
+      transition: color 0.15s ease;
     }
-    .project-link-3:hover {
-      color: #1D4ED8;
-      transform: translateX(2px);
+    .proj-2026-link:hover {
+      color: #2563EB !important;
     }
-    .project-link-3 .icon {
-      width: 18px;
-      height: 18px;
+    .proj-2026-link svg {
+      width: 15px;
+      height: 15px;
+      flex-shrink: 0;
     }
-    
+    .proj-2026-internal {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.74rem;
+      color: #71717A;
+    }
+
+    @media (max-width: 860px) {
+      .proj-2026-grid {
+        grid-template-columns: 1fr;
+      }
+      .proj-2026-wide-cols {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+    }
     @media (max-width: 768px) {
-      .projects-section { padding: 80px 0; }
-      .projects-container { padding: 0 16px; }
-      .project-card-3 { padding: 24px; }
+      .proj-2026 {
+        padding: 44px 0;
+        {% if page.permalink == "/projects/" %}padding-top: 64px;{% endif %}
+      }
+      .proj-2026-card {
+        padding: 22px 18px;
+      }
     }
   </style>
 
-  <div class="projects-container">
-    <div class="projects-header">
-      <h2 class="projects-title">Featured Projects.</h2>
-      <p class="projects-subtitle">Building production-grade platforms that other engineers build on.</p>
+  <div class="proj-2026-inner">
+    <div class="proj-2026-header">
+      <div>
+        <div class="proj-2026-kicker">02 // Architecture &amp; Systems</div>
+        <h2 class="proj-2026-title">Featured Projects</h2>
+        <p class="proj-2026-subtitle">Production platforms, self-hosted LLM infrastructure, and open-source engineering guides.</p>
+      </div>
+      {% unless page.permalink == "/projects/" %}
+      <a href="{{ '/projects/' | relative_url }}" class="proj-2026-all-link">All Repositories &amp; Listings &rarr;</a>
+      {% endunless %}
     </div>
 
-    <div class="projects-grid-3">
-      <!-- 1. Kubernetes Hosting Platform (Hero Project) -->
-      <article class="project-card-3">
-        <div class="project-badge-3">
-          <span class="badge badge-flagship">Flagship Architecture</span>
+    <div class="proj-2026-grid">
+      <!-- 1. Kubernetes Hosting Platform -->
+      <article class="proj-2026-card">
+        <div class="proj-2026-top">
+          <span class="proj-2026-badge flagship">Flagship // Azure Marketplace</span>
+          <span class="proj-2026-index">[01]</span>
         </div>
-        <h3 class="project-title-3">Kubernetes Hosting Platform</h3>
-        <p class="project-desc-3">Production-ready Kubernetes platform engineering project with GitOps (ArgoCD), HashiCorp Vault auto-init/unseal, NGINX Ingress, and essential cloud-native tooling. Enables instant application deployment with zero DevOps expertise required.</p>
-        
-        <div class="project-details-3">
-          <h4>Key Engineering Challenges Solved</h4>
-          <ul>
-            <li>Single-node Kubernetes cluster with automatic initialization and configuration via self-hosted VM</li>
-            <li>GitOps workflows with ArgoCD for declarative application deployment</li>
-            <li>Secure secret management with HashiCorp Vault auto-init and unseal</li>
-            <li>Integrated tooling stack: NGINX Ingress, Redis, Kafka, PostgreSQL, and more</li>
-          </ul>
+        <h3 class="proj-2026-name">Kubernetes Hosting Platform</h3>
+        <p class="proj-2026-desc">Zero-touch Kubernetes platform appliance (AMT Concrete &amp; Scaler) with GitOps via ArgoCD, automated HashiCorp Vault init/unseal, NGINX Ingress, KEDA, and pre-wired cloud-native data services.</p>
+
+        <div class="proj-2026-section-lbl">Engineering Highlights</div>
+        <ul class="proj-2026-points">
+          <li>Automated single-node &amp; Azure VMSS cluster bootstrapping with zero managed-K8s dependency</li>
+          <li>Declarative application delivery via ArgoCD GitOps pipelines</li>
+          <li>Human-free secret lifecycle using HashiCorp Vault auto-init and auto-unseal</li>
+          <li>Pre-integrated NGINX Ingress, Kafka, Redis, PostgreSQL, and KEDA autoscaling</li>
+        </ul>
+
+        <div class="proj-2026-tags">
+          <span class="proj-2026-tag">Kubernetes</span>
+          <span class="proj-2026-tag">ArgoCD</span>
+          <span class="proj-2026-tag">Vault</span>
+          <span class="proj-2026-tag">KEDA</span>
+          <span class="proj-2026-tag">NGINX</span>
+          <span class="proj-2026-tag">Kafka</span>
+          <span class="proj-2026-tag">Azure</span>
         </div>
-        
-        <div class="project-details-3">
-          <h4>My Role & Contribution</h4>
-          <p class="project-role-3">Designed and built the platform foundation, integrated cloud-native tools, and created the automated provisioning system.</p>
-        </div>
-        
-        <div class="project-tech-stack-3">
-          <span class="project-tech-3" title="Kubernetes">Kubernetes</span>
-          <span class="project-tech-3" title="Argo CD">ArgoCD</span>
-          <span class="project-tech-3" title="Vault">Vault</span>
-          <span class="project-tech-3" title="NGINX">NGINX</span>
-          <span class="project-tech-3" title="Redis">Redis</span>
-          <span class="project-tech-3" title="Kafka">Kafka</span>
-          <span class="project-tech-3" title="PostgreSQL">PostgreSQL</span>
-          <span class="project-tech-3" title="Azure">Azure</span>
-        </div>
-        
-        <div class="project-links-3">
-          <a href="https://marketplace.microsoft.com/en-us/product/bjsallmyitlimited1759407982389.bjs-ml?tab=overview" target="_blank" rel="noopener" class="project-link-3">
-            <svg class="icon docs-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-9V3.5L18.5 9H13z"/></svg>
-            Microsoft Marketplace
+
+        <div class="proj-2026-footer">
+          <a href="https://marketplace.microsoft.com/en-us/product/bjsallmyitlimited1759407982389.bjs-ml?tab=overview" target="_blank" rel="noopener" class="proj-2026-link">
+            Microsoft Marketplace &#8599;
+          </a>
+          <a href="https://marketplace.microsoft.com/en-us/product/bjsallmyitlimited1759407982389.amt-scaler?tab=overview" target="_blank" rel="noopener" class="proj-2026-link">
+            AMT Scaler &#8599;
           </a>
         </div>
       </article>
 
-      <!-- 2. Enterprise AI Platform (Hero Project) -->
-      <article class="project-card-3">
-        <div class="project-badge-3">
-          <span class="badge badge-flagship">Flagship Architecture</span>
+      <!-- 2. Enterprise AI Platform -->
+      <article class="proj-2026-card">
+        <div class="proj-2026-top">
+          <span class="proj-2026-badge flagship">Flagship // LLM Infra</span>
+          <span class="proj-2026-index">[02]</span>
         </div>
-        <h3 class="project-title-3">Enterprise AI Platform</h3>
-        <p class="project-desc-3">Production-grade conversational AI platform with self-hosted LLM infrastructure using vLLM for GPU inference, agentic AI framework with pre-built agents, RAG via ChromaDB, and comprehensive RBAC for enterprise security.</p>
-        
-        <div class="project-details-3">
-          <h4>Key Engineering Challenges Solved</h4>
-          <ul>
-            <li>Self-hosted LLM infrastructure with vLLM for high-throughput, low-latency GPU inference</li>
-            <li>Agentic AI framework with pre-built agents, prompt libraries, and customizable workflows</li>
-            <li>Secure multi-tenant architecture with fine-grained RBAC and enterprise integration</li>
-            <li>RAG implementation with ChromaDB vector storage for enterprise knowledge base</li>
-          </ul>
+        <h3 class="proj-2026-name">Enterprise AI Platform</h3>
+        <p class="proj-2026-desc">Self-hosted conversational AI and RAG platform serving 300+ internal employees on bare-metal GPUs via vLLM, ChromaDB vector retrieval, reusable agent workflows, and department-level RBAC.</p>
+
+        <div class="proj-2026-section-lbl">Engineering Highlights</div>
+        <ul class="proj-2026-points">
+          <li>Bare-metal vLLM inference serving 15k-token RAG context pipelines, cutting P99 latency from 8.0s to 3.5s</li>
+          <li>Reduced cloud AI OpEx by 27% versus external frontier API consumption</li>
+          <li>Agentic workflow engine with reusable prompt libraries and tool execution</li>
+          <li>Multi-tenant isolation enforcing department-scoped RBAC via OAuth2</li>
+        </ul>
+
+        <div class="proj-2026-tags">
+          <span class="proj-2026-tag">vLLM</span>
+          <span class="proj-2026-tag">PyTorch</span>
+          <span class="proj-2026-tag">FastAPI</span>
+          <span class="proj-2026-tag">ChromaDB</span>
+          <span class="proj-2026-tag">PostgreSQL</span>
+          <span class="proj-2026-tag">Redis</span>
+          <span class="proj-2026-tag">RBAC</span>
         </div>
-        
-        <div class="project-details-3">
-          <h4>My Role & Contribution</h4>
-          <p class="project-role-3">Designed and built the platform architecture, implemented the agentic AI framework, and integrated enterprise-grade security features.</p>
-        </div>
-        
-        <div class="project-tech-stack-3">
-          <span class="project-tech-3" title="vLLM">vLLM</span>
-          <span class="project-tech-3" title="PyTorch">PyTorch</span>
-          <span class="project-tech-3" title="FastAPI">FastAPI</span>
-          <span class="project-tech-3" title="PostgreSQL">PostgreSQL</span>
-          <span class="project-tech-3" title="Redis">Redis</span>
-          <span class="project-tech-3" title="Chroma DB">ChromaDB</span>
-          <span class="project-tech-3" title="RBAC">RBAC</span>
-        </div>
-        
-        <div class="project-links-3">
+
+        <div class="proj-2026-footer">
+          <span class="proj-2026-internal">Production Internal Platform &bull; 300+ Active Employees</span>
         </div>
       </article>
 
       <!-- 3. Enterprise Identity Platform -->
-      <article class="project-card-3">
-        <div class="project-badge-3">
-          <span class="badge badge-opensource">Open Source Core</span>
+      <article class="proj-2026-card">
+        <div class="proj-2026-top">
+          <span class="proj-2026-badge opensource">Open Source Core</span>
+          <span class="proj-2026-index">[03]</span>
         </div>
-        <h3 class="project-title-3">Enterprise Identity Platform</h3>
-        <p class="project-desc-3">Production-grade Identity Provider (IdP) implementing OpenID Connect (OIDC) and OAuth 2.0 with full multi-tenant isolation, RBAC, and JIT 2FA. Serves as the central authentication foundation that other services depend on for secure authentication and authorization.</p>
-        
-        <div class="project-details-3">
-          <h4>Key Engineering Challenges Solved</h4>
-          <ul>
-            <li>Multi-tenant architecture with complete tenant isolation across independent identity domains</li>
-            <li>OAuth2 & OpenID Connect compliance (RFC 6749, RFC 8252) with three grant types: Authorization Code (Web), Device Code (Headless), Client Credentials (Server-to-Server)</li>
-            <li>Just-In-Time (JIT) 2FA enrollment with TOTP QR code setup and recovery codes</li>
-            <li>Session binding via <code>_sso_sid</code> claim in access tokens for revocation tracking and token correlation</li>
-          </ul>
+        <h3 class="proj-2026-name">Enterprise Identity Platform</h3>
+        <p class="proj-2026-desc">Production OAuth 2.0 &amp; OpenID Connect (OIDC) Identity Provider supporting 600+ users with multi-tenant isolation, asymmetric RS256 JWTs, fine-grained RBAC, and Just-In-Time TOTP 2FA.</p>
+
+        <div class="proj-2026-section-lbl">Engineering Highlights</div>
+        <ul class="proj-2026-points">
+          <li>RFC 6749 &amp; RFC 8252 compliance across Authorization Code (PKCE), Device Code, and Client Credentials grants</li>
+          <li>Stateless public-key JWT verification via JWKS with zero-network-hop validation</li>
+          <li>Session binding via <code>_sso_sid</code> claim with Redis-backed revocation tracking</li>
+          <li>Just-In-Time (JIT) TOTP 2FA enrollment with QR setup and recovery codes</li>
+        </ul>
+
+        <div class="proj-2026-tags">
+          <span class="proj-2026-tag">Python</span>
+          <span class="proj-2026-tag">Django</span>
+          <span class="proj-2026-tag">OAuth2 / OIDC</span>
+          <span class="proj-2026-tag">JWT (RS256)</span>
+          <span class="proj-2026-tag">PostgreSQL</span>
+          <span class="proj-2026-tag">Redis</span>
         </div>
-        
-        <div class="project-details-3">
-          <h4>My Role & Contribution</h4>
-          <p class="project-role-3">Designed and implemented the core OAuth2/OIDC authentication flows, multi-tenancy engine, RBAC permission resolution, and JIT 2FA system for enterprise-scale deployment.</p>
-        </div>
-        
-        <div class="project-tech-stack-3">
-          <span class="project-tech-3" title="Python">Python</span>
-          <span class="project-tech-3" title="Django">Django</span>
-          <span class="project-tech-3" title="OAuth2">OAuth2</span>
-          <span class="project-tech-3" title="OIDC">OIDC</span>
-          <span class="project-tech-3" title="JWT">JWT (RS256)</span>
-          <span class="project-tech-3" title="PostgreSQL">PostgreSQL</span>
-          <span class="project-tech-3" title="Redis">Redis</span>
-          <span class="project-tech-3" title="BFF">BFF Session Pattern</span>
-        </div>
-        
-        <div class="project-links-3">
-           <a href="https://github.com/surjit7/SSO-Django" target="_blank" rel="noopener" class="project-link-3">
-            <svg class="icon github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-            GitHub
+
+        <div class="proj-2026-footer">
+          <a href="https://github.com/surjit7/enterprise-identity-platform" target="_blank" rel="noopener" class="proj-2026-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub &#8599;
           </a>
-          <a href="https://github.com/surjit7/SSO-Django/blob/main/docs/index.md" target="_blank" rel="noopener" class="project-link-3">
-            <svg class="icon docs-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-9V3.5L18.5 9H13z"/></svg>
-            Documentation
+          <a href="https://github.com/surjit7/enterprise-identity-platform/blob/main/docs/index.md" target="_blank" rel="noopener" class="proj-2026-link">
+            Docs &#8599;
           </a>
         </div>
       </article>
 
       <!-- 4. Notification Service Platform -->
-      <article class="project-card-3">
-        <div class="project-badge-3">
+      <article class="proj-2026-card">
+        <div class="proj-2026-top">
+          <span class="proj-2026-badge">Production // Distributed</span>
+          <span class="proj-2026-index">[04]</span>
         </div>
-        <h3 class="project-title-3">Notification Service Platform</h3>
-        <p class="project-desc-3">Production backend notification system contributed to - FastAPI with Kafka-based event consumers, Protocol Buffers for efficient data serialization, and multi-channel delivery via Twilio and other providers.</p>
-        
-        <div class="project-details-3">
-          <h4>Key Engineering Challenges Solved</h4>
-          <ul>
-            <li>Event-driven architecture with Kafka consumers for reliable, asynchronous message delivery</li>
-            <li>Protocol Buffers for efficient data serialization and cross-service communication</li>
-            <li>Multi-channel notification delivery via Twilio and multiple providers</li>
-            <li>Idempotent processing and retry mechanisms for guaranteed message delivery</li>
-          </ul>
+        <h3 class="proj-2026-name">Notification Service Platform</h3>
+        <p class="proj-2026-desc">High-throughput stateless FastAPI notification microservice backed by Kafka event consumers, Protocol Buffers serialization, and multi-channel provider routing for 120k+ daily messages.</p>
+
+        <div class="proj-2026-section-lbl">Engineering Highlights</div>
+        <ul class="proj-2026-points">
+          <li>Asynchronous Kafka consumer topology decoupling API ingestion from downstream delivery</li>
+          <li>Binary Protocol Buffers contracts eliminating schema drift across services</li>
+          <li>Idempotent processing and exponential retry pipelines across Twilio, SMS, WhatsApp, and Email</li>
+          <li>High-availability persistence backed by PostgreSQL and MongoDB</li>
+        </ul>
+
+        <div class="proj-2026-tags">
+          <span class="proj-2026-tag">Python</span>
+          <span class="proj-2026-tag">FastAPI</span>
+          <span class="proj-2026-tag">Kafka</span>
+          <span class="proj-2026-tag">Protobuf</span>
+          <span class="proj-2026-tag">PostgreSQL</span>
+          <span class="proj-2026-tag">MongoDB</span>
+          <span class="proj-2026-tag">Docker</span>
         </div>
-        
-        <div class="project-details-3">
-          <h4>My Role & Contribution</h4>
-          <p class="project-role-3">Contributed to the production backend system, implemented Kafka consumer logic, and optimized data serialization with Protocol Buffers.</p>
-        </div>
-        
-        <div class="project-tech-stack-3">
-          <span class="project-tech-3" title="Python">Python</span>
-          <span class="project-tech-3" title="FastAPI">FastAPI</span>
-          <span class="project-tech-3" title="Kafka">Kafka</span>
-          <span class="project-tech-3" title="PostgreSQL">PostgreSQL</span>
-          <span class="project-tech-3" title="MongoDB">MongoDB</span>
-          <span class="project-tech-3" title="Twilio">Twilio</span>
-          <span class="project-tech-3" title="gRPC">Protocol Buffers</span>
-          <span class="project-tech-3" title="Docker">Docker</span>
-        </div>
-        
-        <div class="project-links-3">
+
+        <div class="proj-2026-footer">
+          <span class="proj-2026-internal">Production Microservice &bull; 120k+ Daily Messages</span>
         </div>
       </article>
 
-      <!-- 5. Kubernetes Play (Open Source) -->
-      <article class="project-card-3">
-        <div class="project-badge-3">
-          <span class="badge badge-opensource">Open Source Guide</span>
+      <!-- 5. Kubernetes Zero-Trust Architecture (Full-Width Banner Card) -->
+      <article class="proj-2026-card wide">
+        <div class="proj-2026-top">
+          <span class="proj-2026-badge opensource">Open Source Architecture Guide</span>
+          <span class="proj-2026-index">[05]</span>
         </div>
-        <h3 class="project-title-3">Kubernetes Zero-Trust Architecture</h3>
-        <p class="project-desc-3">A comprehensive, open-source guided journey through modern cloud-native networking. Explores the entire stack from raw containers up to TLS termination, eBPF routing, and GitOps-driven deployment.</p>
-        
-        <div class="project-details-container">
-          <div class="project-details-3">
-            <h4>Key Engineering Challenges Solved</h4>
-            <ul>
-              <li>Replaced traditional kube-proxy with Cilium (eBPF) for high-performance L4 routing</li>
-              <li>Implemented complete Zero-Trust pod-to-pod communication via NetworkPolicies</li>
-              <li>Engineered a full TLS PKI foundation for secure L7 Ingress termination</li>
-              <li>Automated the entire cluster lifecycle and application delivery using ArgoCD (GitOps)</li>
+        <div class="proj-2026-wide-cols">
+          <div>
+            <h3 class="proj-2026-name">Kubernetes Zero-Trust Architecture</h3>
+            <p class="proj-2026-desc" style="margin-bottom: 16px;">Open-source cloud-native networking reference covering raw containers up through eBPF L4 routing with Cilium, strict NetworkPolicy isolation, TLS PKI Ingress termination, and ArgoCD GitOps automation.</p>
+            <div class="proj-2026-tags" style="padding-top: 0; margin-bottom: 0;">
+              <span class="proj-2026-tag">Kubernetes</span>
+              <span class="proj-2026-tag">Cilium (eBPF)</span>
+              <span class="proj-2026-tag">ArgoCD</span>
+              <span class="proj-2026-tag">TLS / PKI</span>
+              <span class="proj-2026-tag">Zero Trust</span>
+              <span class="proj-2026-tag">NGINX Ingress</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="proj-2026-section-lbl">Engineering Highlights</div>
+            <ul class="proj-2026-points" style="margin-bottom: 16px;">
+              <li>Replaced traditional kube-proxy with Cilium eBPF for high-performance L4 routing</li>
+              <li>Enforced default-deny pod-to-pod isolation via Kubernetes NetworkPolicies</li>
+              <li>Built full TLS PKI foundation for L7 Ingress termination &amp; automated ArgoCD sync</li>
             </ul>
-          </div>
-          
-          <div class="project-details-3">
-            <h4>My Role & Contribution</h4>
-            <p class="project-role-3">Authored the entire repository, creating deep-dive architectural diagrams and repeatable labs to teach advanced Kubernetes concepts.</p>
-          </div>
-          
-          <div class="project-tech-stack-3">
-            <span class="project-tech-3" title="Kubernetes">Kubernetes</span>
-            <span class="project-tech-3" title="Cilium">Cilium (eBPF)</span>
-            <span class="project-tech-3" title="ArgoCD">ArgoCD</span>
-            <span class="project-tech-3" title="TLS/PKI">TLS/PKI</span>
-            <span class="project-tech-3" title="Zero Trust">Zero Trust</span>
-            <span class="project-tech-3" title="Nginx Ingress">NGINX Ingress</span>
-          </div>
-          
-          <div class="project-links-3">
-             <a href="https://github.com/surjit7/k8s-zero-trust-architecture" target="_blank" rel="noopener" class="project-link-3">
-              <svg class="icon github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              GitHub Repository
-            </a>
+            <div class="proj-2026-footer" style="padding-top: 12px;">
+              <a href="https://github.com/surjit7/k8s-zero-trust-architecture" target="_blank" rel="noopener" class="proj-2026-link">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub Repository &#8599;
+              </a>
+            </div>
           </div>
         </div>
       </article>
-
     </div>
   </div>
 </section>
 
 {% if page.permalink == "/projects/" %}
-<!-- More Projects Section -->
-<section id="more-projects" class="section projects-section" style="background: #F9F9F9;">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="section-title">More Projects</h2>
-      <p class="section-subtitle">Additional work on GitHub</p>
+<section id="more-projects" class="proj-2026" style="background: #FAFAFA;">
+  <div class="proj-2026-inner">
+    <div class="proj-2026-header" style="margin-bottom: 24px;">
+      <div>
+        <div class="proj-2026-kicker">03 // Additional Repositories</div>
+        <h2 class="proj-2026-title" style="font-size: clamp(1.45rem, 2.8vw, 1.9rem);">More Open Source &amp; Systems Work</h2>
+      </div>
     </div>
-    <div class="project-links-3">
+
+    <div class="proj-2026-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+      <a href="https://github.com/surjit7/enterprise-celery-rabbitmq-suite" target="_blank" rel="noopener" class="proj-2026-card" style="padding: 22px; text-decoration: none; background: #FFFFFF;">
+        <h3 class="proj-2026-name" style="font-size: 1.05rem;">Enterprise Celery &amp; RabbitMQ Suite</h3>
+        <p class="proj-2026-desc" style="font-size: 0.88rem; margin-bottom: 14px;">Distributed task-queue patterns with RabbitMQ routing, dead-letter queues, and worker observability.</p>
+        <span class="proj-2026-link" style="margin-top: auto;">GitHub &#8599;</span>
+      </a>
+
+      <a href="https://github.com/surjit7/identity-webauthn-service" target="_blank" rel="noopener" class="proj-2026-card" style="padding: 22px; text-decoration: none; background: #FFFFFF;">
+        <h3 class="proj-2026-name" style="font-size: 1.05rem;">Identity WebAuthn Service</h3>
+        <p class="proj-2026-desc" style="font-size: 0.88rem; margin-bottom: 14px;">Passwordless FIDO2 / WebAuthn passkey authentication microservice built in Python.</p>
+        <span class="proj-2026-link" style="margin-top: auto;">GitHub &#8599;</span>
+      </a>
+
+      <a href="https://github.com/surjit7/cache-topologies" target="_blank" rel="noopener" class="proj-2026-card" style="padding: 22px; text-decoration: none; background: #FFFFFF;">
+        <h3 class="proj-2026-name" style="font-size: 1.05rem;">Cache Topologies</h3>
+        <p class="proj-2026-desc" style="font-size: 0.88rem; margin-bottom: 14px;">Reference implementations for stampede protection, jittered TTLs, and negative caching.</p>
+        <span class="proj-2026-link" style="margin-top: auto;">GitHub &#8599;</span>
+      </a>
     </div>
   </div>
 </section>
