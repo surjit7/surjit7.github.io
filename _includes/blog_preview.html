@@ -1,193 +1,100 @@
-<section id="blog" class="blog-2026">
+<section id="blog" class="section blog-section-modern">
   <style>
-    .blog-2026 {
+    .blog-section-modern {
       padding: 64px 0;
       background: #FFFFFF;
-      border-bottom: 1px solid #E4E4E7;
+      border-top: 1px solid #F1F5F9;
     }
-    .blog-2026-inner {
-      max-width: 1040px;
+    .blog-container-modern {
+      max-width: 1050px;
       margin: 0 auto;
       padding: 0 24px;
     }
-    .blog-2026-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin-bottom: 36px;
-    }
-    .blog-2026-kicker {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.74rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #71717A;
-      margin-bottom: 8px;
-    }
-    .blog-2026-title {
-      font-size: clamp(1.85rem, 3.6vw, 2.45rem);
+    .blog-heading-modern {
+      font-size: clamp(2rem, 4vw, 2.75rem);
       font-weight: 800;
-      letter-spacing: -0.04em;
-      color: #09090B;
-      margin: 0 0 6px 0;
+      letter-spacing: -0.03em;
+      color: #111827;
+      margin: 0 0 32px 0;
       line-height: 1.1;
+      text-align: left;
     }
-    .blog-2026-subtitle {
-      font-size: 1rem;
-      color: #52525B !important;
-      margin: 0;
-      max-width: 560px;
-    }
-    .blog-2026-all-link {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: #09090B !important;
-      background: #FAFAFA;
-      border: 1px solid #E4E4E7;
-      border-radius: 8px;
-      padding: 8px 14px;
-      text-decoration: none !important;
-      transition: border-color 0.15s ease, background-color 0.15s ease;
-    }
-    .blog-2026-all-link:hover {
-      border-color: #A1A1AA;
-      background: #F4F4F5;
-    }
-    .blog-2026-grid {
+    .blog-section-modern .blog-list {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
-    .blog-2026-card {
-      background: #FAFAFA;
-      border: 1px solid #E4E4E7;
-      border-radius: 12px;
+    .blog-section-modern .blog-item {
+      background: #F8FAFC;
+      border: 1px solid #E5E7EB;
+      border-radius: 16px;
       padding: 24px;
       display: flex;
       flex-direction: column;
-      text-decoration: none !important;
-      transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
     }
-    .blog-2026-card:hover {
-      background: #FFFFFF;
-      border-color: #D4D4D8;
-      box-shadow: 0 12px 28px -18px rgba(9, 9, 11, 0.14);
+    .blog-section-modern .blog-item:hover {
+      transform: translateY(-4px);
+      border-color: #CBD5E1;
+      box-shadow: 0 12px 28px -10px rgba(15, 23, 42, 0.1);
     }
-    .blog-2026-meta {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px;
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.72rem;
-      font-weight: 600;
-      color: #71717A;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      margin-bottom: 14px;
-    }
-    .blog-2026-card-title {
-      font-size: 1.08rem;
-      font-weight: 700;
-      line-height: 1.35;
-      letter-spacing: -0.02em;
-      color: #09090B;
-      margin: 0 0 10px 0;
-      transition: color 0.15s ease;
-    }
-    .blog-2026-card:hover .blog-2026-card-title {
-      color: #2563EB;
-    }
-    .blog-2026-excerpt {
-      font-size: 0.9rem;
-      line-height: 1.6;
-      color: #52525B !important;
-      margin: 0 0 18px 0;
-    }
-    .blog-2026-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: auto;
-      margin-bottom: 16px;
-    }
-    .blog-2026-tag {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.7rem;
-      font-weight: 600;
-      padding: 3px 8px;
-      background: #FFFFFF;
-      border: 1px solid #E4E4E7;
-      color: #3F3F46;
-      border-radius: 6px;
-    }
-    .blog-2026-cta {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    .blog-section-modern .blog-date {
+      font-family: ui-monospace, SFMono-Regular, monospace;
       font-size: 0.78rem;
       font-weight: 600;
-      color: #09090B;
-      padding-top: 12px;
-      border-top: 1px solid #E4E4E7;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      color: #64748B;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+      display: block;
     }
-    .blog-2026-card:hover .blog-2026-cta {
+    .blog-section-modern .blog-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1.35;
+      letter-spacing: -0.015em;
+      margin: 0 0 10px 0;
+    }
+    .blog-section-modern .blog-title a {
+      color: #0F172A;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .blog-section-modern .blog-item:hover .blog-title a {
       color: #2563EB;
     }
-    @media (max-width: 920px) {
-      .blog-2026-grid {
-        grid-template-columns: 1fr;
-      }
+    .blog-section-modern .blog-excerpt {
+      font-size: 0.92rem;
+      line-height: 1.6;
+      color: #475569;
+      margin: 0;
     }
-    @media (max-width: 768px) {
-      .blog-2026 {
-        padding: 44px 0;
+    @media (max-width: 640px) {
+      .blog-section-modern {
+        padding: 48px 0;
       }
-      .blog-2026-card {
-        padding: 20px 18px;
+      .blog-container-modern {
+        padding: 0 16px;
       }
     }
   </style>
 
-  <div class="blog-2026-inner">
-    <div class="blog-2026-header">
-      <div>
-        <div class="blog-2026-kicker">04 // Engineering Log</div>
-        <h2 class="blog-2026-title">Latest Writing</h2>
-        <p class="blog-2026-subtitle">Deep dives on self-hosted LLM infrastructure, distributed systems, and backend engineering.</p>
-      </div>
-      <a href="{{ '/blog/' | relative_url }}" class="blog-2026-all-link">All Articles &rarr;</a>
-    </div>
-
-    <div class="blog-2026-grid">
+  <div class="blog-container-modern">
+    <h2 class="blog-heading-modern">Latest Writing</h2>
+    <ul class="blog-list">
       {% for post in site.posts limit:3 %}
-        {% assign words = post.content | number_of_words %}
-        {% assign mins = words | divided_by: 200 | plus: 1 %}
-        <a href="{{ post.url | relative_url }}" class="blog-2026-card">
-          <div class="blog-2026-meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
-            <span>{{ mins }} min read</span>
-          </div>
-          <h3 class="blog-2026-card-title">{{ post.title }}</h3>
-          <p class="blog-2026-excerpt">{{ post.excerpt | strip_html | truncate: 155 }}</p>
-          {% if post.tags.size > 0 %}
-          <div class="blog-2026-tags">
-            {% for tag in post.tags limit:3 %}
-            <span class="blog-2026-tag">{{ tag }}</span>
-            {% endfor %}
-          </div>
-          {% endif %}
-          <div class="blog-2026-cta">
-            <span>Read article</span>
-            <span aria-hidden="true">&rarr;</span>
-          </div>
-        </a>
+      <li class="blog-item">
+        <span class="blog-date">{{ post.date | date: "%B %d, %Y" }}</span>
+        <h3 class="blog-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p class="blog-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+      </li>
       {% endfor %}
+    </ul>
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="{{ '/blog/' | relative_url }}" class="btn btn-secondary">View All Posts</a>
     </div>
   </div>
 </section>

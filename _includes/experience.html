@@ -1,306 +1,240 @@
-<section id="experience" class="exp-2026">
-  <style>
-    .exp-2026 {
-      padding: 64px 0;
-      {% if page.permalink == '/experience/' %}padding-top: 84px;{% endif %}
-      background: #FAFAFA;
-      border-bottom: 1px solid #E4E4E7;
-    }
-    .exp-2026-inner {
-      max-width: 1040px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-    .exp-2026-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin-bottom: 36px;
-    }
-    .exp-2026-kicker {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.74rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #71717A;
-      margin-bottom: 8px;
-    }
-    .exp-2026-title {
-      font-size: clamp(1.85rem, 3.6vw, 2.45rem);
-      font-weight: 800;
-      letter-spacing: -0.04em;
-      color: #09090B;
-      margin: 0 0 6px 0;
-      line-height: 1.1;
-    }
-    .exp-2026-subtitle {
-      font-size: 1rem;
-      color: #52525B !important;
-      margin: 0;
-      max-width: 560px;
-    }
-    .exp-2026-resume-link {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: #09090B !important;
-      background: #FFFFFF;
-      border: 1px solid #E4E4E7;
-      border-radius: 8px;
-      padding: 8px 14px;
-      text-decoration: none !important;
-      transition: border-color 0.15s ease, background-color 0.15s ease;
-    }
-    .exp-2026-resume-link:hover {
-      border-color: #A1A1AA;
-      background: #F4F4F5;
-    }
-    .exp-2026-timeline {
-      position: relative;
-      padding-left: 32px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .exp-2026-timeline::before {
-      content: '';
-      position: absolute;
-      left: 6px;
-      top: 10px;
-      bottom: 10px;
-      width: 1px;
-      background: #D4D4D8;
-    }
-    .exp-2026-card {
-      position: relative;
-      background: #FFFFFF;
-      border: 1px solid #E4E4E7;
-      border-radius: 12px;
-      padding: 28px 32px;
-      transition: border-color 0.15s ease, box-shadow 0.15s ease;
-    }
-    .exp-2026-card:hover {
-      border-color: #D4D4D8;
-      box-shadow: 0 10px 28px -16px rgba(9, 9, 11, 0.12);
-    }
-    .exp-2026-node {
-      position: absolute;
-      left: -32px;
-      top: 34px;
-      width: 13px;
-      height: 13px;
-      border-radius: 4px;
-      background: #FFFFFF;
-      border: 2px solid #09090B;
-      box-shadow: 0 0 0 4px #FAFAFA;
-    }
-    .exp-2026-node.active {
-      border-color: #10B981;
-      background: #10B981;
-    }
-    .exp-2026-card-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 20px;
-      padding-bottom: 18px;
-      border-bottom: 1px solid #F4F4F5;
-    }
-    .exp-2026-role {
-      font-size: 1.25rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      color: #09090B;
-      margin: 0 0 4px 0;
-      line-height: 1.25;
-    }
-    .exp-2026-company {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: #3F3F46;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .exp-2026-company-loc {
-      color: #71717A;
-      font-weight: 500;
-    }
-    .exp-2026-date {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.74rem;
-      font-weight: 600;
-      color: #3F3F46;
-      background: #F4F4F5;
-      border: 1px solid #E4E4E7;
-      padding: 5px 10px;
-      border-radius: 6px;
-      letter-spacing: 0.04em;
-      white-space: nowrap;
-    }
-    .exp-2026-date.current {
-      color: #047857;
-      background: rgba(16, 185, 129, 0.08);
-      border-color: rgba(16, 185, 129, 0.25);
-    }
-    .exp-2026-list {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 20px 0;
-    }
-    .exp-2026-list li {
-      position: relative;
-      padding-left: 22px;
-      margin-bottom: 10px;
-      color: #3F3F46;
-      line-height: 1.6;
-      font-size: 0.94rem;
-    }
-    .exp-2026-list li:last-child {
-      margin-bottom: 0;
-    }
-    .exp-2026-list li::before {
-      content: '->';
-      position: absolute;
-      left: 0;
-      top: 0;
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: #71717A;
-    }
-    .exp-2026-list strong {
-      color: #09090B;
-      font-weight: 600;
-    }
-    .exp-2026-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      padding-top: 16px;
-      border-top: 1px solid #F4F4F5;
-    }
-    .exp-2026-tag {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.72rem;
-      font-weight: 600;
-      padding: 4px 9px;
-      background: #FAFAFA;
-      border: 1px solid #E4E4E7;
-      color: #3F3F46;
-      border-radius: 6px;
-    }
-    @media (max-width: 768px) {
-      .exp-2026 {
-        padding: 44px 0;
-        {% if page.permalink == '/experience/' %}padding-top: 64px;{% endif %}
-      }
-      .exp-2026-timeline {
-        padding-left: 22px;
-      }
-      .exp-2026-timeline::before {
-        left: 5px;
-      }
-      .exp-2026-node {
-        left: -22px;
-        width: 11px;
-        height: 11px;
-        top: 26px;
-      }
-      .exp-2026-card {
-        padding: 20px 18px;
-      }
-      .exp-2026-role {
-        font-size: 1.1rem;
-      }
-    }
-  </style>
-
-  <div class="exp-2026-inner">
-    <div class="exp-2026-header">
-      <div>
-        <div class="exp-2026-kicker">01 // Career Timeline</div>
-        <h2 class="exp-2026-title">Experience</h2>
-        <p class="exp-2026-subtitle">Production AI platforms, Kubernetes infrastructure, and distributed Python services.</p>
-      </div>
-      {% unless page.permalink == '/experience/' %}
-      <a href="{{ '/resume/' | relative_url }}" class="exp-2026-resume-link" target="_blank">Full Resume &#8599;</a>
-      {% endunless %}
+<section id="experience" class="experience-wrapper">
+  <!-- Subtle background accent for experience -->
+  <div style="position: absolute; top: 20%; left: -10%; width: 500px; height: 500px; background: rgba(59, 130, 246, 0.05); filter: blur(100px); border-radius: 50%; pointer-events: none;"></div>
+  
+  <div class="container" style="max-width: 1050px; margin: 0 auto; position: relative; z-index: 2;">
+    <div style="text-align: left; margin-bottom: 32px;">
+      <h2 style="font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 800; letter-spacing: -0.03em; color: #111827; margin-bottom: 8px; line-height: 1.1;">Experience.</h2>
+      <p style="font-size: 1.05rem; color: #6B7280; max-width: 600px; margin: 0;">Architecting scalable platforms and high-performance ML pipelines.</p>
     </div>
 
-    <div class="exp-2026-timeline">
+    <style>
+      .experience-wrapper {
+        padding: 40px 0;
+        {% if page.permalink == '/experience/' %}padding-top: 80px;{% endif %}
+        position: relative; 
+        overflow: hidden; 
+        background: #ffffff;
+      }
+      @media (max-width: 768px) {
+        .experience-wrapper {
+          padding: 24px 0;
+          {% if page.permalink == '/experience/' %}padding-top: 60px;{% endif %}
+        }
+      }
+      .premium-timeline {
+        position: relative;
+        padding-left: 48px;
+      }
+      .premium-timeline::before {
+        content: '';
+        position: absolute;
+        left: 11px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: linear-gradient(to bottom, #2563EB 0%, rgba(37, 99, 235, 0.1) 100%);
+        border-radius: 2px;
+      }
+      .premium-role-card {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.4) 100%);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 20px;
+        padding: 32px 40px;
+        margin-bottom: 32px;
+        position: relative;
+        box-shadow: 
+          0 4px 24px -4px rgba(0, 0, 0, 0.03),
+          inset 0 1px 0 rgba(255, 255, 255, 0.8),
+          inset 0 0 20px rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .premium-role-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 
+          0 12px 32px -8px rgba(0, 0, 0, 0.08),
+          inset 0 1px 0 rgba(255, 255, 255, 0.9),
+          inset 0 0 20px rgba(255, 255, 255, 0.6);
+      }
+      .timeline-dot {
+        position: absolute;
+        left: -48px;
+        top: 48px;
+        width: 20px;
+        height: 20px;
+        background: white;
+        border: 4px solid #2563EB;
+        border-radius: 50%;
+        box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+        z-index: 2;
+      }
+      .premium-role-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+      .premium-role-title {
+        font-size: 1.35rem;
+        font-weight: 800;
+        color: #111827;
+        margin: 0 0 6px 0;
+        letter-spacing: -0.01em;
+        line-height: 1.2;
+      }
+      .premium-company {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #2563EB;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .premium-date {
+        font-family: ui-monospace, SFMono-Regular, monospace;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #4B5563;
+        background: #F3F4F6;
+        padding: 4px 12px;
+        border-radius: 99px;
+        letter-spacing: 0.05em;
+        border: 1px solid #E5E7EB;
+      }
+      .premium-achievements {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 24px 0;
+      }
+      .premium-achievements li {
+        position: relative;
+        padding-left: 28px;
+        margin-bottom: 12px;
+        color: #4B5563;
+        line-height: 1.6;
+        font-size: 0.95rem;
+      }
+      .premium-achievements li::before {
+        content: '→';
+        position: absolute;
+        left: 0;
+        color: #059669;
+        font-weight: 800;
+        font-family: ui-monospace, monospace;
+      }
+      .premium-achievements strong {
+        color: #111827;
+        font-weight: 700;
+      }
+      .premium-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(229, 231, 235, 0.6);
+      }
+      .premium-tag {
+        font-family: ui-monospace, SFMono-Regular, monospace;
+        font-size: 0.7rem;
+        font-weight: 700;
+        padding: 4px 10px;
+        background: #F9FAFB;
+        border: 1px solid #E5E7EB;
+        color: #6B7280;
+        border-radius: 6px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        transition: all 0.2s ease;
+      }
+      .premium-role-card:hover .premium-tag {
+        background: white;
+        border-color: #D1D5DB;
+        color: #4B5563;
+      }
+      @media (max-width: 768px) {
+        .premium-timeline { padding-left: 20px; }
+        .premium-timeline::before { left: 7px; }
+        .timeline-dot { left: -20px; width: 14px; height: 14px; top: 28px; box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1); border-width: 2px; }
+        .premium-role-card { padding: 24px 16px; margin-bottom: 24px; }
+        .premium-role-title { font-size: 1.15rem; }
+        .premium-company { font-size: 0.95rem; }
+        .premium-date { font-size: 0.75rem; padding: 4px 10px; }
+        .premium-achievements li { font-size: 0.9rem; padding-left: 20px; margin-bottom: 10px; }
+      }
+    </style>
 
+    <div class="premium-timeline">
+      
       <!-- BJS Home Delivery -->
-      <article class="exp-2026-card">
-        <div class="exp-2026-node active" aria-hidden="true"></div>
-        <div class="exp-2026-card-head">
+      <div class="premium-role-card">
+        <div class="timeline-dot"></div>
+        <div class="premium-role-header">
           <div>
-            <h3 class="exp-2026-role">AI/ML &amp; Senior Python Backend Engineer</h3>
-            <div class="exp-2026-company">
+            <h3 class="premium-role-title">AI/ML & Senior Python Backend Engineer</h3>
+            <div class="premium-company">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
               BJS Home Delivery
-              <span class="exp-2026-company-loc">&bull; Mohali, India (Hybrid)</span>
             </div>
           </div>
-          <div class="exp-2026-date current">JAN 2023 – PRESENT</div>
+          <div class="premium-date">2023 – PRESENT</div>
         </div>
-
-        <ul class="exp-2026-list">
-          <li><strong>Enterprise AI Inference Platform:</strong> Engineered a self-hosted vLLM and ChromaDB platform serving 300+ employees with department-level RBAC. Optimized 15k-token RAG pipelines to cut P99 latency from 8.0s to 3.5s and reduce OpEx by 27%.</li>
-          <li><strong>Enterprise Identity Provider (IdP):</strong> Architected a custom OAuth2, PKCE, and TOTP IdP for 600+ users using an asymmetric RS256 JWT mesh for zero-network-hop verification and Redis-backed session revocation.</li>
-          <li><strong>Event-Driven Notification Service:</strong> Built a stateless FastAPI, Kafka, and Protocol Buffers microservice with idempotent consumers delivering 120k+ daily messages across multi-channel APIs.</li>
-          <li><strong>Zero-Touch Kubernetes Appliance:</strong> Developed an Azure Marketplace Kubernetes appliance automating bare-metal cluster bootstrapping, KEDA node autoscaling, and human-free HashiCorp Vault auto-unsealing.</li>
-          <li><strong>Engineering Leadership:</strong> Directed a team of 4 junior engineers, enforcing code quality standards, sprint execution, and distributed systems architecture patterns.</li>
+        
+        <ul class="premium-achievements">
+          <li><strong>Architected a Custom Enterprise Identity Provider (IdP)</strong> supporting 600+ users via OAuth2, PKCE, and TOTP. Engineered a stateless authentication mesh using asymmetric JWTs for zero-network-hop verification and secure Redis-backed revocation.</li>
+          <li><strong>Built an Event-Driven Notification Microservice</strong> leveraging FastAPI, Kafka, and Protocol Buffers (Protobuf). Implemented strict idempotent processing to guarantee delivery of 120k+ daily messages across multi-channel APIs.</li>
+          <li><strong>Engineered an Enterprise AI Inference Platform</strong> serving 300+ employees with department-level RBAC. Deployed bare-metal vLLM and ChromaDB for complex 15k-token RAG pipelines, slashing P99 latency from 8.0s to 3.5s and reducing OpEx by 27%.</li>
+          <li><strong>Developed a Zero-Touch Kubernetes Appliance</strong> for the Azure Marketplace, fully automating bare-metal cluster bootstrapping, dynamic node enrollment via KEDA, and human-free HashiCorp Vault auto-unsealing.</li>
+          <li><strong>Directed a Team of 4 Junior Engineers</strong>, enforcing rigorous code quality standards, overseeing sprint execution, and mentoring on modern distributed systems design.</li>
         </ul>
 
-        <div class="exp-2026-tags">
-          <span class="exp-2026-tag">FastAPI</span>
-          <span class="exp-2026-tag">vLLM</span>
-          <span class="exp-2026-tag">PyTorch</span>
-          <span class="exp-2026-tag">Kubernetes</span>
-          <span class="exp-2026-tag">KEDA</span>
-          <span class="exp-2026-tag">Vault</span>
-          <span class="exp-2026-tag">Kafka</span>
-          <span class="exp-2026-tag">Protobuf</span>
-          <span class="exp-2026-tag">OAuth2 / PKCE</span>
-          <span class="exp-2026-tag">Redis</span>
+        <div class="premium-tags">
+          <span class="premium-tag">FastAPI</span>
+          <span class="premium-tag">Kafka</span>
+          <span class="premium-tag">Protocol Buffers</span>
+          <span class="premium-tag">Kubernetes</span>
+          <span class="premium-tag">KEDA</span>
+          <span class="premium-tag">Vault</span>
+          <span class="premium-tag">vLLM</span>
+          <span class="premium-tag">PyTorch</span>
+          <span class="premium-tag">OAuth2 & PKCE</span>
+          <span class="premium-tag">Redis</span>
         </div>
-      </article>
+      </div>
 
       <!-- Connoisseur Infotech -->
-      <article class="exp-2026-card">
-        <div class="exp-2026-node" aria-hidden="true"></div>
-        <div class="exp-2026-card-head">
+      <div class="premium-role-card">
+        <div class="timeline-dot" style="border-color: #9CA3AF; box-shadow: 0 0 0 6px rgba(156, 163, 175, 0.1);"></div>
+        <div class="premium-role-header">
           <div>
-            <h3 class="exp-2026-role">Software Engineer (Machine Learning)</h3>
-            <div class="exp-2026-company">
+            <h3 class="premium-role-title">Software Engineer (Machine Learning)</h3>
+            <div class="premium-company" style="color: #6B7280;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
               Connoisseur Infotech (RChilli Inc.)
-              <span class="exp-2026-company-loc">&bull; Mohali, India</span>
             </div>
           </div>
-          <div class="exp-2026-date">OCT 2021 – NOV 2022</div>
+          <div class="premium-date">2021 – 2022</div>
         </div>
-
-        <ul class="exp-2026-list">
-          <li><strong>NLP Engine Modernization:</strong> Replaced legacy Regex and Bi-LSTM resume-parsing pipelines with Transformer-based architectures.</li>
-          <li><strong>Dataset &amp; Annotation Leadership:</strong> Coordinated a 14-person cross-functional team to curate a 5,000+ edge-case Named Entity Recognition (NER) dataset.</li>
-          <li><strong>Custom BERT Fine-Tuning:</strong> Trained and fine-tuned domain BERT models, increasing variable-field extraction accuracy from 71% to 94.6%.</li>
-          <li><strong>GPU Inference Migration:</strong> Transitioned CPU-bound serving pipelines to NVIDIA T4 GPUs via Flask REST APIs, cutting serving latency by 40% while scaling model capacity.</li>
+        
+        <ul class="premium-achievements">
+          <li><strong>Spearheaded NLP Engine Modernization</strong>, systematically replacing legacy rules-based Regex and Bi-LSTM models with state-of-the-art Transformer architectures.</li>
+          <li><strong>Orchestrated a 14-Person Cross-Functional Team</strong> to curate and refine a proprietary annotation dataset containing 5,000+ complex edge cases for Named Entity Recognition (NER).</li>
+          <li><strong>Fine-Tuned Custom BERT Models</strong> on proprietary data, surging extraction accuracy for highly variable fields from 71% to a production-ready 94.6%.</li>
+          <li><strong>Executed a High-Performance GPU Inference Migration</strong>, transitioning CPU-bound pipelines to NVIDIA T4 GPUs to achieve a 40% reduction in serving latency while actively increasing model parameter count.</li>
         </ul>
 
-        <div class="exp-2026-tags">
-          <span class="exp-2026-tag">Python</span>
-          <span class="exp-2026-tag">PyTorch</span>
-          <span class="exp-2026-tag">BERT</span>
-          <span class="exp-2026-tag">HuggingFace</span>
-          <span class="exp-2026-tag">NVIDIA T4</span>
-          <span class="exp-2026-tag">Flask</span>
+        <div class="premium-tags">
+          <span class="premium-tag">Python</span>
+          <span class="premium-tag">PyTorch</span>
+          <span class="premium-tag">BERT</span>
+          <span class="premium-tag">Huggingface</span>
+          <span class="premium-tag">NVIDIA T4</span>
+          <span class="premium-tag">Flask</span>
         </div>
-      </article>
+      </div>
 
     </div>
   </div>
